@@ -13,13 +13,22 @@ public class Movies {
     private ArrayList<String> genres;
 
     public Movies(String name, int year, int duration, ArrayList<String> countriesBanned,
-                  ArrayList<String> actors, ArrayList<String> genres) {
+                 ArrayList<String> actors, ArrayList<String> genres) {
         this.name = name;
         this.year = year;
         this.duration = duration;
         this.countriesBanned = countriesBanned;
         this.actors = actors;
         this.genres = genres;
+    }
+
+    public Movies(Movies movie) {
+        this.name = movie.getName();
+        this.year = movie.getYear();
+        this.duration = movie.getDuration();
+        this.countriesBanned = movie.getCountriesBanned();
+        this.actors = movie.getActors();
+        this.genres = movie.getGenres();
     }
 
     public String getName() {

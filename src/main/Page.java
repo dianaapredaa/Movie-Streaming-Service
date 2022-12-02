@@ -4,7 +4,7 @@ interface Page {
 
 }
 
-class Movies implements Page {
+class MoviesPage implements Page {
 
 }
 
@@ -32,7 +32,7 @@ class PageType {
 
         // retrieve main.Movies type
         if (pageType.equals("Movies")) {
-            return new SeeDetails();
+            return new MoviesPage();
         }
 
         // retrieve Upgrades type
