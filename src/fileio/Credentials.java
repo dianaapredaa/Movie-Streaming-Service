@@ -1,6 +1,10 @@
 package fileio;
 
 public class Credentials {
+
+    public Credentials() {
+
+    }
     private String name;
     private String password;
 

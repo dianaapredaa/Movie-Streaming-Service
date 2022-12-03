@@ -10,10 +10,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import fileio.*;
+
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
 public class Main {
 
     public static void main(final String[] args) throws IOException {
 
+        // read input
         ObjectMapper objectMapper = new ObjectMapper();
         Input inputData = objectMapper.readValue(new File(args[0]), Input.class);
         ArrayNode output = objectMapper.createArrayNode();
@@ -34,7 +38,7 @@ public class Main {
             users.addLast(user);
         }
 
-        System.out.println(users.get(1).getName());
+        System.out.println(users.get(0).getCredentials().getName());
 
         LinkedList<Movies> movies = new LinkedList<>();
         for (int i = 0; i < inputData.getMovies().size(); i++) {

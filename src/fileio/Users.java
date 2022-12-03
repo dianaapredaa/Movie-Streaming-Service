@@ -1,7 +1,11 @@
 package fileio;
 
 public class Users {
+    public Users() {
+
+    }
     public Users(Users users) {
+        this.credentials = users.getCredentials();
     }
 
     public Credentials getCredentials() {
