@@ -124,7 +124,7 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:12:14: Using the '.*' form of import should be avoided - fileio.*. [AvoidStarImport]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:16:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:18:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:48:65: Must have at least one statement. [EmptyBlock]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:49:65: Must have at least one statement. [EmptyBlock]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Page.java:24:22: Parameter pageType should be final. [FinalParameters]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Test.java:1: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Test.java:11:28: Using the '.*' form of import should be avoided - java.util.concurrent.*. [AvoidStarImport]

@@ -38,7 +38,7 @@ public class Main {
             users.addLast(user);
         }
 
-        System.out.println(users.get(0).getCredentials().getName());
+        System.out.println(users.get(0).getCredentials().getCountry());
 
         LinkedList<Movies> movies = new LinkedList<>();
         for (int i = 0; i < inputData.getMovies().size(); i++) {
@@ -49,7 +49,9 @@ public class Main {
         for (int i = 0; i < inputData.getActions().size(); i++) {
 
         }
-
+        ObjectNode outputNode = objectMapper.createObjectNode();
+        outputNode.put("error", "Attacked card does not belong to the enemy.");
+        output.addPOJO(outputNode);
         // output
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(args[1]), output);
