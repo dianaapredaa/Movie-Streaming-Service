@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.regex.Pattern;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -22,15 +23,8 @@ public class Main {
         Input inputData = objectMapper.readValue(new File(args[0]), Input.class);
         ArrayNode output = objectMapper.createArrayNode();
 
-        // call getInstance to retrieve the object available from the class
-        Homepage homepage = Homepage.getInstance();
-
         // create a PageType object to get different types of pages
         PageType page = new PageType();
-        Page moviesPage = page.type("Movies");
-        Page seeDetailsPage = page.type("SeeDetails");
-        Page upgradesPage = page.type("Upgrades");
-        Page logoutPage = page.type("Logout");
 
         LinkedList<Users> users = new LinkedList<>();
         for (int i = 0; i < inputData.getUsers().size(); i++) {
@@ -46,14 +40,41 @@ public class Main {
             movies.addLast(movie);
         }
 
+        Users currentUser = new Users();
+        Page currentPage = page.type("HomePageNonAuthenticated");
+
         for (int i = 0; i < inputData.getActions().size(); i++) {
+            Actions command =  inputData.getActions().get(i);
+
+            switch (command.getType()) {
+                case("on page"):
+                    // jump to features
+
+                    break;
+                case("change page"):
+                    String pageName = command.getPage();
+                    // check if is possible to change pages
+                    if (!currentPage.nextPossiblePage.contains(command.getPage())) {
+//                        // error
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", "Error");
+                        output.addPOJO(objectNode);
+
+                    } else {
+                        // change page
+                        currentPage = page.type(pageName);
+                    }
+                    // jump to features
+
+                    break;
+            }
 
         }
-        ObjectNode outputNode = objectMapper.createObjectNode();
-        outputNode.put("error", "Attacked card does not belong to the enemy.");
-        output.addPOJO(outputNode);
+
         // output
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(args[1]), output);
+        char[] inputPath = args[0].toCharArray();
+        objectWriter.writeValue(new File("checker/resources/out/out_" + inputPath[inputPath.length - 6] + ".json"), output);
     }
 }

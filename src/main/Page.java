@@ -1,22 +1,71 @@
 package main;
 
-interface Page {
+import java.util.ArrayList;
+
+abstract class Page {
+    ArrayList<String> nextPossiblePage = new ArrayList<>();
+}
+
+class HomePageAuthenticated extends Page {
+    public HomePageAuthenticated() {
+        this.nextPossiblePage.add("Movies");
+        this.nextPossiblePage.add("SeeDetails");
+        this.nextPossiblePage.add("Logout");
+    }
+}
+
+class HomePageNonAuthenticated extends Page {
+    public HomePageNonAuthenticated() {
+        this.nextPossiblePage.add("Login");
+        this.nextPossiblePage.add("Register");
+    }
 
 }
 
-class MoviesPage implements Page {
+class Register extends Page {
+    public Register() {
+        this.nextPossiblePage.add("HomePageAuthenticated");
+    }
 
 }
 
-class SeeDetails implements Page {
+class Login extends Page {
+    public Login() {
+        this.nextPossiblePage.add("HomePageAuthenticated");
+    }
 
 }
 
-class Upgrades implements Page {
+class MoviesPage extends Page {
+    public MoviesPage() {
+        this.nextPossiblePage.add("HomePageAuthenticated");
+        this.nextPossiblePage.add("SeeDetails");
+        this.nextPossiblePage.add("Logout");
+    }
 
 }
 
-class Logout implements Page {
+class SeeDetails extends Page {
+    public SeeDetails() {
+        this.nextPossiblePage.add("HomePageAuthenticated");
+        this.nextPossiblePage.add("SeeDetails");
+        this.nextPossiblePage.add("Logout");
+        this.nextPossiblePage.add("Upgrades");
+    }
+
+}
+
+class Upgrades extends Page {
+    public Upgrades() {
+        this.nextPossiblePage.add("HomePageAuthenticated");
+    }
+
+}
+
+class Logout extends Page {
+    public Logout() {
+        this.nextPossiblePage.add("HomePageNonAuthenticated");
+    }
 
 }
 
@@ -42,6 +91,22 @@ class PageType {
         // retrieve Logout type
         if (pageType.equals("Logout")) {
             return new Logout();
+        }
+
+        if (pageType.equals("HomePageAuthenticated")) {
+            return new HomePageAuthenticated();
+        }
+
+        if (pageType.equals("HomePageNonAuthenticated")) {
+            return new HomePageNonAuthenticated();
+        }
+
+        if (pageType.equals("Register")) {
+            return new Register();
+        }
+
+        if (pageType.equals("Login")) {
+            return new Login();
         }
         return null;
     }
