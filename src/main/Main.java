@@ -1,4 +1,5 @@
 package main;
+import java.io.Console;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -32,40 +33,50 @@ public class Main {
             users.addLast(user);
         }
 
-        System.out.println(users.get(0).getCredentials().getCountry());
-
         LinkedList<Movies> movies = new LinkedList<>();
         for (int i = 0; i < inputData.getMovies().size(); i++) {
             Movies movie = new Movies(inputData.getMovies().get(i));
             movies.addLast(movie);
         }
 
-        Users currentUser = new Users();
-        Page currentPage = page.type("HomePageNonAuthenticated");
+        CurrentAuthentication currentAuth = new CurrentAuthentication();
+        Commands commands = new Commands();
+        commands.setCurrent(currentAuth);
+
+        System.out.println(currentAuth.currentPage.pageType);
+
 
         for (int i = 0; i < inputData.getActions().size(); i++) {
             Actions command =  inputData.getActions().get(i);
 
             switch (command.getType()) {
                 case("on page"):
-                    // jump to features
-
+                    // jump to features if possible
+                    if (command.getFeature() != null)
+                        commands.features(command, users, movies, output);
                     break;
                 case("change page"):
                     String pageName = command.getPage();
                     // check if is possible to change pages
-                    if (!currentPage.nextPossiblePage.contains(command.getPage())) {
-//                        // error
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "Error");
-                        output.addPOJO(objectNode);
+                    System.out.println(currentAuth.currentPage.pageType);
 
-                    } else {
+                    if (currentAuth.currentPage.nextPossiblePage.contains(pageName)) {
                         // change page
-                        currentPage = page.type(pageName);
+                        currentAuth.currentPage = page.type(pageName);
+                    } else {
+                        // can not change page
+                        break;
                     }
-                    // jump to features
-
+                    // jump to features if possible
+                    if (pageName.equals("Logout")) {
+                        // only on Logout Page
+                        currentAuth.currentUser = null;
+                        currentAuth.currentPage = page.type("HomePageNonAuthenticated");
+                        currentAuth.currentMoviesList = new LinkedList<>();
+                    } else {
+                        if (command.getFeature() != null)
+                            commands.features(command, users, movies, output);
+                    }
                     break;
             }
 

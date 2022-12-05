@@ -1,11 +1,17 @@
 package fileio;
 
+import java.util.ArrayList;
+
 public class Users {
     public Users() {
 
     }
     public Users(Users users) {
-        this.credentials = users.getCredentials();
+        this.credentials = new Credentials(users.getCredentials());
+    }
+
+    public Users(Credentials credentials) {
+        this.credentials = new Credentials(credentials);
     }
 
     public Credentials getCredentials() {
@@ -17,77 +23,60 @@ public class Users {
     }
 
     private Credentials credentials;
-//    private String name;
-//    private String password;
-//    private String accountType;
-//    private String country;
-//    private int balance;
-//
-//    public Users(Credentials credentials) {
-//        this.name = credentials.getName();
-//        this.password = credentials.getPassword();
-//        this.accountType = credentials.getAccountType();
-//        this.country = credentials.getCountry();
-//        this.balance = credentials.getBalance();
-//    }
 
+    private int tokensCount = 0;
+    private int numFreePremiumMovies = 15;
+    private ArrayList<String> purchasedMovies = new ArrayList<>();
+    private ArrayList<String> watchedMovies = new ArrayList<>();
+    private ArrayList<String> likedMovies = new ArrayList<>();
 
-//    public Users(Users user) {
-//        this.name = user.getName();
-//        this.password = user.getPassword();
-//        this.accountType = user.getAccountType();
-//        this.country = user.getCountry();
-//        this.balance = user.getBalance();
-//    }
+    public int getTokensCount() {
+        return tokensCount;
+    }
 
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getPassword() {
-//        return password;
-//    }
-//
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
-//
-//    public String getAccountType() {
-//        return accountType;
-//    }
-//
-//    public void setAccountType(String accountType) {
-//        this.accountType = accountType;
-//    }
-//
-//    public String getCountry() {
-//        return country;
-//    }
-//
-//    public void setCountry(String country) {
-//        this.country = country;
-//    }
-//
-//    public int getBalance() {
-//        return balance;
-//    }
-//
-//    public void setBalance(int balance) {
-//        this.balance = balance;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Users{" +
-//                "name='" + name + '\'' +
-//                ", password='" + password + '\'' +
-//                ", accountType='" + accountType + '\'' +
-//                ", country='" + country + '\'' +
-//                ", balance=" + balance +
-//                '}';
-//    }
+    public void setTokensCount(int tokensCount) {
+        this.tokensCount = tokensCount;
+    }
+
+    public int getNumFreePremiumMovies() {
+        return numFreePremiumMovies;
+    }
+
+    public void setNumFreePremiumMovies(int numFreePremiumMovies) {
+        this.numFreePremiumMovies = numFreePremiumMovies;
+    }
+
+    public ArrayList<String> getPurchasedMovies() {
+        return purchasedMovies;
+    }
+
+    public void setPurchasedMovies(ArrayList<String> purchasedMovies) {
+        this.purchasedMovies = purchasedMovies;
+    }
+
+    public ArrayList<String> getWatchedMovies() {
+        return watchedMovies;
+    }
+
+    public void setWatchedMovies(ArrayList<String> watchedMovies) {
+        this.watchedMovies = watchedMovies;
+    }
+
+    public ArrayList<String> getLikedMovies() {
+        return likedMovies;
+    }
+
+    public void setLikedMovies(ArrayList<String> likedMovies) {
+        this.likedMovies = likedMovies;
+    }
+
+    public ArrayList<String> getRatedMovies() {
+        return ratedMovies;
+    }
+
+    public void setRatedMovies(ArrayList<String> ratedMovies) {
+        this.ratedMovies = ratedMovies;
+    }
+
+    private ArrayList<String> ratedMovies = new ArrayList<>();
 }

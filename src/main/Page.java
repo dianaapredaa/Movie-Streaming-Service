@@ -4,20 +4,23 @@ import java.util.ArrayList;
 
 abstract class Page {
     ArrayList<String> nextPossiblePage = new ArrayList<>();
+    String pageType = null;
 }
 
 class HomePageAuthenticated extends Page {
     public HomePageAuthenticated() {
-        this.nextPossiblePage.add("Movies");
-        this.nextPossiblePage.add("SeeDetails");
-        this.nextPossiblePage.add("Logout");
+        this.nextPossiblePage.add("movies");
+        this.nextPossiblePage.add("seeDetails");
+        this.nextPossiblePage.add("logout");
+        this.pageType = "HomePageAuthenticated";
     }
 }
 
 class HomePageNonAuthenticated extends Page {
     public HomePageNonAuthenticated() {
-        this.nextPossiblePage.add("Login");
-        this.nextPossiblePage.add("Register");
+        this.nextPossiblePage.add("login");
+        this.nextPossiblePage.add("register");
+        this.pageType = "HomePageNonAuthenticated";
     }
 
 }
@@ -25,6 +28,7 @@ class HomePageNonAuthenticated extends Page {
 class Register extends Page {
     public Register() {
         this.nextPossiblePage.add("HomePageAuthenticated");
+        this.pageType = "register";
     }
 
 }
@@ -32,6 +36,7 @@ class Register extends Page {
 class Login extends Page {
     public Login() {
         this.nextPossiblePage.add("HomePageAuthenticated");
+        this.pageType = "login";
     }
 
 }
@@ -39,8 +44,9 @@ class Login extends Page {
 class MoviesPage extends Page {
     public MoviesPage() {
         this.nextPossiblePage.add("HomePageAuthenticated");
-        this.nextPossiblePage.add("SeeDetails");
-        this.nextPossiblePage.add("Logout");
+        this.nextPossiblePage.add("seeDetails");
+        this.nextPossiblePage.add("logout");
+        this.pageType = "movies";
     }
 
 }
@@ -48,9 +54,11 @@ class MoviesPage extends Page {
 class SeeDetails extends Page {
     public SeeDetails() {
         this.nextPossiblePage.add("HomePageAuthenticated");
-        this.nextPossiblePage.add("SeeDetails");
-        this.nextPossiblePage.add("Logout");
-        this.nextPossiblePage.add("Upgrades");
+        this.nextPossiblePage.add("seeDetails");
+        this.nextPossiblePage.add("logout");
+        this.nextPossiblePage.add("upgrades");
+        this.pageType = "see details";
+
     }
 
 }
@@ -58,6 +66,7 @@ class SeeDetails extends Page {
 class Upgrades extends Page {
     public Upgrades() {
         this.nextPossiblePage.add("HomePageAuthenticated");
+        this.pageType = "upgrades";
     }
 
 }
@@ -65,6 +74,7 @@ class Upgrades extends Page {
 class Logout extends Page {
     public Logout() {
         this.nextPossiblePage.add("HomePageNonAuthenticated");
+        this.pageType = "logout";
     }
 
 }
@@ -75,21 +85,21 @@ class PageType {
             return null;
         }
         // retrieve SeeDetails type
-        if (pageType.equals("SeeDetails")) {
+        if (pageType.equals("see details")) {
             return new SeeDetails();
         }
 
         // retrieve main.Movies type
-        if (pageType.equals("Movies")) {
+        if (pageType.equals("movies")) {
             return new MoviesPage();
         }
 
         // retrieve Upgrades type
-        if (pageType.equals("Upgrades")) {
+        if (pageType.equals("upgrades")) {
             return new Upgrades();
         }
         // retrieve Logout type
-        if (pageType.equals("Logout")) {
+        if (pageType.equals("logout")) {
             return new Logout();
         }
 
@@ -101,11 +111,11 @@ class PageType {
             return new HomePageNonAuthenticated();
         }
 
-        if (pageType.equals("Register")) {
+        if (pageType.equals("register")) {
             return new Register();
         }
 
-        if (pageType.equals("Login")) {
+        if (pageType.equals("login")) {
             return new Login();
         }
         return null;
