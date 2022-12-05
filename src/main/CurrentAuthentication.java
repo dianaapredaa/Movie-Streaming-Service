@@ -12,5 +12,5 @@ public class CurrentAuthentication {
     LinkedList<Movies> currentMoviesList = new LinkedList<>();
     Users currentUser;
     PageType page = new PageType();
-    Page currentPage = page.type("homePageNonAuthenticated");
+    Page currentPage = page.type("HomePageNonAuthenticated");
 }

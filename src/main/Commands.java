@@ -28,6 +28,12 @@ public class Commands {
             case ("login"):
                 // only on Login page
                 if (!currentAuth.currentPage.pageType.equals("login")) {
+                    // output message
+                    ObjectNode objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
                     break;
                 }
                 String username = command.getCredentials().getName();
@@ -69,6 +75,12 @@ public class Commands {
             case ("register"):
                 // only on Register page
                 if (!currentAuth.currentPage.pageType.equals("register")) {
+                    // output message
+                    ObjectNode objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
                     break;
                 }
                 username = command.getCredentials().getName();
@@ -109,10 +121,10 @@ public class Commands {
                 break;
             case ("search"):
                 // only on Movies Page
-//                if (!currentAuth.currentPage.pageType.equals("movies")) {
-//                    System.out.println(currentAuth.currentPage.pageType);
-//                    break;
-//                }
+                if (!currentAuth.currentPage.pageType.equals("movies")) {
+                    System.out.println(currentAuth.currentPage.pageType);
+                    break;
+                }
 
                 // startsWith
                 String startsWith = command.getStartsWith();

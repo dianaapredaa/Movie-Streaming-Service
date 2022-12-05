@@ -43,9 +43,6 @@ public class Main {
         Commands commands = new Commands();
         commands.setCurrent(currentAuth);
 
-        System.out.println(currentAuth.currentPage.pageType);
-
-
         for (int i = 0; i < inputData.getActions().size(); i++) {
             Actions command =  inputData.getActions().get(i);
 
@@ -58,25 +55,38 @@ public class Main {
                 case("change page"):
                     String pageName = command.getPage();
                     // check if is possible to change pages
-                    System.out.println(currentAuth.currentPage.pageType);
 
                     if (currentAuth.currentPage.nextPossiblePage.contains(pageName)) {
                         // change page
                         currentAuth.currentPage = page.type(pageName);
+
                     } else {
                         // can not change page
+                        // output message
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", "null");
+                        objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        output.addPOJO(objectNode);
                         break;
                     }
-                    // jump to features if possible
-                    if (pageName.equals("Logout")) {
+
+                    if (pageName.equals("logout")) {
                         // only on Logout Page
                         currentAuth.currentUser = null;
                         currentAuth.currentPage = page.type("HomePageNonAuthenticated");
                         currentAuth.currentMoviesList = new LinkedList<>();
-                    } else {
-                        if (command.getFeature() != null)
-                            commands.features(command, users, movies, output);
+                        break;
                     }
+
+                    if (pageName.equals("movies")) {
+                        // only on Movies page
+                        currentAuth.currentMoviesList = movies;
+                    }
+
+                    // jump to features
+                    if (command.getFeature() != null)
+                            commands.features(command, users, movies, output);
                     break;
             }
 
