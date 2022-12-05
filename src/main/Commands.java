@@ -28,7 +28,6 @@ public class Commands {
             case ("login"):
                 // only on Login page
                 if (!currentAuth.currentPage.pageType.equals("login")) {
-                    // output message
                     ObjectNode objectNode = objectMapper.createObjectNode();
                     objectNode.putPOJO("error", "Error");
                     objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
@@ -52,7 +51,7 @@ public class Commands {
 
                             // output message
                             ObjectNode objectNode = objectMapper.createObjectNode();
-                            objectNode.putPOJO("error", "null");
+                            objectNode.putPOJO("error", null);
                             objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
                             objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                             output.addPOJO(objectNode);
@@ -75,7 +74,6 @@ public class Commands {
             case ("register"):
                 // only on Register page
                 if (!currentAuth.currentPage.pageType.equals("register")) {
-                    // output message
                     ObjectNode objectNode = objectMapper.createObjectNode();
                     objectNode.putPOJO("error", "Error");
                     objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
@@ -113,7 +111,7 @@ public class Commands {
 
                     // output message
                     ObjectNode objectNode = objectMapper.createObjectNode();
-                    objectNode.putPOJO("error", "null");
+                    objectNode.putPOJO("error", null);
                     objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
                     objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                     output.addPOJO(objectNode);
@@ -122,12 +120,17 @@ public class Commands {
             case ("search"):
                 // only on Movies Page
                 if (!currentAuth.currentPage.pageType.equals("movies")) {
-                    System.out.println(currentAuth.currentPage.pageType);
+                ObjectNode objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", "Error");
+                objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                objectNode.putPOJO("currentUser", null);
+                output.addPOJO(objectNode);
                     break;
                 }
 
                 // startsWith
                 String startsWith = command.getStartsWith();
+                currentAuth.currentMoviesList = new LinkedList<>();
 
                 // find startsWith movies
                 for (int i = 0; i < movies.size(); i++) {
@@ -138,7 +141,7 @@ public class Commands {
                 }
 
                 ObjectNode objectNode = objectMapper.createObjectNode();
-                objectNode.putPOJO("error", "null");
+                objectNode.putPOJO("error", null);
                 objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
@@ -149,10 +152,6 @@ public class Commands {
                 break;
             case ("filters"):
                 // only on Movies Page
-//                if (!currentAuth.currentPage.pageType.equals("movies")) {
-//                    System.out.println(currentAuth.currentPage.pageType);
-//                    break;
-//                }
 
                 // sort
                     // rating

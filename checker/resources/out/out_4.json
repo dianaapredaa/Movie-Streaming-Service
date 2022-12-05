@@ -1,5 +1,5 @@
 [ {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -7,7 +7,7 @@
       "password" : "numiplacevelea",
       "accountType" : "standard",
       "country" : "Romania",
-      "balance" : 300
+      "balance" : "300"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
@@ -17,7 +17,7 @@
     "ratedMovies" : [ ]
   }
 }, {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -25,7 +25,7 @@
       "password" : "discret",
       "accountType" : "premium",
       "country" : "Russia",
-      "balance" : 1337
+      "balance" : "1337"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,

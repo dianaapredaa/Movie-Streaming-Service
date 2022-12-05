@@ -49,8 +49,9 @@ public class Main {
             switch (command.getType()) {
                 case("on page"):
                     // jump to features if possible
-                    if (command.getFeature() != null)
+                    if (command.getFeature() != null) {
                         commands.features(command, users, movies, output);
+                    }
                     break;
                 case("change page"):
                     String pageName = command.getPage();
@@ -59,14 +60,13 @@ public class Main {
                     if (currentAuth.currentPage.nextPossiblePage.contains(pageName)) {
                         // change page
                         currentAuth.currentPage = page.type(pageName);
-
                     } else {
                         // can not change page
                         // output message
                         ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "null");
+                        objectNode.putPOJO("error", "Error");
                         objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
-                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        objectNode.putPOJO("currentUser", null);
                         output.addPOJO(objectNode);
                         break;
                     }
@@ -80,13 +80,13 @@ public class Main {
                     }
 
                     if (pageName.equals("movies")) {
-                        // only on Movies page
                         currentAuth.currentMoviesList = movies;
                     }
 
                     // jump to features
-                    if (command.getFeature() != null)
-                            commands.features(command, users, movies, output);
+                    if (command.getFeature() != null) {
+                        commands.features(command, users, movies, output);
+                    }
                     break;
             }
 

@@ -1,5 +1,5 @@
 [ {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -7,7 +7,7 @@
       "password" : "numiplacevelea",
       "accountType" : "standard",
       "country" : "Russia",
-      "balance" : 300
+      "balance" : "300"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,

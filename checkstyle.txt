@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\Features.java:29: Line is longer than 100 characters (found 114). [LineLength]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\Features.java:54: Line is longer than 100 characters (found 101). [LineLength]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\Features.java:91: Line is longer than 100 characters (found 101). [LineLength]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Actions.java:30:5: Class 'Actions' looks like designed for extension (can be subclassed), but the method 'getMovie' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Actions' final or making the method 'getMovie' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Actions.java:34:5: Class 'Actions' looks like designed for extension (can be subclassed), but the method 'setMovie' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Actions' final or making the method 'setMovie' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Actions.java:34:26: Parameter movie should be final. [FinalParameters]
@@ -53,7 +50,7 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Actions.java:201:32: Parameter duration should be final. [FinalParameters]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Actions.java:206:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Actions.java:206:17: Parameter sort should be final. [FinalParameters]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Credentials.java:17: Line is longer than 100 characters (found 103). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Credentials.java:17: Line is longer than 100 characters (found 106). [LineLength]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Credentials.java:17:24: Parameter name should be final. [FinalParameters]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Credentials.java:17:37: Parameter password should be final. [FinalParameters]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Credentials.java:17:54: Parameter accountType should be final. [FinalParameters]
@@ -143,7 +140,7 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:24:14: Variable 'page' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26: Line is longer than 100 characters (found 112). [LineLength]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26:5: Class 'Commands' looks like designed for extension (can be subclassed), but the method 'features' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Commands' final or making the method 'features' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26:5: Method length is 166 lines (max allowed is 150). [MethodLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26:5: Method length is 165 lines (max allowed is 150). [MethodLength]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26:26: Parameter command should be final. [FinalParameters]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:26:43: Parameter users should be final. [FinalParameters]
@@ -166,8 +163,6 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:18:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:20:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:49:13: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:52:21: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:88:21: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:99: Line is longer than 100 characters (found 124). [LineLength]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:99:102: '6' is a magic number. [MagicNumber]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Page.java:6:23: Variable 'nextPossiblePage' must be private and have accessor methods. [VisibilityModifier]
@@ -184,4 +179,4 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Test.java:1: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Test.java:11:28: Using the '.*' form of import should be avoided - java.util.concurrent.*. [AvoidStarImport]
 Audit done.
-Checkstyle ends with 184 errors.
+Checkstyle ends with 179 errors.

@@ -1,5 +1,5 @@
 [ {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -7,7 +7,7 @@
       "password" : "ciucas",
       "accountType" : "standard",
       "country" : "Romania",
-      "balance" : 3000
+      "balance" : "3000"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
@@ -17,25 +17,11 @@
     "ratedMovies" : [ ]
   }
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -163,23 +149,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -307,23 +279,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -451,23 +409,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -595,23 +539,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -739,23 +669,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -883,23 +799,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1027,23 +929,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1171,23 +1059,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1315,23 +1189,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1459,23 +1319,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1603,23 +1449,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1747,23 +1579,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -1891,23 +1709,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2035,23 +1839,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2179,23 +1969,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2323,23 +2099,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2467,23 +2229,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2611,23 +2359,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2755,23 +2489,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -2899,23 +2619,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3043,23 +2749,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3187,23 +2879,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3331,23 +3009,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3475,23 +3139,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3619,23 +3269,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3763,23 +3399,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -3907,23 +3529,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4051,23 +3659,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4195,23 +3789,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4339,23 +3919,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4483,23 +4049,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4627,23 +4179,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4771,23 +4309,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -4915,23 +4439,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -5059,23 +4569,9 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
     "year" : 1998,
@@ -5203,19 +4699,5 @@
     "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
     "genres" : [ "Drama", "Comedy", "Mystery" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 3000
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 } ]

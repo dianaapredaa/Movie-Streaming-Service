@@ -3,7 +3,7 @@
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -11,25 +11,7 @@
       "password" : "numiplacevelea",
       "accountType" : "standard",
       "country" : "Ireland",
-      "balance" : 300
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
-}, {
-  "error" : "null",
-  "currentMoviesList" : [ ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Ramsi",
-      "password" : "numiplacevelea",
-      "accountType" : "standard",
-      "country" : "Ireland",
-      "balance" : 300
+      "balance" : "300"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
@@ -43,29 +25,19 @@
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {
-  "error" : "null",
-  "currentMoviesList" : [ {
-    "name" : "John Wick: Chapter 3 - Parabellum",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ]
-  }, {
-    "name" : "Titanic",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ]
-  } ],
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
+}, {
+  "error" : null,
+  "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
       "name" : "Ramsi",
       "password" : "numiplacevelea",
       "accountType" : "standard",
       "country" : "Ireland",
-      "balance" : 300
+      "balance" : "300"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
@@ -79,7 +51,7 @@
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -87,7 +59,7 @@
       "password" : "secret",
       "accountType" : "standard",
       "country" : "Romania",
-      "balance" : 200
+      "balance" : "200"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
@@ -97,25 +69,11 @@
     "ratedMovies" : [ ]
   }
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Eduard",
-      "password" : "secret",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 200
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "John Wick: Chapter 3 - Parabellum",
     "year" : 2019,
@@ -131,23 +89,9 @@
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Eduard",
-      "password" : "secret",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 200
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "John Wick: Chapter 3 - Parabellum",
     "year" : 2019,
@@ -163,23 +107,9 @@
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Eduard",
-      "password" : "secret",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 200
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "John Wick: Chapter 3 - Parabellum",
     "year" : 2019,
@@ -195,23 +125,9 @@
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Eduard",
-      "password" : "secret",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 200
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "John Wick: Chapter 3 - Parabellum",
     "year" : 2019,
@@ -227,23 +143,9 @@
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Eduard",
-      "password" : "secret",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 200
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 }, {
-  "error" : "null",
+  "error" : "Error",
   "currentMoviesList" : [ {
     "name" : "John Wick: Chapter 3 - Parabellum",
     "year" : 2019,
@@ -259,19 +161,5 @@
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ]
   } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Eduard",
-      "password" : "secret",
-      "accountType" : "standard",
-      "country" : "Romania",
-      "balance" : 200
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
 } ]

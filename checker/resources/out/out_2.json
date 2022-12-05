@@ -1,5 +1,5 @@
 [ {
-  "error" : "null",
+  "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
@@ -7,7 +7,7 @@
       "password" : "numiplacevelea",
       "accountType" : "standard",
       "country" : "Ireland",
-      "balance" : 300
+      "balance" : "300"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
@@ -17,29 +17,15 @@
     "ratedMovies" : [ ]
   }
 }, {
-  "error" : "null",
-  "currentMoviesList" : [ {
-    "name" : "John Wick: Chapter 3 - Parabellum",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ]
-  }, {
-    "name" : "Titanic",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ]
-  } ],
+  "error" : null,
+  "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
       "name" : "Ramsi",
       "password" : "numiplacevelea",
       "accountType" : "standard",
       "country" : "Ireland",
-      "balance" : 300
+      "balance" : "300"
     },
     "tokensCount" : 0,
     "numFreePremiumMovies" : 15,
