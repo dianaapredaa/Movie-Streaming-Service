@@ -133,22 +133,15 @@ public class Commands {
                 String startsWith = command.getStartsWith();
 
                 // find startsWith movies
+                ArrayList<Movies> currentMoviesList1 = new ArrayList<>();
                 for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-                    if (!currentAuth.currentMoviesList.get(i).getName().contains(startsWith)) {
-                        currentAuth.currentMoviesList.remove(i);
-                        i--;
+                    if (currentAuth.currentMoviesList.get(i).getName().contains(startsWith)) {
+                        currentMoviesList1.add(new Movies(currentAuth.currentMoviesList.get(i)));
                     }
                 }
 
                 objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-
-                ArrayList<Movies> currentMoviesList1 = new ArrayList<>();
-                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(i));
-                    currentMoviesList1.add(newMovie);
-                }
-
                 objectNode.putPOJO("currentMoviesList", currentMoviesList1);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
