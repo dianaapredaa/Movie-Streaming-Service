@@ -219,61 +219,118 @@ public class Commands {
 
             case ("purchase"):
                 // only on SeeDetails page
-//                if (!currentAuth.currentPage.pageType.equals("see details")) {
-//                    objectNode = objectMapper.createObjectNode();
-//                    objectNode.putPOJO("error", "Error");
-//                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-//                    objectNode.putPOJO("currentUser", null);
-//                    output.addPOJO(objectNode);
-//                    break;
-//                }
-//
-//                String objectType = command.getObjectType();
-//                String movie = command.getMovie();
-//
-//                if (currentAuth.currentUser.getCredentials().getAccountType().equals("premium")) {
-//                    currentAuth.currentUser.setPremiumAccount(currentAuth.currentUser.getPremiumAccount() - 1);
-//                } else {
-//                    currentAuth.currentUser.setTokensCount(currentAuth.currentUser.getTokensCount() - 2);
-//                }
-//
-//                String movieTitle = command.getMovie();
-//                int index = -1;
-//
-//                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-//                    if (currentAuth.currentMoviesList.get(i).getName().equals(movieTitle)) {
-//                        index = i;
-//                        break;
-//                    }
-//                }
-//
-//                if (index != -1) {
-//                    currentAuth.purchasedMovies.add(currentAuth.currentMoviesList.get(index));
-//                    // output message
-//                    objectNode = objectMapper.createObjectNode();
-//                    objectNode.putPOJO("error", null);
-//                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-//                    objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
-//                    output.addPOJO(objectNode);
-//                } else {
-//                    // output message
-//                    objectNode = objectMapper.createObjectNode();
-//                    objectNode.putPOJO("error", "Error");
-//                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-//                    objectNode.putPOJO("currentUser", null);
-//                    output.addPOJO(objectNode);
-//                }
+                if (!currentAuth.currentPage.pageType.equals("see details")) {
+                    objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
+                    break;
+                }
 
-                // objectType
-                // movie
-                    // rate
+                String objectType = command.getObjectType();
+                String movie = command.getMovie();
+
+                if (currentAuth.currentUser.getCredentials().getAccountType().equals("premium")) {
+                    currentAuth.currentUser.setPremiumAccount(currentAuth.currentUser.getPremiumAccount() - 1);
+                } else {
+                    currentAuth.currentUser.setTokensCount(currentAuth.currentUser.getTokensCount() - 2);
+                }
+
+                String movieToPurchase = command.getMovie();
+
+                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
+                    if (currentAuth.currentMoviesList.get(i).getName().equals(movieToPurchase)) {
+                        currentAuth.purchasedMovies.add(currentAuth.currentMoviesList.get(i));
+                        // output message
+                        objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", null);
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        output.addPOJO(objectNode);
+                        break;
+                    }
+                }
+
+                // output message
+                objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", "Error");
+                objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                objectNode.putPOJO("currentUser", null);
+                output.addPOJO(objectNode);
                 break;
             case ("watch"):
-                // check if you purchased the movie
+                // only on SeeDetails page
+                if (!currentAuth.currentPage.pageType.equals("see details")) {
+                    objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
+                    break;
+                }
 
+                // check if you purchased the movie
+                for (int i = 0; i < currentAuth.purchasedMovies.size(); i++) {
+                    if (currentAuth.purchasedMovies.get(i).getName().equals(command.getMovie())) {
+                        ArrayList<Movies> watchedMovies = new ArrayList<>();
+                        for (int j = 0; j < currentAuth.currentUser.getWatchedMovies().size(); j++) {
+                            watchedMovies.add(currentAuth.currentUser.getWatchedMovies().get(j));
+                        }
+                        watchedMovies.add(currentAuth.purchasedMovies.get(i));
+                        currentAuth.currentUser.setWatchedMovies(watchedMovies);
+                        // output message
+                        objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", null);
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        output.addPOJO(objectNode);
+                    }
+                }
+
+                // output message
+                objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", "Error");
+                objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                objectNode.putPOJO("currentUser", null);
+                output.addPOJO(objectNode);
                 break;
             case ("rate"):
-                // rate
+                // only on SeeDetails page
+                if (!currentAuth.currentPage.pageType.equals("see details")) {
+                    objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
+                    break;
+                }
+                // check if you watched the movie
+                ArrayList<Movies> watchedMovies = currentAuth.currentUser.getWatchedMovies();
+
+                for (int i = 0; i < watchedMovies.size(); i++) {
+                    if (watchedMovies.get(i).getName().equals(command.getMovie())) {
+                        ArrayList<Movies> ratedMovies = new ArrayList<>();
+                        for (int j = 0; j < currentAuth.currentUser.getRatedMovies().size(); j++) {
+                            ratedMovies.add(currentAuth.currentUser.getRatedMovies().get(j));
+                        }
+                        ratedMovies.add(watchedMovies.get(i));
+                        currentAuth.currentUser.setRatedMovies(ratedMovies);
+                        // output message
+                        objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", null);
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        output.addPOJO(objectNode);
+                    }
+                }
+
+                // output message
+                objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", "Error");
+                objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                objectNode.putPOJO("currentUser", null);
+                output.addPOJO(objectNode);
                 break;
             case ("buy tokens"):
                 // only on Upgrades page
@@ -303,13 +360,46 @@ public class Commands {
                     output.addPOJO(objectNode);
                     break;
                 }
-
                 currentAuth.currentUser.setTokensCount(currentAuth.currentUser.getTokensCount() - 10);
                 currentAuth.currentUser.getCredentials().setAccountType("premium");
                 break;
             case ("like"):
-
+                // only on SeeDetails page
+                if (!currentAuth.currentPage.pageType.equals("see details")) {
+                    objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
+                    break;
+                }
                 // check if you watched the movie
+                watchedMovies = new ArrayList<>();
+                watchedMovies = currentAuth.currentUser.getWatchedMovies();
+
+                for (int i = 0; i < watchedMovies.size(); i++) {
+                    if (watchedMovies.get(i).getName().equals(command.getMovie())) {
+                        ArrayList<Movies> likedMovies = new ArrayList<>();
+                        for (int j = 0; j < currentAuth.currentUser.getLikedMovies().size(); j++) {
+                            likedMovies.add(currentAuth.currentUser.getLikedMovies().get(j));
+                        }
+                        likedMovies.add(watchedMovies.get(i));
+                        currentAuth.currentUser.setLikedMovies(likedMovies);
+                        // output message
+                        objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", null);
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        output.addPOJO(objectNode);
+                    }
+                }
+
+                // output message
+                objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", "Error");
+                objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                objectNode.putPOJO("currentUser", null);
+                output.addPOJO(objectNode);
                 break;
         }
 

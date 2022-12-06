@@ -78,6 +78,7 @@ public class Main {
                         currentAuth.currentUser = null;
                         currentAuth.currentPage = page.type("HomePageNonAuthenticated");
                         currentAuth.currentMoviesList = new LinkedList<>();
+                        currentAuth.purchasedMovies = new LinkedList<>();
                         break;
                     }
 
@@ -130,6 +131,8 @@ public class Main {
                         objectNode.putPOJO("currentMoviesList", new ArrayList<>());
                         objectNode.putPOJO("currentUser", null);
                         output.addPOJO(objectNode);
+                        currentAuth.currentPage = page.type("movies");
+
                     }
                     break;
             }

@@ -11,12 +11,46 @@ public class Users {
     private Credentials credentials;
     private int tokensCount = 0;
     private int numFreePremiumMovies = 15;
-    private ArrayList<String> purchasedMovies = new ArrayList<>();
-    private ArrayList<String> watchedMovies = new ArrayList<>();
-    private ArrayList<String> likedMovies = new ArrayList<>();
+    private ArrayList<Movies> purchasedMovies = new ArrayList<>();
+    private ArrayList<Movies> watchedMovies = new ArrayList<>();
+    private ArrayList<Movies> likedMovies = new ArrayList<>();
+    private ArrayList<Movies> ratedMovies = new ArrayList<>();
 
     @JsonIgnore
     private int premiumAccount = 15;
+
+    public ArrayList<Movies> getPurchasedMovies() {
+        return purchasedMovies;
+    }
+
+    public void setPurchasedMovies(ArrayList<Movies> purchasedMovies) {
+        this.purchasedMovies = purchasedMovies;
+    }
+
+    public ArrayList<Movies> getWatchedMovies() {
+        return watchedMovies;
+    }
+
+    public void setWatchedMovies(ArrayList<Movies> watchedMovies) {
+        this.watchedMovies = watchedMovies;
+    }
+
+    public ArrayList<Movies> getLikedMovies() {
+        return likedMovies;
+    }
+
+    public void setLikedMovies(ArrayList<Movies> likedMovies) {
+        this.likedMovies = likedMovies;
+    }
+
+    public ArrayList<Movies> getRatedMovies() {
+        return ratedMovies;
+    }
+
+    public void setRatedMovies(ArrayList<Movies> ratedMovies) {
+        this.ratedMovies = ratedMovies;
+    }
+
 
     public int getPremiumAccount() {
         return premiumAccount;
@@ -57,38 +91,4 @@ public class Users {
     public void setNumFreePremiumMovies(int numFreePremiumMovies) {
         this.numFreePremiumMovies = numFreePremiumMovies;
     }
-
-    public ArrayList<String> getPurchasedMovies() {
-        return purchasedMovies;
-    }
-
-    public void setPurchasedMovies(ArrayList<String> purchasedMovies) {
-        this.purchasedMovies = purchasedMovies;
-    }
-
-    public ArrayList<String> getWatchedMovies() {
-        return watchedMovies;
-    }
-
-    public void setWatchedMovies(ArrayList<String> watchedMovies) {
-        this.watchedMovies = watchedMovies;
-    }
-
-    public ArrayList<String> getLikedMovies() {
-        return likedMovies;
-    }
-
-    public void setLikedMovies(ArrayList<String> likedMovies) {
-        this.likedMovies = likedMovies;
-    }
-
-    public ArrayList<String> getRatedMovies() {
-        return ratedMovies;
-    }
-
-    public void setRatedMovies(ArrayList<String> ratedMovies) {
-        this.ratedMovies = ratedMovies;
-    }
-
-    private ArrayList<String> ratedMovies = new ArrayList<>();
 }
