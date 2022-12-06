@@ -142,7 +142,12 @@ public class Commands {
 
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-                objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                ArrayList<Movies> currentMoviesList = new ArrayList<>();
+                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
+                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(i));
+                    currentMoviesList.add(newMovie);
+                }
+                objectNode.putPOJO("currentMoviesList", currentMoviesList);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
 
@@ -152,7 +157,7 @@ public class Commands {
                 break;
             case ("filters"):
                 // only on Movies Page
-
+                System.out.println(command.getFilters());
                 // sort
                     // rating
                     // duration

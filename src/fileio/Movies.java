@@ -12,14 +12,47 @@ public class Movies {
     private ArrayList<String> actors;
     private ArrayList<String> genres;
 
+    private int numLikes = 0;
+
+    private int numRatings = 0;
+
+    private int rating = 0;
+
     public Movies(String name, int year, int duration, ArrayList<String> countriesBanned,
-                 ArrayList<String> actors, ArrayList<String> genres) {
+                 ArrayList<String> actors, ArrayList<String> genres, int numLikes, int numRatings, int rating) {
         this.name = name;
         this.year = year;
         this.duration = duration;
         this.countriesBanned = countriesBanned;
         this.actors = actors;
         this.genres = genres;
+        this.numLikes = numLikes;
+        this.numRatings = numRatings;
+        this.rating = rating;
+    }
+
+    public int getNumLikes() {
+        return numLikes;
+    }
+
+    public void setNumLikes(int numLikes) {
+        this.numLikes = numLikes;
+    }
+
+    public int getNumRatings() {
+        return numRatings;
+    }
+
+    public void setNumRatings(int numRatings) {
+        this.numRatings = numRatings;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
     public Movies(Movies movie) {
@@ -29,6 +62,9 @@ public class Movies {
         this.countriesBanned = movie.getCountriesBanned();
         this.actors = movie.getActors();
         this.genres = movie.getGenres();
+        this.numLikes = movie.getNumLikes();
+        this.numRatings = movie.getNumRatings();
+        this.rating = movie.getRating();
     }
 
     public String getName() {

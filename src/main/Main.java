@@ -81,6 +81,17 @@ public class Main {
 
                     if (pageName.equals("movies")) {
                         currentAuth.currentMoviesList = movies;
+
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", null);
+                        ArrayList<Movies> currentMoviesList = new ArrayList<>();
+                        for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
+                            Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
+                            currentMoviesList.add(newMovie);
+                        }
+                        objectNode.putPOJO("currentMoviesList", currentMoviesList);
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        output.addPOJO(objectNode);
                     }
 
                     // jump to features
