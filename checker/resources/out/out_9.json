@@ -58,4 +58,8 @@
   "error" : "Error",
   "currentMoviesList" : [ ],
   "currentUser" : null
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
 } ]

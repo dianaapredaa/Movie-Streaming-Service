@@ -20,11 +20,10 @@ public class Commands {
     public void setCurrent(CurrentAuthentication currentAuth) {
         this.currentAuth = currentAuth;
     }
-
     PageType page = new PageType();
     ObjectNode objectNode;
 
-    public void features(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output){
+    public void features(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
         switch (command.getFeature()) {
             case ("login"):
                 // only on Login page
@@ -107,7 +106,6 @@ public class Commands {
                     Users newUser = new Users(command.getCredentials());
                     users.add(newUser);
                     currentAuth.currentUser = newUser;
-                    currentAuth.currentMoviesList = new LinkedList<>();
 
                     // move to HomePageAuthenticated
                     currentAuth.currentPage = page.type("HomePageAuthenticated");
@@ -133,31 +131,30 @@ public class Commands {
 
                 // startsWith
                 String startsWith = command.getStartsWith();
-                currentAuth.currentMoviesList = new LinkedList<>();
 
                 // find startsWith movies
-                for (int i = 0; i < movies.size(); i++) {
-                    if (movies.get(i).getName().contains(startsWith)) {
-                        Movies newMovie = new Movies(movies.get(i));
-                        currentAuth.currentMoviesList.add(newMovie);
+                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
+                    if (!currentAuth.currentMoviesList.get(i).getName().contains(startsWith)) {
+                        currentAuth.currentMoviesList.remove(i);
+                        i--;
                     }
                 }
 
                 objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
 
-                ArrayList<Movies> currentMoviesList = new ArrayList<>();
+                ArrayList<Movies> currentMoviesList1 = new ArrayList<>();
                 for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
                     Movies newMovie = new Movies(currentAuth.currentMoviesList.get(i));
-                    currentMoviesList.add(newMovie);
+                    currentMoviesList1.add(newMovie);
                 }
 
-                objectNode.putPOJO("currentMoviesList", currentMoviesList);
+                objectNode.putPOJO("currentMoviesList", currentMoviesList1);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
 
                 // empty currentMoviesList
-                currentAuth.currentMoviesList = new LinkedList<>();
+//                currentAuth.currentMoviesList = new LinkedList<>();
 
                 break;
             case ("filter"):
@@ -175,13 +172,10 @@ public class Commands {
                 String duration = "increasing";
                 ArrayList<String> genre = new ArrayList<>();
                 ArrayList<String> actors = new ArrayList<>();
-//                ArrayList<Movies> currentMoviesList = new ArrayList<>();
+                actors.add("Keanu Reeves");
 
-//                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-//                    currentMoviesList.add(currentAuth.currentMoviesList.get(i));
-//                }
                 for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-                    if (!currentAuth.currentMoviesList.get(i).getActors().contains(actors) || !currentAuth.currentMoviesList.get(i).getGenres().contains(genre)) {
+                    if (!currentAuth.currentMoviesList.get(i).getActors().contains(actors)) {
                         currentAuth.currentMoviesList.remove(i);
                         i--;
                     }
@@ -191,85 +185,62 @@ public class Commands {
                     for (int j = 0; j < currentAuth.currentMoviesList.size() - i - 1; j ++) {
                         if (rating.equals("increasing")) {
                             if (currentAuth.currentMoviesList.get(j).getRating() > currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                if (currentAuth.currentMoviesList.get(j).getRating() > currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                    Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                    currentAuth.currentMoviesList.remove(j);
-                                    currentAuth.currentMoviesList.add(j + 1, auxMovie);
-                                }
-                                if (currentAuth.currentMoviesList.get(j).getRating() == currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                    if (duration.equals("increasing")) {
-                                        if (currentAuth.currentMoviesList.get(j).getDuration() > currentAuth.currentMoviesList.get(j + 1).getDuration()) {
-                                            Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                            currentAuth.currentMoviesList.remove(j);
-                                            currentAuth.currentMoviesList.add(j + 1, auxMovie);
-                                        }
-                                    }
-
-                                    if (duration.equals("decreasing")) {
-                                        if (currentAuth.currentMoviesList.get(j).getDuration() < currentAuth.currentMoviesList.get(j + 1).getDuration()) {
-                                            Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                            currentAuth.currentMoviesList.remove(j);
-                                            currentAuth.currentMoviesList.add(j + 1, auxMovie);
-                                        }
-                                    }
-                                }
+                                Movies auxMovie = currentAuth.currentMoviesList.get(j);
+                                currentAuth.currentMoviesList.remove(j);
+                                currentAuth.currentMoviesList.add(j + 1, auxMovie);
                             }
                         }
 
                         if (rating.equals("decreasing")) {
                             if (currentAuth.currentMoviesList.get(j).getRating() < currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                if (currentAuth.currentMoviesList.get(j).getRating() > currentAuth.currentMoviesList.get(j + 1).getRating()) {
+                                Movies auxMovie = currentAuth.currentMoviesList.get(j);
+                                currentAuth.currentMoviesList.remove(j);
+                                currentAuth.currentMoviesList.add(j + 1, auxMovie);
+                            }
+                        }
+                        if (currentAuth.currentMoviesList.get(j).getRating() == currentAuth.currentMoviesList.get(j + 1).getRating()) {
+                            if (duration.equals("increasing")) {
+                                if (currentAuth.currentMoviesList.get(j).getDuration() > currentAuth.currentMoviesList.get(j + 1).getDuration()) {
                                     Movies auxMovie = currentAuth.currentMoviesList.get(j);
                                     currentAuth.currentMoviesList.remove(j);
                                     currentAuth.currentMoviesList.add(j + 1, auxMovie);
                                 }
-                                if (currentAuth.currentMoviesList.get(j).getRating() == currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                    if (duration.equals("increasing")) {
-                                        if (currentAuth.currentMoviesList.get(j).getDuration() > currentAuth.currentMoviesList.get(j + 1).getDuration()) {
-                                            Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                            currentAuth.currentMoviesList.remove(j);
-                                            currentAuth.currentMoviesList.add(j + 1, auxMovie);
-                                        }
-                                    }
+                            }
 
-                                    if (duration.equals("decreasing")) {
-                                        if (currentAuth.currentMoviesList.get(j).getDuration() < currentAuth.currentMoviesList.get(j + 1).getDuration()) {
-                                            Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                            currentAuth.currentMoviesList.remove(j);
-                                            currentAuth.currentMoviesList.add(j + 1, auxMovie);
-                                        }
-                                    }
+                            if (duration.equals("decreasing")) {
+                                if (currentAuth.currentMoviesList.get(j).getDuration() < currentAuth.currentMoviesList.get(j + 1).getDuration()) {
+                                    Movies auxMovie = currentAuth.currentMoviesList.get(j);
+                                    currentAuth.currentMoviesList.remove(j);
+                                    currentAuth.currentMoviesList.add(j + 1, auxMovie);
                                 }
                             }
                         }
-
-
                     }
                 }
                 objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-                objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+
+                ArrayList<Movies> currentMoviesList2 = new ArrayList<>();
+                for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
+                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
+                    currentMoviesList2.add(newMovie);
+                }
+
+                objectNode.putPOJO("currentMoviesList", currentMoviesList2);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
-                // sort
-                    // rating
-                    // duration
-                // filters
-                    // contains
-                        // genre
-                        // actors
                 break;
 
             case ("purchase"):
                 // only on SeeDetails page
-//                if (!currentAuth.currentPage.pageType.equals("see details")) {
-//                    objectNode = objectMapper.createObjectNode();
-//                    objectNode.putPOJO("error", "Error");
-//                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-//                    objectNode.putPOJO("currentUser", null);
-//                    output.addPOJO(objectNode);
-//                    break;
-//                }
+                if (!currentAuth.currentPage.pageType.equals("see details")) {
+                    objectNode = objectMapper.createObjectNode();
+                    objectNode.putPOJO("error", "Error");
+                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                    objectNode.putPOJO("currentUser", null);
+                    output.addPOJO(objectNode);
+                    break;
+                }
 //
 //                String objectType = command.getObjectType();
 //                String movie = command.getMovie();
@@ -337,7 +308,15 @@ public class Commands {
                 // output message
                 objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-                objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+
+                ArrayList<Movies> currentMoviesList3 = new ArrayList<>();
+                for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
+                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
+                    currentMoviesList3.add(newMovie);
+                }
+
+                objectNode.putPOJO("currentMoviesList", currentMoviesList3);
+
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
                 break;
@@ -359,7 +338,14 @@ public class Commands {
                 // output message
                 objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-                objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+
+                ArrayList<Movies> currentMoviesList4 = new ArrayList<>();
+                for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
+                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
+                    currentMoviesList4.add(newMovie);
+                }
+                objectNode.putPOJO("currentMoviesList", currentMoviesList4);
+
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
                 break;
@@ -378,13 +364,13 @@ public class Commands {
                     break;
                 }
 
-                currentMoviesList = new ArrayList<>();
+                ArrayList<Movies> currentMoviesList5 = new ArrayList<>();
                 boolean isTitle = false;
 
                 String movieTitle = command.getMovie();
                 for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
                     if (currentAuth.currentMoviesList.get(i).getName().equals(movieTitle)) {
-                        currentMoviesList.add(currentAuth.currentMoviesList.get(i));
+                        currentMoviesList5.add(currentAuth.currentMoviesList.get(i));
                         isTitle = true;
                     }
                 }
@@ -393,7 +379,9 @@ public class Commands {
                     // output message
                     objectNode = objectMapper.createObjectNode();
                     objectNode.putPOJO("error", null);
-                    objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+
+                    objectNode.putPOJO("currentMoviesList", currentMoviesList5);
+
                     objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                     output.addPOJO(objectNode);
                 } else {
