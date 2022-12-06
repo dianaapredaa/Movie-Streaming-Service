@@ -17,6 +17,10 @@
     "ratedMovies" : [ ]
   }
 }, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
+}, {
   "error" : null,
   "currentMoviesList" : [ ],
   "currentUser" : {
@@ -36,27 +40,7 @@
   }
 }, {
   "error" : null,
-  "currentMoviesList" : [ {
-    "name" : "John Wick: Chapter 3 - Parabellum",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
-  }, {
-    "name" : "Titanic",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
-  } ],
+  "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
       "name" : "Mihail",
@@ -74,26 +58,6 @@
   }
 }, {
   "error" : "Error",
-  "currentMoviesList" : [ {
-    "name" : "John Wick: Chapter 3 - Parabellum",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
-  }, {
-    "name" : "Titanic",
-    "year" : 2019,
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
-  } ],
+  "currentMoviesList" : [ ],
   "currentUser" : null
 } ]

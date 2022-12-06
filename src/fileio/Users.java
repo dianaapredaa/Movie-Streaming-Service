@@ -1,11 +1,31 @@
 package fileio;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.ArrayList;
 
 public class Users {
     public Users() {
 
     }
+    private Credentials credentials;
+    private int tokensCount = 0;
+    private int numFreePremiumMovies = 15;
+    private ArrayList<String> purchasedMovies = new ArrayList<>();
+    private ArrayList<String> watchedMovies = new ArrayList<>();
+    private ArrayList<String> likedMovies = new ArrayList<>();
+
+    @JsonIgnore
+    private int premiumAccount = 0;
+
+    public int getPremiumAccount() {
+        return premiumAccount;
+    }
+
+    public void setPremiumAccount(int premiumAccount) {
+        this.premiumAccount = premiumAccount;
+    }
+
     public Users(Users users) {
         this.credentials = new Credentials(users.getCredentials());
     }
@@ -21,14 +41,6 @@ public class Users {
     public void setCredentials(Credentials credentials) {
         this.credentials = credentials;
     }
-
-    private Credentials credentials;
-
-    private int tokensCount = 0;
-    private int numFreePremiumMovies = 15;
-    private ArrayList<String> purchasedMovies = new ArrayList<>();
-    private ArrayList<String> watchedMovies = new ArrayList<>();
-    private ArrayList<String> likedMovies = new ArrayList<>();
 
     public int getTokensCount() {
         return tokensCount;

@@ -10,8 +10,9 @@ abstract class Page {
 class HomePageAuthenticated extends Page {
     public HomePageAuthenticated() {
         this.nextPossiblePage.add("movies");
-        this.nextPossiblePage.add("seeDetails");
+        this.nextPossiblePage.add("see details");
         this.nextPossiblePage.add("logout");
+        this.nextPossiblePage.add("upgrades");
         this.pageType = "HomePageAuthenticated";
     }
 }

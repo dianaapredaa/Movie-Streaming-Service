@@ -31,6 +31,9 @@ public class Main {
         for (int i = 0; i < inputData.getUsers().size(); i++) {
             Users user = new Users(inputData.getUsers().get(i));
             users.addLast(user);
+            if (users.get(i).getCredentials().getAccountType().equals("premium")) {
+                users.get(i).setPremiumAccount(15);
+            }
         }
 
         LinkedList<Movies> movies = new LinkedList<>();
@@ -56,7 +59,6 @@ public class Main {
                 case("change page"):
                     String pageName = command.getPage();
                     // check if is possible to change pages
-
                     if (currentAuth.currentPage.nextPossiblePage.contains(pageName)) {
                         // change page
                         currentAuth.currentPage = page.type(pageName);
@@ -65,7 +67,7 @@ public class Main {
                         // output message
                         ObjectNode objectNode = objectMapper.createObjectNode();
                         objectNode.putPOJO("error", "Error");
-                        objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
                         objectNode.putPOJO("currentUser", null);
                         output.addPOJO(objectNode);
                         break;
@@ -80,7 +82,15 @@ public class Main {
                     }
 
                     if (pageName.equals("movies")) {
-                        currentAuth.currentMoviesList = movies;
+                        for (int j = 0; j < movies.size(); j++) {
+                            // current User's Country
+                            String userCountry = currentAuth.currentUser.getCredentials().getCountry();
+
+                            // populate current User's MovieList with non-banned movies
+                            if (!movies.get(j).getCountriesBanned().contains(userCountry)) {
+                                currentAuth.currentMoviesList.add(movies.get(j));
+                            }
+                        }
 
                         ObjectNode objectNode = objectMapper.createObjectNode();
                         objectNode.putPOJO("error", null);

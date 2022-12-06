@@ -8,24 +8,21 @@ public class Actions {
     private String type;
     private String page;
     private String feature;
-
     private String objectType;
-
-    // Movie - Filters - Contains - actors/genre
-    private Filters filters;
-
-    // Upgrades - Buy Token - count
-    private int count;
-
-    // SeeDetails - Rate - rate
-    private int rate;
-
-    // Login - Login - Credentials - name/password
+    private String startsWith;     // Movies - Search - StartsWith
+    private String movie;       // SeeDetails
+    private int count;     // Upgrades - Buy Token - count
+    private int rate;           // SeeDetails - Rate - rate
+    private Filters filters;     // Movie - Filters - Sort - rating/duration
+    private Credentials credentials;     // Login - Login - Credentials - name/password
     // Register - Register - Credentials - name/password/accountType/country/balance
-    private Credentials credentials;
 
-    // Movies - Search - StartsWith
-    private String startsWith;
+    public Actions(Actions actions) {
+        this.filters = new Filters(actions.getFilters());
+    }
+    public Actions(Filters filters) {
+        this.filters = new Filters(filters);
+    }
 
     public String getMovie() {
         return movie;
@@ -35,8 +32,13 @@ public class Actions {
         this.movie = movie;
     }
 
-    // SeeDetails
-    private String movie;
+    public Credentials getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(Credentials credentials) {
+        this.credentials = credentials;
+    }
 
     public String getStartsWith() {
         return startsWith;
@@ -94,14 +96,6 @@ public class Actions {
         this.rate = rate;
     }
 
-    public Credentials getCredentials() {
-        return credentials;
-    }
-
-    public void setCredentials(Credentials credentials) {
-        this.credentials = credentials;
-    }
-
     public String getObjectType() {
         return objectType;
     }
@@ -118,6 +112,16 @@ class Filters {
     private Contains contains;
     private Sort sort;
 
+    public Filters(Filters filters) {
+        this.contains = new Contains(filters.getContains());
+        this.sort = new Sort(filters.getSort());
+    }
+
+    public Filters(Contains contains, Sort sort) {
+        this.contains = new Contains(contains);
+        this.sort = new Sort(sort);
+    }
+
     public Sort getSort() {
         return sort;
     }
@@ -132,11 +136,6 @@ class Filters {
 
     public void setContains(Contains contains) {
         this.contains = contains;
-    }
-
-    public Filters(Filters filters) {
-        this.contains = filters.getContains();
-        this.sort = filters.getSort();
     }
 }
 

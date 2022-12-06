@@ -10,6 +10,7 @@ public class CurrentAuthentication {
     public CurrentAuthentication() {
     }
     LinkedList<Movies> currentMoviesList = new LinkedList<>();
+    LinkedList<Movies> purchasedMovies = new LinkedList<>();
     Users currentUser;
     PageType page = new PageType();
     Page currentPage = page.type("HomePageNonAuthenticated");
