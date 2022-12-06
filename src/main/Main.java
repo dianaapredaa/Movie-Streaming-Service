@@ -91,9 +91,9 @@ public class Main {
                                 currentAuth.currentMoviesList.add(movies.get(j));
                             }
                         }
-
                         ObjectNode objectNode = objectMapper.createObjectNode();
                         objectNode.putPOJO("error", null);
+
                         ArrayList<Movies> currentMoviesList = new ArrayList<>();
                         for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
                             Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
@@ -107,6 +107,29 @@ public class Main {
                     // jump to features
                     if (command.getFeature() != null) {
                         commands.features(command, users, movies, output);
+                    } else if (pageName.equals("see details")) {
+                        String movieName = command.getMovie();
+
+                        ArrayList<Movies> currentMoviesList5 = new ArrayList<>();
+                        for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
+                            if (currentAuth.currentMoviesList.get(j).getName().equals(movieName)) {
+                                currentMoviesList5.add(currentAuth.currentMoviesList.get(j));
+                                // output message
+                                ObjectNode objectNode = objectMapper.createObjectNode();
+                                objectNode.putPOJO("error", null);
+                                objectNode.putPOJO("currentMoviesList", currentMoviesList5);
+                                objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                                output.addPOJO(objectNode);
+                                break;
+                            }
+                        }
+
+                        // output message
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", "Error");
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", null);
+                        output.addPOJO(objectNode);
                     }
                     break;
             }

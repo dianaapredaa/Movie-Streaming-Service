@@ -235,12 +235,18 @@
     "ratedMovies" : [ ]
   }
 }, {
-  "error" : "Error",
-  "currentMoviesList" : [ ],
-  "currentUser" : null
-}, {
   "error" : null,
-  "currentMoviesList" : [ ],
+  "currentMoviesList" : [ {
+    "name" : "Indiana Jones and the Temple of Doom",
+    "year" : 2012,
+    "duration" : 88,
+    "countriesBanned" : [ "Nigeria", "Lithuania", "Burkina Faso" ],
+    "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
+    "genres" : [ "Drama", "Comedy", "Mystery" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  } ],
   "currentUser" : {
     "credentials" : {
       "name" : "Iancu",
@@ -261,23 +267,13 @@
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {
-  "error" : null,
+  "error" : "Error",
   "currentMoviesList" : [ ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Iancu",
-      "password" : "corega",
-      "accountType" : "standard",
-      "country" : "Japan",
-      "balance" : "50"
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
 }, {
   "error" : "Error",
   "currentMoviesList" : [ ],
@@ -287,23 +283,13 @@
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {
-  "error" : null,
+  "error" : "Error",
   "currentMoviesList" : [ ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Iancu",
-      "password" : "corega",
-      "accountType" : "standard",
-      "country" : "Japan",
-      "balance" : "50"
-    },
-    "tokensCount" : 0,
-    "numFreePremiumMovies" : 15,
-    "purchasedMovies" : [ ],
-    "watchedMovies" : [ ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ ]
-  }
+  "currentUser" : null
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
 }, {
   "error" : "Error",
   "currentMoviesList" : [ ],

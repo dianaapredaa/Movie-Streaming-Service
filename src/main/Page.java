@@ -10,7 +10,6 @@ abstract class Page {
 class HomePageAuthenticated extends Page {
     public HomePageAuthenticated() {
         this.nextPossiblePage.add("movies");
-        this.nextPossiblePage.add("see details");
         this.nextPossiblePage.add("logout");
         this.nextPossiblePage.add("upgrades");
         this.pageType = "HomePageAuthenticated";
@@ -45,7 +44,7 @@ class Login extends Page {
 class MoviesPage extends Page {
     public MoviesPage() {
         this.nextPossiblePage.add("HomePageAuthenticated");
-        this.nextPossiblePage.add("seeDetails");
+        this.nextPossiblePage.add("see details");
         this.nextPossiblePage.add("logout");
         this.pageType = "movies";
     }
@@ -55,7 +54,6 @@ class MoviesPage extends Page {
 class SeeDetails extends Page {
     public SeeDetails() {
         this.nextPossiblePage.add("HomePageAuthenticated");
-        this.nextPossiblePage.add("seeDetails");
         this.nextPossiblePage.add("logout");
         this.nextPossiblePage.add("upgrades");
         this.pageType = "see details";
@@ -67,6 +65,8 @@ class SeeDetails extends Page {
 class Upgrades extends Page {
     public Upgrades() {
         this.nextPossiblePage.add("HomePageAuthenticated");
+        this.nextPossiblePage.add("movies");
+        this.nextPossiblePage.add("logout");
         this.pageType = "upgrades";
     }
 

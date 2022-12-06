@@ -52,7 +52,7 @@ public class Commands {
                             // output message
                             objectNode = objectMapper.createObjectNode();
                             objectNode.putPOJO("error", null);
-                            objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+                            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
                             objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                             output.addPOJO(objectNode);
                             break;
@@ -146,9 +146,6 @@ public class Commands {
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
 
-                // empty currentMoviesList
-//                currentAuth.currentMoviesList = new LinkedList<>();
-
                 break;
             case ("filter"):
                 // only on Movies Page
@@ -167,44 +164,47 @@ public class Commands {
                 ArrayList<String> actors = new ArrayList<>();
                 actors.add("Keanu Reeves");
 
+                ArrayList<Movies> currentMoviesList2 = new ArrayList<>();
+
                 for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-                    if (!currentAuth.currentMoviesList.get(i).getActors().contains(actors)) {
-                        currentAuth.currentMoviesList.remove(i);
-                        i--;
+                    for (int j = 0; j < actors.size(); j ++) {
+                        if (currentAuth.currentMoviesList.get(i).getActors().contains(actors.get(j))) {
+                            currentMoviesList2.add(currentAuth.currentMoviesList.get(i));
+                        }
                     }
                 }
 
-                for (int i = 0; i < currentAuth.currentMoviesList.size() - 1; i++) {
-                    for (int j = 0; j < currentAuth.currentMoviesList.size() - i - 1; j ++) {
+                for (int i = 0; i < currentMoviesList2.size() - 1; i++) {
+                    for (int j = 0; j < currentMoviesList2.size() - i - 1; j ++) {
                         if (rating.equals("increasing")) {
-                            if (currentAuth.currentMoviesList.get(j).getRating() > currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                currentAuth.currentMoviesList.remove(j);
-                                currentAuth.currentMoviesList.add(j + 1, auxMovie);
+                            if (currentMoviesList2.get(j).getRating() > currentMoviesList2.get(j + 1).getRating()) {
+                                Movies auxMovie = currentMoviesList2.get(j);
+                                currentMoviesList2.remove(j);
+                                currentMoviesList2.add(j + 1, auxMovie);
                             }
                         }
 
                         if (rating.equals("decreasing")) {
-                            if (currentAuth.currentMoviesList.get(j).getRating() < currentAuth.currentMoviesList.get(j + 1).getRating()) {
-                                Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                currentAuth.currentMoviesList.remove(j);
-                                currentAuth.currentMoviesList.add(j + 1, auxMovie);
+                            if (currentMoviesList2.get(j).getRating() < currentMoviesList2.get(j + 1).getRating()) {
+                                Movies auxMovie = currentMoviesList2.get(j);
+                                currentMoviesList2.remove(j);
+                                currentMoviesList2.add(j + 1, auxMovie);
                             }
                         }
-                        if (currentAuth.currentMoviesList.get(j).getRating() == currentAuth.currentMoviesList.get(j + 1).getRating()) {
+                        if (currentMoviesList2.get(j).getRating() == currentMoviesList2.get(j + 1).getRating()) {
                             if (duration.equals("increasing")) {
-                                if (currentAuth.currentMoviesList.get(j).getDuration() > currentAuth.currentMoviesList.get(j + 1).getDuration()) {
-                                    Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                    currentAuth.currentMoviesList.remove(j);
-                                    currentAuth.currentMoviesList.add(j + 1, auxMovie);
+                                if (currentMoviesList2.get(j).getDuration() > currentMoviesList2.get(j + 1).getDuration()) {
+                                    Movies auxMovie = currentMoviesList2.get(j);
+                                    currentMoviesList2.remove(j);
+                                    currentMoviesList2.add(j + 1, auxMovie);
                                 }
                             }
 
                             if (duration.equals("decreasing")) {
-                                if (currentAuth.currentMoviesList.get(j).getDuration() < currentAuth.currentMoviesList.get(j + 1).getDuration()) {
-                                    Movies auxMovie = currentAuth.currentMoviesList.get(j);
-                                    currentAuth.currentMoviesList.remove(j);
-                                    currentAuth.currentMoviesList.add(j + 1, auxMovie);
+                                if (currentMoviesList2.get(j).getDuration() < currentMoviesList2.get(j + 1).getDuration()) {
+                                    Movies auxMovie = currentMoviesList2.get(j);
+                                    currentMoviesList2.remove(j);
+                                    currentMoviesList2.add(j + 1, auxMovie);
                                 }
                             }
                         }
@@ -212,13 +212,6 @@ public class Commands {
                 }
                 objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-
-                ArrayList<Movies> currentMoviesList2 = new ArrayList<>();
-                for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
-                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
-                    currentMoviesList2.add(newMovie);
-                }
-
                 objectNode.putPOJO("currentMoviesList", currentMoviesList2);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
                 output.addPOJO(objectNode);
@@ -226,14 +219,14 @@ public class Commands {
 
             case ("purchase"):
                 // only on SeeDetails page
-                if (!currentAuth.currentPage.pageType.equals("see details")) {
-                    objectNode = objectMapper.createObjectNode();
-                    objectNode.putPOJO("error", "Error");
-                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                    objectNode.putPOJO("currentUser", null);
-                    output.addPOJO(objectNode);
-                    break;
-                }
+//                if (!currentAuth.currentPage.pageType.equals("see details")) {
+//                    objectNode = objectMapper.createObjectNode();
+//                    objectNode.putPOJO("error", "Error");
+//                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+//                    objectNode.putPOJO("currentUser", null);
+//                    output.addPOJO(objectNode);
+//                    break;
+//                }
 //
 //                String objectType = command.getObjectType();
 //                String movie = command.getMovie();
@@ -259,7 +252,7 @@ public class Commands {
 //                    // output message
 //                    objectNode = objectMapper.createObjectNode();
 //                    objectNode.putPOJO("error", null);
-//                    objectNode.putPOJO("currentMoviesList", currentAuth.currentMoviesList);
+//                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
 //                    objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
 //                    output.addPOJO(objectNode);
 //                } else {
@@ -294,24 +287,11 @@ public class Commands {
                 }
                 // count
                 int count = command.getCount();
+                // set Tokens
                 currentAuth.currentUser.setTokensCount(currentAuth.currentUser.getTokensCount() + count);
                 int newBalance = Integer.parseInt(currentAuth.currentUser.getCredentials().getBalance()) - count;
+                // set Balance
                 currentAuth.currentUser.getCredentials().setBalance(Integer.toString(newBalance));
-
-                // output message
-                objectNode = objectMapper.createObjectNode();
-                objectNode.putPOJO("error", null);
-
-                ArrayList<Movies> currentMoviesList3 = new ArrayList<>();
-                for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
-                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
-                    currentMoviesList3.add(newMovie);
-                }
-
-                objectNode.putPOJO("currentMoviesList", currentMoviesList3);
-
-                objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
-                output.addPOJO(objectNode);
                 break;
             case ("buy premium account"):
                 // only on Upgrades page
@@ -326,65 +306,10 @@ public class Commands {
 
                 currentAuth.currentUser.setTokensCount(currentAuth.currentUser.getTokensCount() - 10);
                 currentAuth.currentUser.getCredentials().setAccountType("premium");
-                currentAuth.currentUser.setPremiumAccount(15);
-
-                // output message
-                objectNode = objectMapper.createObjectNode();
-                objectNode.putPOJO("error", null);
-
-                ArrayList<Movies> currentMoviesList4 = new ArrayList<>();
-                for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
-                    Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
-                    currentMoviesList4.add(newMovie);
-                }
-                objectNode.putPOJO("currentMoviesList", currentMoviesList4);
-
-                objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
-                output.addPOJO(objectNode);
                 break;
             case ("like"):
 
                 // check if you watched the movie
-                break;
-            case ("movies"):
-                // only on SeeDetails page
-                if (!currentAuth.currentPage.pageType.equals("see details")) {
-                    objectNode = objectMapper.createObjectNode();
-                    objectNode.putPOJO("error", "Error");
-                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                    objectNode.putPOJO("currentUser", null);
-                    output.addPOJO(objectNode);
-                    break;
-                }
-
-                ArrayList<Movies> currentMoviesList5 = new ArrayList<>();
-                boolean isTitle = false;
-
-                String movieTitle = command.getMovie();
-                for (int i = 0; i < currentAuth.currentMoviesList.size(); i++) {
-                    if (currentAuth.currentMoviesList.get(i).getName().equals(movieTitle)) {
-                        currentMoviesList5.add(currentAuth.currentMoviesList.get(i));
-                        isTitle = true;
-                    }
-                }
-
-                if (isTitle) {
-                    // output message
-                    objectNode = objectMapper.createObjectNode();
-                    objectNode.putPOJO("error", null);
-
-                    objectNode.putPOJO("currentMoviesList", currentMoviesList5);
-
-                    objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
-                    output.addPOJO(objectNode);
-                } else {
-                    // output message
-                    objectNode = objectMapper.createObjectNode();
-                    objectNode.putPOJO("error", "Error");
-                    objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                    objectNode.putPOJO("currentUser", null);
-                    output.addPOJO(objectNode);
-                }
                 break;
         }
 

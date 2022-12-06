@@ -16,7 +16,7 @@ public class Users {
     private ArrayList<String> likedMovies = new ArrayList<>();
 
     @JsonIgnore
-    private int premiumAccount = 0;
+    private int premiumAccount = 15;
 
     public int getPremiumAccount() {
         return premiumAccount;
