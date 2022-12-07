@@ -16,8 +16,16 @@ public class Users {
     private ArrayList<Movies> likedMovies = new ArrayList<>();
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
 
-    @JsonIgnore
-    private int premiumAccount = 15;
+    public Users (Users users) {
+//        this.credentials.setName(users.getCredentials().getName());
+        this.credentials = new Credentials(users.getCredentials());
+        this.tokensCount = users.getTokensCount();
+        this.numFreePremiumMovies = users.getNumFreePremiumMovies();
+        this.purchasedMovies = new ArrayList<>(users.getPurchasedMovies());
+        this.watchedMovies = new ArrayList<>(users.getWatchedMovies());
+        this.likedMovies = new ArrayList<>(users.getLikedMovies());
+        this.ratedMovies = new ArrayList<>(users.getRatedMovies());
+    }
 
     public ArrayList<Movies> getPurchasedMovies() {
         return purchasedMovies;
@@ -49,19 +57,6 @@ public class Users {
 
     public void setRatedMovies(ArrayList<Movies> ratedMovies) {
         this.ratedMovies = ratedMovies;
-    }
-
-
-    public int getPremiumAccount() {
-        return premiumAccount;
-    }
-
-    public void setPremiumAccount(int premiumAccount) {
-        this.premiumAccount = premiumAccount;
-    }
-
-    public Users(Users users) {
-        this.credentials = new Credentials(users.getCredentials());
     }
 
     public Users(Credentials credentials) {

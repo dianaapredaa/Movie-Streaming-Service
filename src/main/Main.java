@@ -31,9 +31,6 @@ public class Main {
         for (int i = 0; i < inputData.getUsers().size(); i++) {
             Users user = new Users(inputData.getUsers().get(i));
             users.addLast(user);
-            if (users.get(i).getCredentials().getAccountType().equals("premium")) {
-                users.get(i).setPremiumAccount(15);
-            }
         }
 
         LinkedList<Movies> movies = new LinkedList<>();
@@ -59,9 +56,9 @@ public class Main {
                 case("change page"):
                     String pageName = command.getPage();
                     // check if is possible to change pages
-                    if (currentAuth.currentPage.nextPossiblePage.contains(pageName)) {
+                    if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)) {
                         // change page
-                        currentAuth.currentPage = page.type(pageName);
+                        currentAuth.setCurrentPage(page.type(pageName));
                     } else {
                         // can not change page
                         // output message
@@ -75,36 +72,35 @@ public class Main {
 
                     if (pageName.equals("logout")) {
                         // only on Logout Page
-                        currentAuth.currentUser = null;
-                        currentAuth.currentPage = page.type("HomePageNonAuthenticated");
-                        currentAuth.currentMoviesList = new LinkedList<>();
-                        currentAuth.purchasedMovies = new LinkedList<>();
+                        currentAuth.setCurrentUser(null);
+                        currentAuth.setCurrentPage(page.type("HomePageNonAuthenticated"));
+                        currentAuth.setCurrentMoviesList(new LinkedList<>());
+                        currentAuth.setPurchasedMovies(new LinkedList<>());
                         break;
                     }
 
                     if (pageName.equals("movies")) {
                         for (int j = 0; j < movies.size(); j++) {
                             // current User's Country
-                            String userCountry = currentAuth.currentUser.getCredentials().getCountry();
+                            String userCountry = currentAuth.getCurrentUser().getCredentials().getCountry();
 
                             // populate current User's MovieList with non-banned movies
                             if (!movies.get(j).getCountriesBanned().contains(userCountry)) {
-                                currentAuth.currentMoviesList.add(movies.get(j));
+                                currentAuth.getCurrentMoviesList().add(movies.get(j));
                             }
                         }
                         ObjectNode objectNode = objectMapper.createObjectNode();
                         objectNode.putPOJO("error", null);
 
                         ArrayList<Movies> currentMoviesList = new ArrayList<>();
-                        for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
-                            Movies newMovie = new Movies(currentAuth.currentMoviesList.get(j));
+                        for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
+                            Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
                             currentMoviesList.add(newMovie);
                         }
                         objectNode.putPOJO("currentMoviesList", currentMoviesList);
-                        objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                        objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
                         output.addPOJO(objectNode);
                     }
-
                     // jump to features
                     if (command.getFeature() != null) {
                         commands.features(command, users, movies, output);
@@ -112,27 +108,27 @@ public class Main {
                         String movieName = command.getMovie();
 
                         ArrayList<Movies> currentMoviesList5 = new ArrayList<>();
-                        for (int j = 0; j < currentAuth.currentMoviesList.size(); j++) {
-                            if (currentAuth.currentMoviesList.get(j).getName().equals(movieName)) {
-                                currentMoviesList5.add(currentAuth.currentMoviesList.get(j));
+                        for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
+                            if (currentAuth.getCurrentMoviesList().get(j).getName().equals(movieName)) {
+                                currentMoviesList5.add(currentAuth.getCurrentMoviesList().get(j));
                                 // output message
                                 ObjectNode objectNode = objectMapper.createObjectNode();
                                 objectNode.putPOJO("error", null);
                                 objectNode.putPOJO("currentMoviesList", currentMoviesList5);
-                                objectNode.putPOJO("currentUser", new Users(currentAuth.currentUser));
+                                objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
                                 output.addPOJO(objectNode);
                                 break;
                             }
                         }
-
-                        // output message
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "Error");
-                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                        objectNode.putPOJO("currentUser", null);
-                        output.addPOJO(objectNode);
-                        currentAuth.currentPage = page.type("movies");
-
+                        if (currentMoviesList5.isEmpty()) {
+                            // output message
+                            ObjectNode objectNode = objectMapper.createObjectNode();
+                            objectNode.putPOJO("error", "Error");
+                            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                            objectNode.putPOJO("currentUser", null);
+                            output.addPOJO(objectNode);
+                            currentAuth.setCurrentPage(page.type("movies"));
+                        }
                     }
                     break;
             }
