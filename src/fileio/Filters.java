@@ -1,6 +1,6 @@
 package fileio;
 
-public class Filters {
+public final class Filters {
     public Filters() {
 
     }
@@ -8,12 +8,12 @@ public class Filters {
     private Contains contains;
     private Sort sort;
 
-    public Filters(Filters filters) {
+    public Filters(final Filters filters) {
         this.contains = new Contains(filters.getContains());
         this.sort = new Sort(filters.getSort());
     }
 
-    public Filters(Contains contains, Sort sort) {
+    public Filters(final Contains contains, final Sort sort) {
         this.contains = new Contains(contains);
         this.sort = new Sort(sort);
     }
@@ -22,7 +22,7 @@ public class Filters {
         return sort;
     }
 
-    public void setSort(Sort sort) {
+    public void setSort(final Sort sort) {
         this.sort = sort;
     }
 
@@ -30,7 +30,7 @@ public class Filters {
         return contains;
     }
 
-    public void setContains(Contains contains) {
+    public void setContains(final Contains contains) {
         this.contains = contains;
     }
 }

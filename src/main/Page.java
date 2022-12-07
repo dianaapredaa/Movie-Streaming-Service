@@ -6,25 +6,41 @@ public abstract class Page {
     private ArrayList<String> nextPossiblePage = new ArrayList<>();
     private String pageType = null;
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<String> getNextPossiblePage() {
         return nextPossiblePage;
     }
 
-    public void setNextPossiblePage(ArrayList<String> nextPossiblePage) {
+    /**
+     *
+     * @param nextPossiblePage
+     */
+    public void setNextPossiblePage(final ArrayList<String> nextPossiblePage) {
         this.nextPossiblePage = nextPossiblePage;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getPageType() {
         return pageType;
     }
 
-    public void setPageType(String pageType) {
+    /**
+     *
+     * @param pageType
+     */
+    public void setPageType(final String pageType) {
         this.pageType = pageType;
     }
 }
 
 class HomePageAuthenticated extends Page {
-    public HomePageAuthenticated() {
+    HomePageAuthenticated() {
         this.getNextPossiblePage().add("movies");
         this.getNextPossiblePage().add("logout");
         this.getNextPossiblePage().add("upgrades");
@@ -33,7 +49,7 @@ class HomePageAuthenticated extends Page {
 }
 
 class HomePageNonAuthenticated extends Page {
-    public HomePageNonAuthenticated() {
+    HomePageNonAuthenticated() {
         this.getNextPossiblePage().add("login");
         this.getNextPossiblePage().add("register");
         this.setPageType("HomePageNonAuthenticated");
@@ -42,7 +58,7 @@ class HomePageNonAuthenticated extends Page {
 }
 
 class Register extends Page {
-    public Register() {
+    Register() {
         this.getNextPossiblePage().add("HomePageAuthenticated");
         this.setPageType("register");
     }
@@ -50,7 +66,7 @@ class Register extends Page {
 }
 
 class Login extends Page {
-    public Login() {
+    Login() {
         this.getNextPossiblePage().add("HomePageAuthenticated");
         this.setPageType("login");
     }
@@ -58,7 +74,7 @@ class Login extends Page {
 }
 
 class MoviesPage extends Page {
-    public MoviesPage() {
+    MoviesPage() {
         this.getNextPossiblePage().add("HomePageAuthenticated");
         this.getNextPossiblePage().add("see details");
         this.getNextPossiblePage().add("logout");
@@ -68,7 +84,7 @@ class MoviesPage extends Page {
 }
 
 class SeeDetails extends Page {
-    public SeeDetails() {
+    SeeDetails() {
         this.getNextPossiblePage().add("HomePageAuthenticated");
         this.getNextPossiblePage().add("logout");
         this.getNextPossiblePage().add("upgrades");
@@ -80,7 +96,7 @@ class SeeDetails extends Page {
 }
 
 class Upgrades extends Page {
-    public Upgrades() {
+    Upgrades() {
         this.getNextPossiblePage().add("HomePageAuthenticated");
         this.getNextPossiblePage().add("movies");
         this.getNextPossiblePage().add("logout");
@@ -90,7 +106,7 @@ class Upgrades extends Page {
 }
 
 class Logout extends Page {
-    public Logout() {
+    Logout() {
         this.getNextPossiblePage().add("HomePageNonAuthenticated");
         this.setPageType("logout");
     }

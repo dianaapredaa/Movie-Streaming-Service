@@ -7,16 +7,24 @@ import fileio.Movies;
 import fileio.Users;
 import java.util.LinkedList;
 
-public class Commands {
+public final class Commands {
     private CurrentAuthentication currentAuth;
     public CurrentAuthentication getCurrent() {
         return currentAuth;
     }
-    public void setCurrent(CurrentAuthentication currentAuth) {
-        this.currentAuth = currentAuth;
+    public void setCurrent(final CurrentAuthentication currentAuthentication) {
+        this.currentAuth = currentAuthentication;
     }
 
-    public void features(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
+    public void features(final Actions command, final LinkedList<Users> users,
+                         final LinkedList<Movies> movies, final ArrayNode output) {
         switch (command.getFeature()) {
             case ("login"):
                 LoginFeatures login = new LoginFeatures();
@@ -36,7 +44,7 @@ public class Commands {
             case ("filter"):
                 MoviesFeatures moviesForFilters = new MoviesFeatures();
                 moviesForFilters.setCurrent(currentAuth);
-                moviesForFilters.filters(command,users, movies, output);
+                moviesForFilters.filters(command, users, movies, output);
                 break;
             case ("purchase"):
                 SeeDetailsFeatures seeDetailsPurchase = new SeeDetailsFeatures();
@@ -68,6 +76,8 @@ public class Commands {
                 seeDetailsLike.setCurrent(currentAuth);
                 seeDetailsLike.like(command, users, movies, output);
                 break;
+            default:
+                System.out.println("Nothing to do here");
         }
 
     }

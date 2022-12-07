@@ -1,11 +1,9 @@
 package fileio;
 
-public class Sort {
-
+public final class Sort {
     public Sort() {
 
     }
-
     private String rating;
     private String duration;
 
@@ -13,7 +11,7 @@ public class Sort {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(final String rating) {
         this.rating = rating;
     }
 
@@ -21,16 +19,16 @@ public class Sort {
         return duration;
     }
 
-    public void setDuration(String duration) {
+    public void setDuration(final String duration) {
         this.duration = duration;
     }
 
-    public Sort(String rating, String duration) {
+    public Sort(final String rating, final String duration) {
         this.rating = rating;
         this.duration = duration;
     }
 
-    public Sort(Sort sort) {
+    public Sort(final Sort sort) {
         this.duration = sort.getDuration();
         this.rating = sort.getRating();
     }

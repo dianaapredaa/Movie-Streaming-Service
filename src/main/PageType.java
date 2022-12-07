@@ -1,7 +1,12 @@
 package main;
 
-public class PageType {
-    public Page type(String pageType) {
+public final class PageType {
+    /**
+     *
+     * @param pageType
+     * @return
+     */
+    public Page type(final String pageType) {
         if (pageType == null) {
             return null;
         }

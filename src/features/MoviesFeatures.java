@@ -7,25 +7,29 @@ import fileio.Actions;
 import fileio.Movies;
 import fileio.Users;
 import main.CurrentAuthentication;
-import main.PageType;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class MoviesFeatures {
+public final class MoviesFeatures {
     private CurrentAuthentication currentAuth;
     public CurrentAuthentication getCurrent() {
         return currentAuth;
     }
-    public void setCurrent(CurrentAuthentication currentAuth) {
-        this.currentAuth = currentAuth;
+    public void setCurrent(final CurrentAuthentication currentAuthentication) {
+        this.currentAuth = currentAuthentication;
     }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    // create a PageType object to get different types of pages
-    private static final PageType page = new PageType();
-
-    public void search (Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
+    public void search(final Actions command, final LinkedList<Users> users,
+                       final LinkedList<Movies> movies, final ArrayNode output) {
         // only on Movies Page
         if (!currentAuth.getCurrentPage().getPageType().equals("movies")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -55,7 +59,15 @@ public class MoviesFeatures {
 
     }
 
-    public void filters (Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
+    public void filters(final Actions command, final LinkedList<Users> users,
+                        final LinkedList<Movies> movies, final ArrayNode output) {
         // only on Movies Page
         if (!currentAuth.getCurrentPage().getPageType().equals("movies")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -83,7 +95,7 @@ public class MoviesFeatures {
         ArrayList<Movies> currentMoviesList = new ArrayList<>();
 
         for (int i = 0; i < currentAuth.getCurrentMoviesList().size() && actors != null; i++) {
-            for (int j = 0; j < actors.size(); j ++) {
+            for (int j = 0; j < actors.size(); j++) {
                 if (currentAuth.getCurrentMoviesList().get(i).getActors().contains(actors.get(j))) {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
@@ -91,9 +103,10 @@ public class MoviesFeatures {
         }
 
         for (int i = 0; i < currentMoviesList.size() - 1; i++) {
-            for (int j = 0; j < currentMoviesList.size() - i - 1; j ++) {
+            for (int j = 0; j < currentMoviesList.size() - i - 1; j++) {
                 if (rating.equals("increasing")) {
-                    if (currentMoviesList.get(j).getRating() > currentMoviesList.get(j + 1).getRating()) {
+                    if (currentMoviesList.get(j).getRating()
+                            > currentMoviesList.get(j + 1).getRating()) {
                         Movies auxMovie = currentMoviesList.get(j);
                         currentMoviesList.remove(j);
                         currentMoviesList.add(j + 1, auxMovie);
@@ -101,15 +114,18 @@ public class MoviesFeatures {
                 }
 
                 if (rating.equals("decreasing")) {
-                    if (currentMoviesList.get(j).getRating() < currentMoviesList.get(j + 1).getRating()) {
+                    if (currentMoviesList.get(j).getRating()
+                            < currentMoviesList.get(j + 1).getRating()) {
                         Movies auxMovie = currentMoviesList.get(j);
                         currentMoviesList.remove(j);
                         currentMoviesList.add(j + 1, auxMovie);
                     }
                 }
-                if (currentMoviesList.get(j).getRating() == currentMoviesList.get(j + 1).getRating()) {
+                if (currentMoviesList.get(j).getRating()
+                        == currentMoviesList.get(j + 1).getRating()) {
                     if (duration.equals("increasing")) {
-                        if (currentMoviesList.get(j).getDuration() > currentMoviesList.get(j + 1).getDuration()) {
+                        if (currentMoviesList.get(j).getDuration()
+                                > currentMoviesList.get(j + 1).getDuration()) {
                             Movies auxMovie = currentMoviesList.get(j);
                             currentMoviesList.remove(j);
                             currentMoviesList.add(j + 1, auxMovie);
@@ -117,7 +133,8 @@ public class MoviesFeatures {
                     }
 
                     if (duration.equals("decreasing")) {
-                        if (currentMoviesList.get(j).getDuration() < currentMoviesList.get(j + 1).getDuration()) {
+                        if (currentMoviesList.get(j).getDuration()
+                                < currentMoviesList.get(j + 1).getDuration()) {
                             Movies auxMovie = currentMoviesList.get(j);
                             currentMoviesList.remove(j);
                             currentMoviesList.add(j + 1, auxMovie);
@@ -133,7 +150,12 @@ public class MoviesFeatures {
         output.addPOJO(objectNode);
     }
 
-    public void onMoviesPage(LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param movies
+     * @param output
+     */
+    public void onMoviesPage(final LinkedList<Movies> movies, final ArrayNode output) {
         currentAuth.setCurrentMoviesList(new LinkedList<>());
 
         for (int j = 0; j < movies.size(); j++) {

@@ -1,12 +1,7 @@
 package main;
-import java.io.Console;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.regex.Pattern;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
@@ -17,8 +12,16 @@ import fileio.*;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-public class Main {
+public final class Main {
+    private Main() {
 
+    }
+
+    /**
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(final String[] args) throws IOException {
 
         // read input
@@ -103,6 +106,8 @@ public class Main {
                         break;
                     }
                     break;
+                default:
+                    System.out.println("Nothing to do here");
             }
 
         }

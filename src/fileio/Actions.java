@@ -1,8 +1,6 @@
 package fileio;
 
-import java.util.ArrayList;
-
-public class Actions {
+public final class Actions {
     public Actions() {
     }
     private String type;
@@ -17,10 +15,10 @@ public class Actions {
     private Credentials credentials;     // Login - Login - Credentials - name/password
     // Register - Register - Credentials - name/password/accountType/country/balance
 
-    public Actions(Actions actions) {
+    public Actions(final Actions actions) {
         this.filters = new Filters(actions.getFilters());
     }
-    public Actions(Filters filters) {
+    public Actions(final Filters filters) {
         this.filters = new Filters(filters);
     }
 
@@ -28,7 +26,7 @@ public class Actions {
         return movie;
     }
 
-    public void setMovie(String movie) {
+    public void setMovie(final String movie) {
         this.movie = movie;
     }
 
@@ -36,7 +34,7 @@ public class Actions {
         return credentials;
     }
 
-    public void setCredentials(Credentials credentials) {
+    public void setCredentials(final Credentials credentials) {
         this.credentials = credentials;
     }
 
@@ -44,7 +42,7 @@ public class Actions {
         return startsWith;
     }
 
-    public void setStartsWith(String startsWith) {
+    public void setStartsWith(final String startsWith) {
         this.startsWith = startsWith;
     }
 
@@ -52,7 +50,7 @@ public class Actions {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 
@@ -60,7 +58,7 @@ public class Actions {
         return page;
     }
 
-    public void setPage(String page) {
+    public void setPage(final String page) {
         this.page = page;
     }
 
@@ -68,7 +66,7 @@ public class Actions {
         return feature;
     }
 
-    public void setFeature(String futures) {
+    public void setFeature(final String futures) {
         this.feature = futures;
     }
 
@@ -76,7 +74,7 @@ public class Actions {
         return filters;
     }
 
-    public void setFilters(Filters filters) {
+    public void setFilters(final Filters filters) {
         this.filters = filters;
     }
 
@@ -84,7 +82,7 @@ public class Actions {
         return count;
     }
 
-    public void setCount(int count) {
+    public void setCount(final int count) {
         this.count = count;
     }
 
@@ -92,7 +90,7 @@ public class Actions {
         return rate;
     }
 
-    public void setRate(int rate) {
+    public void setRate(final int rate) {
         this.rate = rate;
     }
 
@@ -100,7 +98,7 @@ public class Actions {
         return objectType;
     }
 
-    public void setObjectType(String objectType) {
+    public void setObjectType(final String objectType) {
         this.objectType = objectType;
     }
 }

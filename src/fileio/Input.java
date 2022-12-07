@@ -2,7 +2,7 @@ package fileio;
 
 import java.util.ArrayList;
 
-public class Input {
+public final class Input {
 
     public Input() {
     }
@@ -15,7 +15,7 @@ public class Input {
         return users;
     }
 
-    public void setUsers(ArrayList<Users> users) {
+    public void setUsers(final ArrayList<Users> users) {
         this.users = users;
     }
 
@@ -23,7 +23,7 @@ public class Input {
         return movies;
     }
 
-    public void setMovies(ArrayList<Movies> movies) {
+    public void setMovies(final ArrayList<Movies> movies) {
         this.movies = movies;
     }
 
@@ -31,7 +31,7 @@ public class Input {
         return actions;
     }
 
-    public void setActions(ArrayList<Actions> actions) {
+    public void setActions(final ArrayList<Actions> actions) {
         this.actions = actions;
     }
 }

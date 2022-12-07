@@ -2,7 +2,7 @@ package fileio;
 
 import java.util.ArrayList;
 
-public class Contains {
+public final class Contains {
     public Contains() {
 
     }
@@ -10,12 +10,12 @@ public class Contains {
     private ArrayList<String> actors;
     private ArrayList<String> genre;
 
-    public Contains(ArrayList<String> actors, ArrayList<String> genre) {
+    public Contains(final ArrayList<String> actors, final ArrayList<String> genre) {
         this.actors = actors;
         this.genre = genre;
     }
 
-    public Contains(Contains contains) {
+    public Contains(final Contains contains) {
         this.actors = contains.getActors();
         this.genre = contains.getGenre();
     }
@@ -24,7 +24,7 @@ public class Contains {
         return actors;
     }
 
-    public void setActors(ArrayList<String> actors) {
+    public void setActors(final ArrayList<String> actors) {
         this.actors = actors;
     }
 
@@ -32,7 +32,7 @@ public class Contains {
         return genre;
     }
 
-    public void setGenre(ArrayList<String> genre) {
+    public void setGenre(final ArrayList<String> genre) {
         this.genre = genre;
     }
 }

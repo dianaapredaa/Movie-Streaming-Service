@@ -1,20 +1,18 @@
 package fileio;
 
-public class Credentials {
+public final class Credentials {
 
     public Credentials() {
 
     }
     private String name;
     private String password;
-
     private String accountType;
-
     private String country;
-
     private String balance;
 
-    public Credentials(String name, String password, String accountType, String country, String balance) {
+    public Credentials(final String name, final String password, final String accountType,
+                       final String country, final String balance) {
         this.name = name;
         this.password = password;
         this.accountType = accountType;
@@ -22,7 +20,7 @@ public class Credentials {
         this.balance = balance;
     }
 
-    public Credentials(Credentials credentials) {
+    public Credentials(final Credentials credentials) {
         this.name = credentials.getName();
         this.password = credentials.getPassword();
         this.accountType = credentials.getAccountType();
@@ -34,7 +32,7 @@ public class Credentials {
         return accountType;
     }
 
-    public void setAccountType(String accountType) {
+    public void setAccountType(final String accountType) {
         this.accountType = accountType;
     }
 
@@ -42,7 +40,7 @@ public class Credentials {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(final String country) {
         this.country = country;
     }
 
@@ -50,7 +48,7 @@ public class Credentials {
         return balance;
     }
 
-    public void setBalance(String balance) {
+    public void setBalance(final String balance) {
         this.balance = balance;
     }
 
@@ -58,7 +56,7 @@ public class Credentials {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(final String password) {
         this.password = password;
     }
 
@@ -66,7 +64,7 @@ public class Credentials {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 }

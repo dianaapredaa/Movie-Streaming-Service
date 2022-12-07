@@ -7,25 +7,30 @@ import fileio.Actions;
 import fileio.Movies;
 import fileio.Users;
 import main.CurrentAuthentication;
-import main.PageType;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class UpgradesFeatures {
+public final class UpgradesFeatures {
+    public static final int PREMIUM_COST = 10;
     private CurrentAuthentication currentAuth;
     public CurrentAuthentication getCurrent() {
         return currentAuth;
     }
-    public void setCurrent(CurrentAuthentication currentAuth) {
-        this.currentAuth = currentAuth;
+    public void setCurrent(final CurrentAuthentication currentAuthentication) {
+        this.currentAuth = currentAuthentication;
     }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    // create a PageType object to get different types of pages
-    private static final PageType page = new PageType();
-
-    public void buyTokens(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
+    public void buyTokens(final Actions command, final LinkedList<Users> users,
+                          final LinkedList<Movies> movies, final ArrayNode output) {
         // only on Upgrades page
         if (!currentAuth.getCurrentPage().getPageType().equals("upgrades")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -38,13 +43,23 @@ public class UpgradesFeatures {
         // count
         int count = command.getCount();
         // set Tokens
-        currentAuth.getCurrentUser().setTokensCount(currentAuth.getCurrentUser().getTokensCount() + count);
-        int newBalance = Integer.parseInt(currentAuth.getCurrentUser().getCredentials().getBalance()) - count;
+        int tokensNumber = currentAuth.getCurrentUser().getTokensCount();
+        currentAuth.getCurrentUser().setTokensCount(tokensNumber + count);
+        String balanceValue = currentAuth.getCurrentUser().getCredentials().getBalance();
+        int newBalance = Integer.parseInt(balanceValue) - count;
         // set Balance
         currentAuth.getCurrentUser().getCredentials().setBalance(Integer.toString(newBalance));
     }
 
-    public void buyPremiumAccount (Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
+    public void buyPremiumAccount(final Actions command, final LinkedList<Users> users,
+                                  final LinkedList<Movies> movies, final ArrayNode output) {
         // only on Upgrades page
         if (!currentAuth.getCurrentPage().getPageType().equals("upgrades")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -54,7 +69,9 @@ public class UpgradesFeatures {
             output.addPOJO(objectNode);
             return;
         }
-        currentAuth.getCurrentUser().setTokensCount(currentAuth.getCurrentUser().getTokensCount() - 10);
+
+        int tokensNumber = currentAuth.getCurrentUser().getTokensCount();
+        currentAuth.getCurrentUser().setTokensCount(tokensNumber - PREMIUM_COST);
         currentAuth.getCurrentUser().getCredentials().setAccountType("premium");
 
     }

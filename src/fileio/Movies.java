@@ -2,7 +2,7 @@ package fileio;
 
 import java.util.ArrayList;
 
-public class Movies {
+public final class Movies {
     public Movies() {
     }
     private String name;
@@ -11,15 +11,14 @@ public class Movies {
     private ArrayList<String> countriesBanned;
     private ArrayList<String> actors;
     private ArrayList<String> genres;
-
     private int numLikes = 0;
-
     private int numRatings = 0;
-
     private int rating = 0;
 
-    public Movies(String name, int year, int duration, ArrayList<String> countriesBanned,
-                 ArrayList<String> actors, ArrayList<String> genres, int numLikes, int numRatings, int rating) {
+    public Movies(final String name, final int year, final int duration,
+                  final ArrayList<String> countriesBanned, final ArrayList<String> actors,
+                  final ArrayList<String> genres, final int numLikes, final int numRatings,
+                  final int rating) {
         this.name = name;
         this.year = year;
         this.duration = duration;
@@ -35,7 +34,7 @@ public class Movies {
         return numLikes;
     }
 
-    public void setNumLikes(int numLikes) {
+    public void setNumLikes(final int numLikes) {
         this.numLikes = numLikes;
     }
 
@@ -43,7 +42,7 @@ public class Movies {
         return numRatings;
     }
 
-    public void setNumRatings(int numRatings) {
+    public void setNumRatings(final int numRatings) {
         this.numRatings = numRatings;
     }
 
@@ -51,11 +50,11 @@ public class Movies {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(final int rating) {
         this.rating = rating;
     }
 
-    public Movies(Movies movie) {
+    public Movies(final Movies movie) {
         this.name = movie.getName();
         this.year = movie.getYear();
         this.duration = movie.getDuration();
@@ -71,7 +70,7 @@ public class Movies {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -79,7 +78,7 @@ public class Movies {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(final int year) {
         this.year = year;
     }
 
@@ -87,7 +86,7 @@ public class Movies {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(final int duration) {
         this.duration = duration;
     }
 
@@ -95,7 +94,7 @@ public class Movies {
         return countriesBanned;
     }
 
-    public void setCountriesBanned(ArrayList<String> countriesBanned) {
+    public void setCountriesBanned(final ArrayList<String> countriesBanned) {
         this.countriesBanned = countriesBanned;
     }
 
@@ -103,7 +102,7 @@ public class Movies {
         return actors;
     }
 
-    public void setActors(ArrayList<String> actors) {
+    public void setActors(final ArrayList<String> actors) {
         this.actors = actors;
     }
 
@@ -111,7 +110,7 @@ public class Movies {
         return genres;
     }
 
-    public void setGenres(ArrayList<String> genres) {
+    public void setGenres(final ArrayList<String> genres) {
         this.genres = genres;
     }
 

@@ -12,20 +12,39 @@ import main.PageType;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class LoginFeatures {
+
+public final class LoginFeatures {
     private CurrentAuthentication currentAuth;
+
+    /**
+     *
+     * @return
+     */
     public CurrentAuthentication getCurrent() {
         return currentAuth;
     }
-    public void setCurrent(CurrentAuthentication currentAuth) {
-        this.currentAuth = currentAuth;
+
+    /**
+     *
+     * @param currentAuthentication
+     */
+    public void setCurrent(final CurrentAuthentication currentAuthentication) {
+        this.currentAuth = currentAuthentication;
     }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
-    private static final PageType page = new PageType();
+    private static final PageType PAGE_TYPE = new PageType();
 
-    public void login (Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
+    /**
+     *
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
+    public void login(final Actions command, final LinkedList<Users> users,
+                       final LinkedList<Movies> movies, final ArrayNode output) {
         // only on Login page
         if (!currentAuth.getCurrentPage().getPageType().equals("login")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -44,7 +63,7 @@ public class LoginFeatures {
                     // login successfully
                     currentAuth.setCurrentUser(users.get(i));
                     // move to HomePageAuthenticated
-                    currentAuth.setCurrentPage(page.type("HomePageAuthenticated"));
+                    currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
 
                     // output message
                     ObjectNode objectNode = objectMapper.createObjectNode();
@@ -65,6 +84,6 @@ public class LoginFeatures {
         output.addPOJO(objectNode);
 
         // move back to HomePageNonAuthenticated
-        currentAuth.setCurrentPage(page.type("HomePageNonAuthenticated"));
+        currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageNonAuthenticated"));
     }
 }

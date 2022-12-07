@@ -1,22 +1,21 @@
 package fileio;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.util.ArrayList;
 
-public class Users {
+public final class Users {
     public Users() {
 
     }
+    public static final int NUM_FREE_PREMIUM_MOVIES = 15;
     private Credentials credentials;
     private int tokensCount = 0;
-    private int numFreePremiumMovies = 15;
+    private int numFreePremiumMovies = NUM_FREE_PREMIUM_MOVIES;
     private ArrayList<Movies> purchasedMovies = new ArrayList<>();
     private ArrayList<Movies> watchedMovies = new ArrayList<>();
     private ArrayList<Movies> likedMovies = new ArrayList<>();
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
 
-    public Users (Users users) {
+    public Users(final Users users) {
         this.credentials = new Credentials(users.getCredentials());
         this.tokensCount = users.getTokensCount();
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
@@ -34,7 +33,7 @@ public class Users {
         return purchasedMovies;
     }
 
-    public void setPurchasedMovies(ArrayList<Movies> purchasedMovies) {
+    public void setPurchasedMovies(final ArrayList<Movies> purchasedMovies) {
         this.purchasedMovies = purchasedMovies;
     }
 
@@ -42,7 +41,7 @@ public class Users {
         return watchedMovies;
     }
 
-    public void setWatchedMovies(ArrayList<Movies> watchedMovies) {
+    public void setWatchedMovies(final ArrayList<Movies> watchedMovies) {
         this.watchedMovies = watchedMovies;
     }
 
@@ -50,7 +49,7 @@ public class Users {
         return likedMovies;
     }
 
-    public void setLikedMovies(ArrayList<Movies> likedMovies) {
+    public void setLikedMovies(final ArrayList<Movies> likedMovies) {
         this.likedMovies = likedMovies;
     }
 
@@ -58,11 +57,11 @@ public class Users {
         return ratedMovies;
     }
 
-    public void setRatedMovies(ArrayList<Movies> ratedMovies) {
+    public void setRatedMovies(final ArrayList<Movies> ratedMovies) {
         this.ratedMovies = ratedMovies;
     }
 
-    public Users(Credentials credentials) {
+    public Users(final Credentials credentials) {
         this.credentials = new Credentials(credentials);
     }
 
@@ -70,7 +69,7 @@ public class Users {
         return credentials;
     }
 
-    public void setCredentials(Credentials credentials) {
+    public void setCredentials(final Credentials credentials) {
         this.credentials = credentials;
     }
 
@@ -78,7 +77,7 @@ public class Users {
         return tokensCount;
     }
 
-    public void setTokensCount(int tokensCount) {
+    public void setTokensCount(final int tokensCount) {
         this.tokensCount = tokensCount;
     }
 
@@ -86,7 +85,7 @@ public class Users {
         return numFreePremiumMovies;
     }
 
-    public void setNumFreePremiumMovies(int numFreePremiumMovies) {
+    public void setNumFreePremiumMovies(final int numFreePremiumMovies) {
         this.numFreePremiumMovies = numFreePremiumMovies;
     }
 }
