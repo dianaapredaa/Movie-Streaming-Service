@@ -1,19 +1,13 @@
 package main;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import features.*;
 import fileio.Actions;
 import fileio.Movies;
 import fileio.Users;
-
-import java.util.AbstractList;
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Commands {
-    private ObjectMapper objectMapper = new ObjectMapper();
     private CurrentAuthentication currentAuth;
     public CurrentAuthentication getCurrent() {
         return currentAuth;
@@ -21,8 +15,6 @@ public class Commands {
     public void setCurrent(CurrentAuthentication currentAuth) {
         this.currentAuth = currentAuth;
     }
-    PageType page = new PageType();
-    ObjectNode objectNode;
 
     public void features(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
         switch (command.getFeature()) {

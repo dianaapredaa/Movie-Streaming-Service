@@ -11,6 +11,8 @@ import java.util.regex.Pattern;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import features.MoviesFeatures;
+import features.SeeDetailsFeatures;
 import fileio.*;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -55,13 +57,13 @@ public class Main {
                     break;
                 case("change page"):
                     String pageName = command.getPage();
+
                     // check if is possible to change pages
                     if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)) {
                         // change page
                         currentAuth.setCurrentPage(page.type(pageName));
                     } else {
-                        // can not change page
-                        // output message
+                        // output message for can not change page
                         ObjectNode objectNode = objectMapper.createObjectNode();
                         objectNode.putPOJO("error", "Error");
                         objectNode.putPOJO("currentMoviesList", new ArrayList<>());
@@ -70,65 +72,35 @@ public class Main {
                         break;
                     }
 
+                    // jump to features
+                    if (command.getFeature() != null) {
+                        commands.features(command, users, movies, output);
+                        break;
+                    }
+
+                    // if changed page is Logout Page
                     if (pageName.equals("logout")) {
                         // only on Logout Page
                         currentAuth.setCurrentUser(null);
                         currentAuth.setCurrentPage(page.type("HomePageNonAuthenticated"));
                         currentAuth.setCurrentMoviesList(new LinkedList<>());
-                        currentAuth.setPurchasedMovies(new LinkedList<>());
                         break;
                     }
 
+                    // if changed page is Movies
                     if (pageName.equals("movies")) {
-                        for (int j = 0; j < movies.size(); j++) {
-                            // current User's Country
-                            String userCountry = currentAuth.getCurrentUser().getCredentials().getCountry();
-
-                            // populate current User's MovieList with non-banned movies
-                            if (!movies.get(j).getCountriesBanned().contains(userCountry)) {
-                                currentAuth.getCurrentMoviesList().add(movies.get(j));
-                            }
-                        }
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", null);
-
-                        ArrayList<Movies> currentMoviesList = new ArrayList<>();
-                        for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
-                            Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
-                            currentMoviesList.add(newMovie);
-                        }
-                        objectNode.putPOJO("currentMoviesList", currentMoviesList);
-                        objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
-                        output.addPOJO(objectNode);
+                        MoviesFeatures moviesFeatures = new MoviesFeatures();
+                        moviesFeatures.setCurrent(currentAuth);
+                        moviesFeatures.onMoviesPage(movies, output);
+                        break;
                     }
-                    // jump to features
-                    if (command.getFeature() != null) {
-                        commands.features(command, users, movies, output);
-                    } else if (pageName.equals("see details")) {
-                        String movieName = command.getMovie();
 
-                        ArrayList<Movies> currentMoviesList5 = new ArrayList<>();
-                        for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
-                            if (currentAuth.getCurrentMoviesList().get(j).getName().equals(movieName)) {
-                                currentMoviesList5.add(currentAuth.getCurrentMoviesList().get(j));
-                                // output message
-                                ObjectNode objectNode = objectMapper.createObjectNode();
-                                objectNode.putPOJO("error", null);
-                                objectNode.putPOJO("currentMoviesList", currentMoviesList5);
-                                objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
-                                output.addPOJO(objectNode);
-                                break;
-                            }
-                        }
-                        if (currentMoviesList5.isEmpty()) {
-                            // output message
-                            ObjectNode objectNode = objectMapper.createObjectNode();
-                            objectNode.putPOJO("error", "Error");
-                            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                            objectNode.putPOJO("currentUser", null);
-                            output.addPOJO(objectNode);
-                            currentAuth.setCurrentPage(page.type("movies"));
-                        }
+                    // if changed page is SeeDetails
+                    if (pageName.equals("see details")) {
+                        SeeDetailsFeatures seeDetailsFeatures = new SeeDetailsFeatures();
+                        seeDetailsFeatures.setCurrent(currentAuth);
+                        seeDetailsFeatures.seeDetailsMovies(command, output);
+                        break;
                     }
                     break;
             }

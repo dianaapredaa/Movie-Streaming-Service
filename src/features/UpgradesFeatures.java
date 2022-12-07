@@ -20,10 +20,10 @@ public class UpgradesFeatures {
     public void setCurrent(CurrentAuthentication currentAuth) {
         this.currentAuth = currentAuth;
     }
-    private ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
-    private static PageType page = new PageType();
+    private static final PageType page = new PageType();
 
     public void buyTokens(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
         // only on Upgrades page

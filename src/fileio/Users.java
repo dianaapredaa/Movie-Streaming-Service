@@ -17,10 +17,13 @@ public class Users {
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
 
     public Users (Users users) {
-//        this.credentials.setName(users.getCredentials().getName());
         this.credentials = new Credentials(users.getCredentials());
         this.tokensCount = users.getTokensCount();
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
+//        this.purchasedMovies.addAll(users.getPurchasedMovies());
+//        this.watchedMovies.addAll(users.getWatchedMovies());
+//        this.likedMovies.addAll(users.getLikedMovies());
+//        this.ratedMovies.addAll(users.getRatedMovies());
         this.purchasedMovies = new ArrayList<>(users.getPurchasedMovies());
         this.watchedMovies = new ArrayList<>(users.getWatchedMovies());
         this.likedMovies = new ArrayList<>(users.getLikedMovies());

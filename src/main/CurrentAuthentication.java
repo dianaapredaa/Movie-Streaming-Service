@@ -3,14 +3,12 @@ package main;
 import fileio.Movies;
 import fileio.Users;
 
-import java.security.PublicKey;
 import java.util.LinkedList;
 
 public class CurrentAuthentication {
     public CurrentAuthentication() {
     }
     private LinkedList<Movies> currentMoviesList = new LinkedList<>();
-    private LinkedList<Movies> purchasedMovies = new LinkedList<>();
     private Users currentUser;
     private PageType page = new PageType();
     private Page currentPage = page.type("HomePageNonAuthenticated");
@@ -21,14 +19,6 @@ public class CurrentAuthentication {
 
     public void setCurrentMoviesList(LinkedList<Movies> currentMoviesList) {
         this.currentMoviesList = currentMoviesList;
-    }
-
-    public LinkedList<Movies> getPurchasedMovies() {
-        return purchasedMovies;
-    }
-
-    public void setPurchasedMovies(LinkedList<Movies> purchasedMovies) {
-        this.purchasedMovies = purchasedMovies;
     }
 
     public Users getCurrentUser() {

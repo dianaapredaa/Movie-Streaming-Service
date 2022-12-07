@@ -20,10 +20,10 @@ public class RegisterFeatures {
     public void setCurrent(CurrentAuthentication currentAuth) {
         this.currentAuth = currentAuth;
     }
-    private ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
-    private static PageType page = new PageType();
+    private static final PageType page = new PageType();
 
     public void register(Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
         // only on Register page
@@ -37,7 +37,6 @@ public class RegisterFeatures {
         }
         String username = command.getCredentials().getName();
         String password = command.getCredentials().getPassword();
-        boolean alreadyRegistered = false;
 
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getCredentials().getName().equals(username)) {
@@ -51,24 +50,23 @@ public class RegisterFeatures {
                     objectNode.putPOJO("currentMoviesList", new ArrayList<>());
                     objectNode.putPOJO("currentUser", null);
                     output.addPOJO(objectNode);
-                    break;
+                    return;
                 }
             }
         }
-        if (!alreadyRegistered) {
-            // register using given credentials
-            users.add(new Users(command.getCredentials()));
-            currentAuth.setCurrentUser(new Users(command.getCredentials()));
 
-            // move to HomePageAuthenticated
-            currentAuth.setCurrentPage(page.type("HomePageAuthenticated"));
+        // register using given credentials
+        users.add(new Users(command.getCredentials()));
+        currentAuth.setCurrentUser(new Users(command.getCredentials()));
 
-            // output message
-            ObjectNode objectNode = objectMapper.createObjectNode();
-            objectNode.putPOJO("error", null);
-            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-            objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
-            output.addPOJO(objectNode);
-        }
+        // move to HomePageAuthenticated
+        currentAuth.setCurrentPage(page.type("HomePageAuthenticated"));
+
+        // output message
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.putPOJO("error", null);
+        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+        objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
+        output.addPOJO(objectNode);
     }
 }

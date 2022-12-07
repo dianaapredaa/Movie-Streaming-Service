@@ -245,7 +245,7 @@
     "ratedMovies" : [ ]
   }
 }, {
-  "error" : "Error10",
+  "error" : "Error",
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {

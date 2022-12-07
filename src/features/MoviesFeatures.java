@@ -20,10 +20,10 @@ public class MoviesFeatures {
     public void setCurrent(CurrentAuthentication currentAuth) {
         this.currentAuth = currentAuth;
     }
-    private ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
-    private static PageType page = new PageType();
+    private static final PageType page = new PageType();
 
     public void search (Actions command, LinkedList<Users> users, LinkedList<Movies> movies, ArrayNode output) {
         // only on Movies Page
@@ -130,5 +130,31 @@ public class MoviesFeatures {
         objectNode.putPOJO("error", null);
         objectNode.putPOJO("currentMoviesList", currentMoviesList);
         objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
-        output.addPOJO(objectNode);    }
+        output.addPOJO(objectNode);
+    }
+
+    public void onMoviesPage(LinkedList<Movies> movies, ArrayNode output) {
+        currentAuth.setCurrentMoviesList(new LinkedList<>());
+
+        for (int j = 0; j < movies.size(); j++) {
+            // current User's Country
+            String userCountry = currentAuth.getCurrentUser().getCredentials().getCountry();
+
+            // populate current User's MovieList with non-banned movies
+            if (!movies.get(j).getCountriesBanned().contains(userCountry)) {
+                currentAuth.getCurrentMoviesList().add(movies.get(j));
+            }
+        }
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.putPOJO("error", null);
+
+        ArrayList<Movies> currentMoviesList = new ArrayList<>();
+        for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
+            Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
+            currentMoviesList.add(newMovie);
+        }
+        objectNode.putPOJO("currentMoviesList", currentMoviesList);
+        objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
+        output.addPOJO(objectNode);
+    }
 }
