@@ -248,7 +248,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0
     } ],
@@ -286,7 +286,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0
     } ],
@@ -297,7 +297,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0
     } ],
@@ -381,7 +381,7 @@
     "countriesBanned" : [ "Russia" ],
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 0,
+    "numLikes" : 1,
     "numRatings" : 0,
     "rating" : 0
   } ],

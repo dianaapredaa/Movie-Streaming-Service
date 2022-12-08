@@ -52,8 +52,9 @@ public final class SeeDetailsFeatures {
         } else {
             movieName = currentAuth.getCurrentMoviesList().get(0).getName();
         }
-        for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
-            if (currentAuth.getCurrentMoviesList().get(i).getName().equals(movieName)) {
+
+//        for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
+            if (currentAuth.getCurrentMoviesList().get(0).getName().equals(movieName)) {
                 // charge for purchasing a movie
                 String accType = currentAuth.getCurrentUser().getCredentials().getAccountType();
                 if (accType.equals("premium")) {
@@ -66,13 +67,13 @@ public final class SeeDetailsFeatures {
                 }
 
                 // update current user purchased list
-                Movies movie = new Movies(currentAuth.getCurrentMoviesList().get(i));
+                Movies movie = currentAuth.getCurrentMoviesList().get(0);
                 currentAuth.getCurrentUser().getPurchasedMovies().add(movie);
 
-                // update current movie list
-                currentAuth.setCurrentMoviesList(new LinkedList<>());
-                movie = new Movies(currentAuth.getCurrentUser().getPurchasedMovies().get(0));
-                currentAuth.getCurrentMoviesList().add(movie);
+//                // update current movie list
+//                currentAuth.setCurrentMoviesList(new LinkedList<>());
+//                movie = currentAuth.getCurrentUser().getPurchasedMovies().get(0);
+//                currentAuth.getCurrentMoviesList().add(movie);
 
                 // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
@@ -88,7 +89,7 @@ public final class SeeDetailsFeatures {
                 output.addPOJO(objectNode);
                 return;
             }
-        }
+//        }
         // output message for Error
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", "Error");
@@ -132,13 +133,13 @@ public final class SeeDetailsFeatures {
 
                 Movies movie;
                 // update current user watched list
-                movie = new Movies(currentAuth.getCurrentUser().getPurchasedMovies().get(i));
+                movie = currentAuth.getCurrentUser().getPurchasedMovies().get(i);
                 currentAuth.getCurrentUser().getWatchedMovies().add(movie);
 
-                // update current movie list
-                currentAuth.setCurrentMoviesList(new LinkedList<>());
-                movie = new Movies(currentAuth.getCurrentUser().getWatchedMovies().get(0));
-                currentAuth.getCurrentMoviesList().add(movie);
+//                // update current movie list
+//                currentAuth.setCurrentMoviesList(new LinkedList<>());
+//                movie = currentAuth.getCurrentUser().getWatchedMovies().get(0);
+//                currentAuth.getCurrentMoviesList().add(movie);
 
                 // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
@@ -198,20 +199,20 @@ public final class SeeDetailsFeatures {
                 // increase number of likes
                 int numRatings = currentAuth.getCurrentUser().getWatchedMovies().get(i).getNumRatings() + 1;
                 currentAuth.getCurrentUser().getWatchedMovies().get(i).setNumRatings(numRatings);
-                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(numRatings);
+//                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(numRatings);
                 // calculate rate
                 int avgRating = (currentAuth.getCurrentUser().getWatchedMovies().get(i).getNumRatings() * (numRatings - 1) + rating) / numRatings;
                 currentAuth.getCurrentUser().getWatchedMovies().get(i).setRating(avgRating);
-                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(avgRating);
+//                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(avgRating);
 
                 // update current user rated list
-                Movies movie = new Movies(currentAuth.getCurrentUser().getWatchedMovies().get(i));
+                Movies movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
                 currentAuth.getCurrentUser().getRatedMovies().add(movie);
 
-                // update current movie list
-                currentAuth.setCurrentMoviesList(new LinkedList<>());
-                movie = new Movies(currentAuth.getCurrentUser().getRatedMovies().get(0));
-                currentAuth.getCurrentMoviesList().add(movie);
+//                // update current movie list
+//                currentAuth.setCurrentMoviesList(new LinkedList<>());
+//                movie = currentAuth.getCurrentUser().getRatedMovies().get(0);
+//                currentAuth.getCurrentMoviesList().add(movie);
 
                 // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
@@ -269,21 +270,21 @@ public final class SeeDetailsFeatures {
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
             String watchedMovieName = currentAuth.getCurrentUser().getWatchedMovies().get(i).getName();
-            if (watchedMovieName.equals(movieName) ){
+            if (watchedMovieName.equals(movieName)) {
                 // increase number of likes
                 int numLikes;
                 numLikes = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getNumLikes();
-                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumLikes(numLikes + 1);
+//                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumLikes(numLikes + 1);
                 currentAuth.getCurrentUser().getWatchedMovies().get(i).setNumLikes(numLikes + 1);
 
                 // update current user likes list
-                Movies movie = new Movies(currentAuth.getCurrentUser().getWatchedMovies().get(i));
+                Movies movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
                 currentAuth.getCurrentUser().getLikedMovies().add(movie);
 
-                // update current movie list
-                currentAuth.setCurrentMoviesList(new LinkedList<>());
-                movie = new Movies(currentAuth.getCurrentUser().getLikedMovies().get(0));
-                currentAuth.getCurrentMoviesList().add(movie);
+//                // update current movie list
+//                currentAuth.setCurrentMoviesList(new LinkedList<>());
+//                movie = currentAuth.getCurrentUser().getLikedMovies().get(0);
+//                currentAuth.getCurrentMoviesList().add(movie);
 
                 // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
@@ -321,18 +322,20 @@ public final class SeeDetailsFeatures {
             if (currentAuth.getCurrentMoviesList().get(j).getName().equals(movie)) {
 
                 LinkedList<Movies> currentMoviesList = new LinkedList<>();
-                Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
+                Movies newMovie = currentAuth.getCurrentMoviesList().get(j);
                 currentMoviesList.add(newMovie);
+                currentAuth.setCurrentMoviesList(currentMoviesList);
 
                 // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
-                objectNode.putPOJO("currentMoviesList", currentMoviesList);
+
+                LinkedList<Movies> moviesListToPrint = new LinkedList<>();
+                moviesListToPrint.add(new Movies(newMovie));
+
+                objectNode.putPOJO("currentMoviesList", moviesListToPrint);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
                 output.addPOJO(objectNode);
-
-                currentAuth.setCurrentMoviesList(new LinkedList<>());
-                currentAuth.getCurrentMoviesList().add(currentMoviesList.get(0));
                 return;
             }
         }

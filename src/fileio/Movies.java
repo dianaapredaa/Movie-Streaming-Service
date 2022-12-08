@@ -59,8 +59,8 @@ public final class Movies {
         this.year = movie.getYear();
         this.duration = movie.getDuration();
         this.countriesBanned = movie.getCountriesBanned();
-        this.actors = movie.getActors();
-        this.genres = movie.getGenres();
+        this.actors = new ArrayList<>(movie.getActors());
+        this.genres = new ArrayList<>(movie.getGenres());
         this.numLikes = movie.getNumLikes();
         this.numRatings = movie.getNumRatings();
         this.rating = movie.getRating();

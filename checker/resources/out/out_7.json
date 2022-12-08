@@ -351,7 +351,7 @@
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
       "genres" : [ "Comedy", "Mystery", "Fantasy" ],
       "numLikes" : 0,
-      "numRatings" : 3,
+      "numRatings" : 0,
       "rating" : 0
     } ],
     "watchedMovies" : [ ],
@@ -389,7 +389,7 @@
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
       "genres" : [ "Comedy", "Mystery", "Fantasy" ],
       "numLikes" : 0,
-      "numRatings" : 3,
+      "numRatings" : 0,
       "rating" : 0
     } ],
     "watchedMovies" : [ {
@@ -400,8 +400,8 @@
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
       "genres" : [ "Comedy", "Mystery", "Fantasy" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 3
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ ]
@@ -437,8 +437,8 @@
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
       "genres" : [ "Comedy", "Mystery", "Fantasy" ],
       "numLikes" : 0,
-      "numRatings" : 3,
-      "rating" : 0
+      "numRatings" : 1,
+      "rating" : 3
     } ],
     "watchedMovies" : [ {
       "name" : "My Sassy Girl",
@@ -719,7 +719,7 @@
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
       "genres" : [ "Comedy", "Western", "Mystery" ],
       "numLikes" : 0,
-      "numRatings" : 5,
+      "numRatings" : 0,
       "rating" : 0
     } ],
     "watchedMovies" : [ ],
@@ -757,7 +757,7 @@
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
       "genres" : [ "Comedy", "Western", "Mystery" ],
       "numLikes" : 0,
-      "numRatings" : 5,
+      "numRatings" : 0,
       "rating" : 0
     } ],
     "watchedMovies" : [ {
@@ -768,8 +768,8 @@
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
       "genres" : [ "Comedy", "Western", "Mystery" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 5
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ ]
@@ -805,8 +805,8 @@
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
       "genres" : [ "Comedy", "Western", "Mystery" ],
       "numLikes" : 0,
-      "numRatings" : 5,
-      "rating" : 0
+      "numRatings" : 1,
+      "rating" : 5
     } ],
     "watchedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
@@ -842,8 +842,8 @@
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
     "genres" : [ "Comedy", "Western", "Mystery" ],
     "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
+    "numRatings" : 1,
+    "rating" : 5
   }, {
     "name" : "Take the Money and Run",
     "year" : 2006,
@@ -1013,8 +1013,8 @@
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
       "genres" : [ "Comedy", "Western", "Mystery" ],
       "numLikes" : 0,
-      "numRatings" : 5,
-      "rating" : 0
+      "numRatings" : 1,
+      "rating" : 5
     } ],
     "watchedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
@@ -1084,8 +1084,8 @@
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
     "genres" : [ "Comedy", "Western", "Mystery" ],
     "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
+    "numRatings" : 1,
+    "rating" : 5
   }, {
     "name" : "My Sassy Girl",
     "year" : 2005,
@@ -1094,8 +1094,8 @@
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
     "genres" : [ "Comedy", "Mystery", "Fantasy" ],
     "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
+    "numRatings" : 1,
+    "rating" : 3
   }, {
     "name" : "Kiwi!",
     "year" : 2002,
@@ -1285,26 +1285,6 @@
     "numRatings" : 0,
     "rating" : 0
   }, {
-    "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
-    "duration" : 125,
-    "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
-    "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
-    "genres" : [ "Comedy", "Western", "Mystery" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
-  }, {
-    "name" : "My Sassy Girl",
-    "year" : 2005,
-    "duration" : 125,
-    "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
-    "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
-    "genres" : [ "Comedy", "Mystery", "Fantasy" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0
-  }, {
     "name" : "The Empty Hours",
     "year" : 2003,
     "duration" : 106,
@@ -1354,6 +1334,26 @@
     "numLikes" : 0,
     "numRatings" : 0,
     "rating" : 0
+  }, {
+    "name" : "My Sassy Girl",
+    "year" : 2005,
+    "duration" : 125,
+    "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
+    "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
+    "genres" : [ "Comedy", "Mystery", "Fantasy" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 3
+  }, {
+    "name" : "Lord, Save Us from Your Followers",
+    "year" : 1998,
+    "duration" : 125,
+    "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
+    "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
+    "genres" : [ "Comedy", "Western", "Mystery" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 5
   } ],
   "currentUser" : {
     "credentials" : {

@@ -19,14 +19,30 @@ public final class Users {
         this.credentials = new Credentials(users.getCredentials());
         this.tokensCount = users.getTokensCount();
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
-//        this.purchasedMovies.addAll(users.getPurchasedMovies());
-//        this.watchedMovies.addAll(users.getWatchedMovies());
-//        this.likedMovies.addAll(users.getLikedMovies());
-//        this.ratedMovies.addAll(users.getRatedMovies());
-        this.purchasedMovies = new ArrayList<>(users.getPurchasedMovies());
-        this.watchedMovies = new ArrayList<>(users.getWatchedMovies());
-        this.likedMovies = new ArrayList<>(users.getLikedMovies());
-        this.ratedMovies = new ArrayList<>(users.getRatedMovies());
+
+        this.purchasedMovies = new ArrayList<>();
+
+        for (Movies movie : users.getPurchasedMovies()) {
+            this.purchasedMovies.add(new Movies(movie));
+        }
+
+        this.watchedMovies = new ArrayList<>();
+
+        for (Movies movie : users.getWatchedMovies()) {
+            this.watchedMovies.add(new Movies(movie));
+        }
+
+        this.likedMovies = new ArrayList<>();
+
+        for (Movies movie : users.getLikedMovies()) {
+            this.likedMovies.add(new Movies(movie));
+        }
+
+        this.ratedMovies = new ArrayList<>();
+
+        for (Movies movie : users.getRatedMovies()) {
+            this.ratedMovies.add(new Movies(movie));
+        }
     }
 
     public ArrayList<Movies> getPurchasedMovies() {

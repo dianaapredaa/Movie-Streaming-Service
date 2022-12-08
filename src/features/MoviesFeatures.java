@@ -44,16 +44,25 @@ public final class MoviesFeatures {
         String startsWith = command.getStartsWith();
 
         // find startsWith movies
-        ArrayList<Movies> currentMoviesList1 = new ArrayList<>();
+        LinkedList<Movies> currentMoviesList = new LinkedList<>();
         for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
             if (currentAuth.getCurrentMoviesList().get(i).getName().startsWith(startsWith)) {
-                currentMoviesList1.add(new Movies(currentAuth.getCurrentMoviesList().get(i)));
+                currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
             }
         }
 
+//        currentAuth.setCurrentMoviesList(currentMoviesList);
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
-        objectNode.putPOJO("currentMoviesList", currentMoviesList1);
+
+        ArrayList<Movies> currentMoviesListToPrint = new ArrayList<>();
+        for (int j = 0; j < currentMoviesList.size(); j++) {
+            Movies newMovie = new Movies(currentMoviesList.get(j));
+            currentMoviesListToPrint.add(newMovie);
+        }
+
+        objectNode.putPOJO("currentMoviesList", currentMoviesListToPrint);
         objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
         output.addPOJO(objectNode);
 
@@ -78,18 +87,26 @@ public final class MoviesFeatures {
             return;
         }
 
-        String rating = "increasing";
-        String duration = "increasing";
+        String rating = null;
+        String duration = null;
         ArrayList<String> genre = null;
         ArrayList<String> actors = null;
 
         if (command.getFilters().getSort() != null) {
-            rating = command.getFilters().getSort().getRating();
-            duration = command.getFilters().getSort().getDuration();
+            if (command.getFilters().getSort().getRating() != null) {
+                rating = command.getFilters().getSort().getRating();
+            }
+            if (command.getFilters().getSort().getDuration() != null) {
+                duration = command.getFilters().getSort().getDuration();
+            }
         }
         if (command.getFilters().getContains() != null) {
-            genre = command.getFilters().getContains().getGenre();
-            actors = command.getFilters().getContains().getActors();
+            if (command.getFilters().getContains().getGenre() != null) {
+                genre = command.getFilters().getContains().getGenre();
+            }
+            if (command.getFilters().getContains().getActors() != null) {
+                actors = command.getFilters().getContains().getActors();
+            }
         }
 
         ArrayList<Movies> currentMoviesList = new ArrayList<>();
@@ -102,47 +119,53 @@ public final class MoviesFeatures {
             }
         }
 
-        for (int j = 0; j < currentAuth.getCurrentMoviesList().size() && actors == null; j++) {
-            Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
-            currentMoviesList.add(newMovie);
+        if (actors == null && genre == null) {
+            for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
+                Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
+                currentMoviesList.add(newMovie);
+            }
         }
 
         for (int i = 0; i < currentMoviesList.size() - 1; i++) {
             for (int j = 0; j < currentMoviesList.size() - i - 1; j++) {
-                if (rating.equals("increasing")) {
-                    if (currentMoviesList.get(j).getRating()
-                            > currentMoviesList.get(j + 1).getRating()) {
-                        Movies auxMovie = currentMoviesList.get(j);
-                        currentMoviesList.remove(j);
-                        currentMoviesList.add(j + 1, auxMovie);
-                    }
-                }
-
-                if (rating.equals("decreasing")) {
-                    if (currentMoviesList.get(j).getRating()
-                            < currentMoviesList.get(j + 1).getRating()) {
-                        Movies auxMovie = currentMoviesList.get(j);
-                        currentMoviesList.remove(j);
-                        currentMoviesList.add(j + 1, auxMovie);
-                    }
-                }
-                if (currentMoviesList.get(j).getRating()
-                        == currentMoviesList.get(j + 1).getRating()) {
-                    if (duration.equals("increasing")) {
-                        if (currentMoviesList.get(j).getDuration()
-                                > currentMoviesList.get(j + 1).getDuration()) {
+                if (rating != null) {
+                    if (rating.equals("increasing")) {
+                        if (currentMoviesList.get(j).getRating()
+                                > currentMoviesList.get(j + 1).getRating()) {
                             Movies auxMovie = currentMoviesList.get(j);
                             currentMoviesList.remove(j);
                             currentMoviesList.add(j + 1, auxMovie);
                         }
                     }
 
-                    if (duration.equals("decreasing")) {
-                        if (currentMoviesList.get(j).getDuration()
-                                < currentMoviesList.get(j + 1).getDuration()) {
+                    if (rating.equals("decreasing")) {
+                        if (currentMoviesList.get(j).getRating()
+                                < currentMoviesList.get(j + 1).getRating()) {
                             Movies auxMovie = currentMoviesList.get(j);
                             currentMoviesList.remove(j);
                             currentMoviesList.add(j + 1, auxMovie);
+                        }
+                    }
+                }
+                if (duration != null) {
+                    if (currentMoviesList.get(j).getRating()
+                            == currentMoviesList.get(j + 1).getRating()) {
+                        if (duration.equals("increasing")) {
+                            if (currentMoviesList.get(j).getDuration()
+                                    > currentMoviesList.get(j + 1).getDuration()) {
+                                Movies auxMovie = currentMoviesList.get(j);
+                                currentMoviesList.remove(j);
+                                currentMoviesList.add(j + 1, auxMovie);
+                            }
+                        }
+
+                        if (duration.equals("decreasing")) {
+                            if (currentMoviesList.get(j).getDuration()
+                                    < currentMoviesList.get(j + 1).getDuration()) {
+                                Movies auxMovie = currentMoviesList.get(j);
+                                currentMoviesList.remove(j);
+                                currentMoviesList.add(j + 1, auxMovie);
+                            }
                         }
                     }
                 }
@@ -151,7 +174,13 @@ public final class MoviesFeatures {
 
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
-        objectNode.putPOJO("currentMoviesList", currentMoviesList);
+
+        ArrayList<Movies> listToPrint = new ArrayList<>();
+        for (Movies movie : currentMoviesList) {
+            listToPrint.add(new Movies(movie));
+        }
+
+        objectNode.putPOJO("currentMoviesList", listToPrint);
         objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
         output.addPOJO(objectNode);
     }
@@ -173,6 +202,7 @@ public final class MoviesFeatures {
                 currentAuth.getCurrentMoviesList().add(movies.get(j));
             }
         }
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
 
@@ -181,6 +211,7 @@ public final class MoviesFeatures {
             Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
             currentMoviesList.add(newMovie);
         }
+
         objectNode.putPOJO("currentMoviesList", currentMoviesList);
         objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
         output.addPOJO(objectNode);
