@@ -45,8 +45,13 @@ public final class SeeDetailsFeatures {
         }
 
         String objectType = command.getObjectType();
-        String movieName = command.getMovie();
+        String movieName;
 
+        if (objectType != null) {
+            movieName = command.getMovie();
+        } else {
+            movieName = currentAuth.getCurrentMoviesList().get(0).getName();
+        }
         for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
             if (currentAuth.getCurrentMoviesList().get(i).getName().equals(movieName)) {
                 // charge for purchasing a movie
@@ -111,10 +116,19 @@ public final class SeeDetailsFeatures {
             return;
         }
 
+        String objectType = command.getObjectType();
+        String movieName;
+
+        if (objectType != null) {
+            movieName = command.getMovie();
+        } else {
+            movieName = currentAuth.getCurrentMoviesList().get(0).getName();
+        }
+
         // check if you purchased the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getPurchasedMovies().size(); i++) {
-            String movieName = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getName();
-            if (movieName.equals(command.getMovie())) {
+            String purchasedMovieName = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getName();
+            if (purchasedMovieName.equals(movieName)) {
 
                 Movies movie;
                 // update current user watched list
@@ -168,7 +182,15 @@ public final class SeeDetailsFeatures {
             return;
         }
 
-        String movieName = command.getMovie();
+        String objectType = command.getObjectType();
+        String movieName;
+
+        if (objectType != null) {
+            movieName = command.getMovie();
+        } else {
+            movieName = currentAuth.getCurrentMoviesList().get(0).getName();
+        }
+
         int rating = command.getRate();
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
@@ -178,9 +200,9 @@ public final class SeeDetailsFeatures {
                 currentAuth.getCurrentUser().getWatchedMovies().get(i).setNumRatings(numRatings);
                 currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(numRatings);
                 // calculate rate
-                int avgRating = (currentAuth.getCurrentUser().getWatchedMovies().get(i).getNumRatings() + rating) / numRatings;
-//                currentAuth.getCurrentUser().getWatchedMovies().get(i).setRating(avgRating);
-//                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(avgRating);
+                int avgRating = (currentAuth.getCurrentUser().getWatchedMovies().get(i).getNumRatings() * (numRatings - 1) + rating) / numRatings;
+                currentAuth.getCurrentUser().getWatchedMovies().get(i).setRating(avgRating);
+                currentAuth.getCurrentUser().getPurchasedMovies().get(i).setNumRatings(avgRating);
 
                 // update current user rated list
                 Movies movie = new Movies(currentAuth.getCurrentUser().getWatchedMovies().get(i));
@@ -234,11 +256,20 @@ public final class SeeDetailsFeatures {
             output.addPOJO(objectNode);
             return;
         }
+        String objectType = command.getObjectType();
+        String movieName;
+
+        if (objectType != null) {
+            movieName = command.getMovie();
+        } else {
+            movieName = currentAuth.getCurrentMoviesList().get(0).getName();
+        }
+
 
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
-            String movieName = currentAuth.getCurrentUser().getWatchedMovies().get(i).getName();
-            if (movieName.equals(command.getMovie())) {
+            String watchedMovieName = currentAuth.getCurrentUser().getWatchedMovies().get(i).getName();
+            if (watchedMovieName.equals(movieName) ){
                 // increase number of likes
                 int numLikes;
                 numLikes = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getNumLikes();
@@ -273,7 +304,7 @@ public final class SeeDetailsFeatures {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", "Error");
         objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-        objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
+        objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
 
     }

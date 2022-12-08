@@ -46,7 +46,7 @@ public final class MoviesFeatures {
         // find startsWith movies
         ArrayList<Movies> currentMoviesList1 = new ArrayList<>();
         for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
-            if (currentAuth.getCurrentMoviesList().get(i).getName().contains(startsWith)) {
+            if (currentAuth.getCurrentMoviesList().get(i).getName().startsWith(startsWith)) {
                 currentMoviesList1.add(new Movies(currentAuth.getCurrentMoviesList().get(i)));
             }
         }
@@ -80,8 +80,8 @@ public final class MoviesFeatures {
 
         String rating = "increasing";
         String duration = "increasing";
-        ArrayList<String> genre = new ArrayList<>();
-        ArrayList<String> actors = new ArrayList<>();
+        ArrayList<String> genre = null;
+        ArrayList<String> actors = null;
 
         if (command.getFilters().getSort() != null) {
             rating = command.getFilters().getSort().getRating();
@@ -100,6 +100,11 @@ public final class MoviesFeatures {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
             }
+        }
+
+        for (int j = 0; j < currentAuth.getCurrentMoviesList().size() && actors == null; j++) {
+            Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
+            currentMoviesList.add(newMovie);
         }
 
         for (int i = 0; i < currentMoviesList.size() - 1; i++) {
@@ -143,6 +148,7 @@ public final class MoviesFeatures {
                 }
             }
         }
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
         objectNode.putPOJO("currentMoviesList", currentMoviesList);

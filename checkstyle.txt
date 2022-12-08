@@ -1,9 +1,13 @@
 Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\RegisterFeatures.java:20:28: Parameter currentAuthentication should be final. [FinalParameters]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:20:28: Parameter currentAuthentication should be final. [FinalParameters]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:175: Line is longer than 100 characters (found 101). [LineLength]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:177: Line is longer than 100 characters (found 108). [LineLength]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:181: Line is longer than 100 characters (found 127). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:130: Line is longer than 100 characters (found 107). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:197: Line is longer than 100 characters (found 101). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:199: Line is longer than 100 characters (found 108). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:203: Line is longer than 100 characters (found 146). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:271: Line is longer than 100 characters (found 103). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:272:52: ')' is preceded with whitespace. [ParenPad]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\features\SeeDetailsFeatures.java:272:53: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Commands.java:4:16: Using the '.*' form of import should be avoided - features.*. [AvoidStarImport]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:4:17: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:11:14: Using the '.*' form of import should be avoided - fileio.*. [AvoidStarImport]
@@ -11,4 +15,4 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Main.java:119:102: '6' is a magic number. [MagicNumber]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\main\Test.java:11:28: Using the '.*' form of import should be avoided - java.util.concurrent.*. [AvoidStarImport]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 15 errors.
