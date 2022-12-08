@@ -39,7 +39,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Titanic",
     "year" : 2019,
@@ -49,7 +49,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -95,7 +95,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Titanic",
     "year" : 2019,
@@ -105,7 +105,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -155,7 +155,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Titanic",
     "year" : 2019,
@@ -165,7 +165,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -201,7 +201,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -229,7 +229,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -250,7 +250,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ ],
     "likedMovies" : [ ],
@@ -267,7 +267,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -288,7 +288,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ {
       "name" : "Titanic",
@@ -299,7 +299,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ ]
@@ -315,7 +315,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 1,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -336,7 +336,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ {
       "name" : "Titanic",
@@ -347,7 +347,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "likedMovies" : [ {
       "name" : "Titanic",
@@ -358,7 +358,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "ratedMovies" : [ ]
   }
@@ -373,7 +373,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Titanic",
     "year" : 2019,
@@ -383,7 +383,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 1,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -404,7 +404,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ {
       "name" : "Titanic",
@@ -415,7 +415,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "likedMovies" : [ {
       "name" : "Titanic",
@@ -426,7 +426,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "ratedMovies" : [ ]
   }
@@ -441,7 +441,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -462,7 +462,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ {
       "name" : "Titanic",
@@ -473,7 +473,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "likedMovies" : [ {
       "name" : "Titanic",
@@ -484,7 +484,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 1,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "ratedMovies" : [ ]
   }

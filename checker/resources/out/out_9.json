@@ -39,7 +39,7 @@
     "genres" : [ "Comedy", "Western", "Mystery" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Take the Money and Run",
     "year" : 2006,
@@ -49,7 +49,7 @@
     "genres" : [ "Thriller", "Western", "Mystery" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Penelope",
     "year" : 2008,
@@ -59,7 +59,7 @@
     "genres" : [ "Fantasy", "Drama", "Thriller" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Kiwi!",
     "year" : 2002,
@@ -69,7 +69,7 @@
     "genres" : [ "Western", "Mystery", "Romance" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
     "year" : 1999,
@@ -79,7 +79,7 @@
     "genres" : [ "Horror", "Action", "Thriller" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "The Empty Hours",
     "year" : 2003,
@@ -89,7 +89,7 @@
     "genres" : [ "Fantasy", "Thriller", "Mystery" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Jason's Lyric",
     "year" : 1994,
@@ -99,7 +99,7 @@
     "genres" : [ "Drama", "Mystery", "Western" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Comet in Moominland",
     "year" : 2000,
@@ -109,7 +109,7 @@
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -119,7 +119,7 @@
     "genres" : [ "Drama", "Horror", "Fantasy" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Shaolin Temple (Shao Lin si)",
     "year" : 1987,
@@ -129,7 +129,7 @@
     "genres" : [ "Horror", "Western", "Drama" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
     "year" : 1988,
@@ -139,7 +139,7 @@
     "genres" : [ "Drama", "Comedy", "Fantasy" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Endangered Species",
     "year" : 1994,
@@ -149,7 +149,7 @@
     "genres" : [ "Mystery", "Fantasy", "Drama" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Celluloid Closet, The",
     "year" : 2002,
@@ -159,7 +159,7 @@
     "genres" : [ "Comedy", "Thriller", "Horror" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "As You Like It",
     "year" : 1999,
@@ -169,7 +169,7 @@
     "genres" : [ "Romance", "Horror", "Thriller" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
     "year" : 1994,
@@ -179,7 +179,7 @@
     "genres" : [ "Comedy", "Mystery", "Drama" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Mistress",
     "year" : 2012,
@@ -189,7 +189,7 @@
     "genres" : [ "Thriller", "Drama", "Fantasy" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   }, {
     "name" : "Indiana Jones and the Temple of Doom",
     "year" : 2012,
@@ -199,7 +199,7 @@
     "genres" : [ "Drama", "Comedy", "Mystery" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -227,7 +227,7 @@
     "genres" : [ "Drama", "Mystery", "Western" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -255,7 +255,7 @@
     "genres" : [ "Drama", "Mystery", "Western" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -276,7 +276,7 @@
       "genres" : [ "Drama", "Mystery", "Western" ],
       "numLikes" : 0,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ ],
     "likedMovies" : [ ],
@@ -293,7 +293,7 @@
     "genres" : [ "Drama", "Mystery", "Western" ],
     "numLikes" : 0,
     "numRatings" : 0,
-    "rating" : 0
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -314,7 +314,7 @@
       "genres" : [ "Drama", "Mystery", "Western" ],
       "numLikes" : 0,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "watchedMovies" : [ {
       "name" : "Jason's Lyric",
@@ -325,7 +325,7 @@
       "genres" : [ "Drama", "Mystery", "Western" ],
       "numLikes" : 0,
       "numRatings" : 0,
-      "rating" : 0
+      "rating" : 0.0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ ]

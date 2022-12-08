@@ -13,7 +13,7 @@ public final class Movies {
     private ArrayList<String> genres;
     private int numLikes = 0;
     private int numRatings = 0;
-    private int rating = 0;
+    private double rating = 0;
 
     public Movies(final String name, final int year, final int duration,
                   final ArrayList<String> countriesBanned, final ArrayList<String> actors,
@@ -46,11 +46,11 @@ public final class Movies {
         this.numRatings = numRatings;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(final int rating) {
+    public void setRating(final double rating) {
         this.rating = rating;
     }
 
