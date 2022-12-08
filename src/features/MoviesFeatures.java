@@ -51,8 +51,6 @@ public final class MoviesFeatures {
             }
         }
 
-//        currentAuth.setCurrentMoviesList(currentMoviesList);
-
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
 
@@ -111,18 +109,39 @@ public final class MoviesFeatures {
 
         ArrayList<Movies> currentMoviesList = new ArrayList<>();
 
-        for (int i = 0; i < currentAuth.getCurrentMoviesList().size() && actors != null; i++) {
-            for (int j = 0; j < actors.size(); j++) {
-                if (currentAuth.getCurrentMoviesList().get(i).getActors().contains(actors.get(j))) {
+        // filter by actors
+        if (actors != null && genre == null) {
+            for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
+                if (currentAuth.getCurrentMoviesList().get(i).getActors().containsAll(actors)) {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
             }
         }
 
+        // filer by genre
+        if (actors == null && genre != null) {
+            for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
+                if (currentAuth.getCurrentMoviesList().get(i).getGenres().containsAll(genre)) {
+                    currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
+                }
+            }
+        }
+
+        // filter by actors and genre
         if (actors == null && genre == null) {
             for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
                 Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
                 currentMoviesList.add(newMovie);
+            }
+        }
+
+        // ignore actors and genre
+        if (actors != null && genre != null) {
+            for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
+                if (currentAuth.getCurrentMoviesList().get(i).getActors().containsAll(actors) &&
+                        currentAuth.getCurrentMoviesList().get(i).getGenres().containsAll(genre) ) {
+                    currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
+                }
             }
         }
 

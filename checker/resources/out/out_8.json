@@ -4811,9 +4811,373 @@
   "currentMoviesList" : [ ],
   "currentUser" : null
 }, {
-  "error" : "Error",
-  "currentMoviesList" : [ ],
-  "currentUser" : null
+  "error" : null,
+  "currentMoviesList" : [ {
+    "name" : "Lord, Save Us from Your Followers",
+    "year" : 1998,
+    "duration" : 125,
+    "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
+    "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
+    "genres" : [ "Comedy", "Western", "Mystery" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "My Sassy Girl",
+    "year" : 2005,
+    "duration" : 125,
+    "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
+    "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
+    "genres" : [ "Comedy", "Mystery", "Fantasy" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 2
+  }, {
+    "name" : "Take the Money and Run",
+    "year" : 2006,
+    "duration" : 134,
+    "countriesBanned" : [ "Indonesia", "China", "India" ],
+    "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
+    "genres" : [ "Thriller", "Western", "Mystery" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 2
+  }, {
+    "name" : "Penelope",
+    "year" : 2008,
+    "duration" : 166,
+    "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+    "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
+    "genres" : [ "Fantasy", "Drama", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 2
+  }, {
+    "name" : "Kiwi!",
+    "year" : 2002,
+    "duration" : 82,
+    "countriesBanned" : [ "Brazil", "China", "Russia" ],
+    "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
+    "genres" : [ "Western", "Mystery", "Romance" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 2
+  }, {
+    "name" : "Little Foxes, The",
+    "year" : 1999,
+    "duration" : 128,
+    "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
+    "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
+    "genres" : [ "Horror", "Action", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 2
+  }, {
+    "name" : "The Empty Hours",
+    "year" : 2003,
+    "duration" : 106,
+    "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
+    "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
+    "genres" : [ "Fantasy", "Thriller", "Mystery" ],
+    "numLikes" : 0,
+    "numRatings" : 1,
+    "rating" : 2
+  }, {
+    "name" : "Comet in Moominland",
+    "year" : 2000,
+    "duration" : 91,
+    "countriesBanned" : [ "Brazil", "China", "Colombia" ],
+    "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
+    "genres" : [ "Mystery", "Horror", "Western" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Bag It",
+    "year" : 2008,
+    "duration" : 149,
+    "countriesBanned" : [ "China", "Sweden", "Finland" ],
+    "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
+    "genres" : [ "Drama", "Horror", "Fantasy" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Shaolin Temple (Shao Lin si)",
+    "year" : 1987,
+    "duration" : 135,
+    "countriesBanned" : [ "China", "Norway", "United States" ],
+    "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
+    "genres" : [ "Horror", "Western", "Drama" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
+    "year" : 1988,
+    "duration" : 178,
+    "countriesBanned" : [ "China", "Sweden", "Costa Rica" ],
+    "actors" : [ "Florella Snoday", "Obie Dowsing", "Lynnea Denington", "Chrystal Evreux" ],
+    "genres" : [ "Drama", "Comedy", "Fantasy" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Endangered Species",
+    "year" : 1994,
+    "duration" : 79,
+    "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
+    "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
+    "genres" : [ "Mystery", "Fantasy", "Drama" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Celluloid Closet, The",
+    "year" : 2002,
+    "duration" : 155,
+    "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
+    "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
+    "genres" : [ "Comedy", "Thriller", "Horror" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "As You Like It",
+    "year" : 1999,
+    "duration" : 91,
+    "countriesBanned" : [ "China", "Venezuela", "India" ],
+    "actors" : [ "Maureene Elks", "Amber McGilbon", "Lora Doelle", "Blondelle Spyvye" ],
+    "genres" : [ "Romance", "Horror", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "The Well-Digger's Daughter",
+    "year" : 1994,
+    "duration" : 141,
+    "countriesBanned" : [ "China", "South Africa", "India" ],
+    "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
+    "genres" : [ "Comedy", "Mystery", "Drama" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Mistress",
+    "year" : 2012,
+    "duration" : 146,
+    "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
+    "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
+    "genres" : [ "Thriller", "Drama", "Fantasy" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
+    "name" : "Indiana Jones and the Temple of Doom",
+    "year" : 2012,
+    "duration" : 88,
+    "countriesBanned" : [ "Nigeria", "Lithuania", "Burkina Faso" ],
+    "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
+    "genres" : [ "Drama", "Comedy", "Mystery" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  } ],
+  "currentUser" : {
+    "credentials" : {
+      "name" : "Dorel",
+      "password" : "ciucas",
+      "accountType" : "premium",
+      "country" : "Romania",
+      "balance" : "2000"
+    },
+    "tokensCount" : 990,
+    "numFreePremiumMovies" : 9,
+    "purchasedMovies" : [ {
+      "name" : "Take the Money and Run",
+      "year" : 2006,
+      "duration" : 134,
+      "countriesBanned" : [ "Indonesia", "China", "India" ],
+      "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
+      "genres" : [ "Thriller", "Western", "Mystery" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "My Sassy Girl",
+      "year" : 2005,
+      "duration" : 125,
+      "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
+      "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
+      "genres" : [ "Comedy", "Mystery", "Fantasy" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Penelope",
+      "year" : 2008,
+      "duration" : 166,
+      "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+      "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
+      "genres" : [ "Fantasy", "Drama", "Thriller" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Kiwi!",
+      "year" : 2002,
+      "duration" : 82,
+      "countriesBanned" : [ "Brazil", "China", "Russia" ],
+      "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
+      "genres" : [ "Western", "Mystery", "Romance" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Little Foxes, The",
+      "year" : 1999,
+      "duration" : 128,
+      "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
+      "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
+      "genres" : [ "Horror", "Action", "Thriller" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "The Empty Hours",
+      "year" : 2003,
+      "duration" : 106,
+      "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
+      "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
+      "genres" : [ "Fantasy", "Thriller", "Mystery" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    } ],
+    "watchedMovies" : [ {
+      "name" : "Take the Money and Run",
+      "year" : 2006,
+      "duration" : 134,
+      "countriesBanned" : [ "Indonesia", "China", "India" ],
+      "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
+      "genres" : [ "Thriller", "Western", "Mystery" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "My Sassy Girl",
+      "year" : 2005,
+      "duration" : 125,
+      "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
+      "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
+      "genres" : [ "Comedy", "Mystery", "Fantasy" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Penelope",
+      "year" : 2008,
+      "duration" : 166,
+      "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+      "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
+      "genres" : [ "Fantasy", "Drama", "Thriller" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Kiwi!",
+      "year" : 2002,
+      "duration" : 82,
+      "countriesBanned" : [ "Brazil", "China", "Russia" ],
+      "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
+      "genres" : [ "Western", "Mystery", "Romance" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Little Foxes, The",
+      "year" : 1999,
+      "duration" : 128,
+      "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
+      "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
+      "genres" : [ "Horror", "Action", "Thriller" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "The Empty Hours",
+      "year" : 2003,
+      "duration" : 106,
+      "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
+      "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
+      "genres" : [ "Fantasy", "Thriller", "Mystery" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    } ],
+    "likedMovies" : [ ],
+    "ratedMovies" : [ {
+      "name" : "Take the Money and Run",
+      "year" : 2006,
+      "duration" : 134,
+      "countriesBanned" : [ "Indonesia", "China", "India" ],
+      "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
+      "genres" : [ "Thriller", "Western", "Mystery" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "My Sassy Girl",
+      "year" : 2005,
+      "duration" : 125,
+      "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
+      "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
+      "genres" : [ "Comedy", "Mystery", "Fantasy" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Penelope",
+      "year" : 2008,
+      "duration" : 166,
+      "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+      "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
+      "genres" : [ "Fantasy", "Drama", "Thriller" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Kiwi!",
+      "year" : 2002,
+      "duration" : 82,
+      "countriesBanned" : [ "Brazil", "China", "Russia" ],
+      "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
+      "genres" : [ "Western", "Mystery", "Romance" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "Little Foxes, The",
+      "year" : 1999,
+      "duration" : 128,
+      "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
+      "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
+      "genres" : [ "Horror", "Action", "Thriller" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    }, {
+      "name" : "The Empty Hours",
+      "year" : 2003,
+      "duration" : 106,
+      "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
+      "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
+      "genres" : [ "Fantasy", "Thriller", "Mystery" ],
+      "numLikes" : 0,
+      "numRatings" : 1,
+      "rating" : 2
+    } ]
+  }
 }, {
   "error" : null,
   "currentMoviesList" : [ {
@@ -5469,243 +5833,9 @@
     } ]
   }
 }, {
-  "error" : null,
-  "currentMoviesList" : [ {
-    "name" : "Comet in Moominland",
-    "year" : 2000,
-    "duration" : 91,
-    "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-    "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-    "genres" : [ "Mystery", "Horror", "Western" ],
-    "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
-  } ],
-  "currentUser" : {
-    "credentials" : {
-      "name" : "Dorel",
-      "password" : "ciucas",
-      "accountType" : "premium",
-      "country" : "Romania",
-      "balance" : "2000"
-    },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : 8,
-    "purchasedMovies" : [ {
-      "name" : "Take the Money and Run",
-      "year" : 2006,
-      "duration" : 134,
-      "countriesBanned" : [ "Indonesia", "China", "India" ],
-      "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
-      "genres" : [ "Thriller", "Western", "Mystery" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "My Sassy Girl",
-      "year" : 2005,
-      "duration" : 125,
-      "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
-      "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
-      "genres" : [ "Comedy", "Mystery", "Fantasy" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Penelope",
-      "year" : 2008,
-      "duration" : 166,
-      "countriesBanned" : [ "Azerbaijan", "China", "India" ],
-      "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
-      "genres" : [ "Fantasy", "Drama", "Thriller" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Kiwi!",
-      "year" : 2002,
-      "duration" : 82,
-      "countriesBanned" : [ "Brazil", "China", "Russia" ],
-      "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
-      "genres" : [ "Western", "Mystery", "Romance" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Little Foxes, The",
-      "year" : 1999,
-      "duration" : 128,
-      "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
-      "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
-      "genres" : [ "Horror", "Action", "Thriller" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "The Empty Hours",
-      "year" : 2003,
-      "duration" : 106,
-      "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
-      "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
-      "genres" : [ "Fantasy", "Thriller", "Mystery" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    } ],
-    "watchedMovies" : [ {
-      "name" : "Take the Money and Run",
-      "year" : 2006,
-      "duration" : 134,
-      "countriesBanned" : [ "Indonesia", "China", "India" ],
-      "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
-      "genres" : [ "Thriller", "Western", "Mystery" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "My Sassy Girl",
-      "year" : 2005,
-      "duration" : 125,
-      "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
-      "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
-      "genres" : [ "Comedy", "Mystery", "Fantasy" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Penelope",
-      "year" : 2008,
-      "duration" : 166,
-      "countriesBanned" : [ "Azerbaijan", "China", "India" ],
-      "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
-      "genres" : [ "Fantasy", "Drama", "Thriller" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Kiwi!",
-      "year" : 2002,
-      "duration" : 82,
-      "countriesBanned" : [ "Brazil", "China", "Russia" ],
-      "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
-      "genres" : [ "Western", "Mystery", "Romance" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Little Foxes, The",
-      "year" : 1999,
-      "duration" : 128,
-      "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
-      "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
-      "genres" : [ "Horror", "Action", "Thriller" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "The Empty Hours",
-      "year" : 2003,
-      "duration" : 106,
-      "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
-      "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
-      "genres" : [ "Fantasy", "Thriller", "Mystery" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    } ],
-    "likedMovies" : [ ],
-    "ratedMovies" : [ {
-      "name" : "Take the Money and Run",
-      "year" : 2006,
-      "duration" : 134,
-      "countriesBanned" : [ "Indonesia", "China", "India" ],
-      "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
-      "genres" : [ "Thriller", "Western", "Mystery" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "My Sassy Girl",
-      "year" : 2005,
-      "duration" : 125,
-      "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
-      "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
-      "genres" : [ "Comedy", "Mystery", "Fantasy" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Penelope",
-      "year" : 2008,
-      "duration" : 166,
-      "countriesBanned" : [ "Azerbaijan", "China", "India" ],
-      "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
-      "genres" : [ "Fantasy", "Drama", "Thriller" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Kiwi!",
-      "year" : 2002,
-      "duration" : 82,
-      "countriesBanned" : [ "Brazil", "China", "Russia" ],
-      "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
-      "genres" : [ "Western", "Mystery", "Romance" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Little Foxes, The",
-      "year" : 1999,
-      "duration" : 128,
-      "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
-      "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
-      "genres" : [ "Horror", "Action", "Thriller" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "The Empty Hours",
-      "year" : 2003,
-      "duration" : 106,
-      "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
-      "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
-      "genres" : [ "Fantasy", "Thriller", "Mystery" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    } ]
-  }
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
 }, {
   "error" : null,
   "currentMoviesList" : [ {
@@ -5786,8 +5916,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -5957,8 +6087,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "watchedMovies" : [ {
       "name" : "Take the Money and Run",
@@ -6028,8 +6158,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ {
@@ -6092,16 +6222,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     } ]
   }
 }, {
@@ -6195,8 +6315,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "watchedMovies" : [ {
       "name" : "Take the Money and Run",
@@ -6266,8 +6386,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ {
@@ -6330,16 +6450,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     } ]
   }
 }, {
@@ -6433,8 +6543,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -6514,8 +6624,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     } ],
     "likedMovies" : [ ],
     "ratedMovies" : [ {
@@ -6578,16 +6688,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     } ]
   }
 }, {
@@ -6681,8 +6781,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -6762,8 +6862,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -6836,16 +6936,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     } ]
   }
 }, {
@@ -6939,8 +7029,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7020,8 +7110,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7094,16 +7184,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7196,8 +7276,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -7367,8 +7447,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7448,8 +7528,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7522,16 +7602,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7635,8 +7705,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7716,8 +7786,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7790,16 +7860,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7903,8 +7963,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -7994,8 +8054,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8068,16 +8128,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8181,8 +8231,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8272,8 +8322,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8356,16 +8406,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8469,8 +8509,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8560,8 +8600,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8644,16 +8684,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -8756,8 +8786,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -8927,8 +8957,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9018,8 +9048,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9102,16 +9132,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9225,8 +9245,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9316,8 +9336,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9400,16 +9420,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9523,8 +9533,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9624,8 +9634,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9708,16 +9718,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9831,8 +9831,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -9932,8 +9932,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10026,16 +10026,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10149,8 +10139,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10250,8 +10240,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10344,16 +10334,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10466,8 +10446,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -10637,8 +10617,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10738,8 +10718,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10832,16 +10812,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -10965,8 +10935,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11066,8 +11036,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11160,16 +11130,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11293,8 +11253,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11404,8 +11364,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11498,16 +11458,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11631,8 +11581,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11742,8 +11692,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11846,16 +11796,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -11979,8 +11919,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12090,8 +12030,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12194,16 +12134,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12326,8 +12256,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -12497,8 +12427,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12608,8 +12538,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12712,16 +12642,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12855,8 +12775,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -12966,8 +12886,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13070,16 +12990,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13213,8 +13123,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13334,8 +13244,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13438,16 +13348,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13581,8 +13481,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13702,8 +13602,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13816,16 +13716,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -13959,8 +13849,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -14080,8 +13970,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -14194,16 +14084,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -14336,8 +14216,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -14507,8 +14387,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -14628,8 +14508,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -14742,16 +14622,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -14895,8 +14765,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15016,8 +14886,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15130,16 +15000,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15283,8 +15143,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15414,8 +15274,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15528,16 +15388,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15681,8 +15531,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15812,8 +15662,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -15936,16 +15786,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -16089,8 +15929,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -16220,8 +16060,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -16344,16 +16184,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -16496,8 +16326,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -16667,8 +16497,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -16798,8 +16628,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -16922,16 +16752,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17085,8 +16905,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17216,8 +17036,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17340,16 +17160,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17503,8 +17313,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17644,8 +17454,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17768,16 +17578,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -17931,8 +17731,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -18072,8 +17872,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -18206,16 +18006,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -18369,8 +18159,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -18510,8 +18300,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -18644,16 +18434,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -18806,8 +18586,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -18977,8 +18757,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -19118,8 +18898,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -19252,16 +19032,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -19425,8 +19195,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -19566,8 +19336,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -19700,16 +19470,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -19873,8 +19633,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20024,8 +19784,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20158,16 +19918,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20331,8 +20081,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20482,8 +20232,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20626,16 +20376,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20799,8 +20539,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -20950,8 +20690,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -21094,16 +20834,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -21266,8 +20996,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -21437,8 +21167,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -21588,8 +21318,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -21732,16 +21462,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -21915,8 +21635,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -22066,8 +21786,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -22210,16 +21930,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -22323,8 +22033,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -1,
+    "tokensCount" : 988,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -22393,8 +22103,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -22554,8 +22264,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -22698,16 +22408,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -22811,8 +22511,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -1,
+    "tokensCount" : 988,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -22881,8 +22581,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -23042,8 +22742,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -23196,16 +22896,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -23309,8 +22999,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -1,
+    "tokensCount" : 988,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -23379,8 +23069,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -23540,8 +23230,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -23694,16 +23384,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -23876,8 +23556,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -23977,8 +23657,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -1,
+    "tokensCount" : 988,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -24047,8 +23727,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -24208,8 +23888,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -24363,16 +24043,6 @@
       "numRatings" : 1,
       "rating" : 2
     }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    }, {
       "name" : "Bag It",
       "year" : 2008,
       "duration" : 149,
@@ -24485,8 +24155,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -1,
+    "tokensCount" : 988,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -24555,8 +24225,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -24716,8 +24386,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -24871,16 +24541,6 @@
       "numRatings" : 1,
       "rating" : 2
     }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    }, {
       "name" : "Bag It",
       "year" : 2008,
       "duration" : 149,
@@ -24993,8 +24653,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -2,
+    "tokensCount" : 986,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -25063,8 +24723,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -25234,8 +24894,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -25389,16 +25049,6 @@
       "numRatings" : 1,
       "rating" : 2
     }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    }, {
       "name" : "Bag It",
       "year" : 2008,
       "duration" : 149,
@@ -25511,8 +25161,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -2,
+    "tokensCount" : 986,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -25581,8 +25231,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -25752,8 +25402,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -25916,16 +25566,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -26098,8 +25738,8 @@
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
     "genres" : [ "Mystery", "Horror", "Western" ],
     "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
+    "numRatings" : 0,
+    "rating" : 0
   }, {
     "name" : "Bag It",
     "year" : 2008,
@@ -26199,8 +25839,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -2,
+    "tokensCount" : 986,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -26269,8 +25909,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -26440,8 +26080,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -26605,16 +26245,6 @@
       "numRatings" : 1,
       "rating" : 2
     }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
-    }, {
       "name" : "Bag It",
       "year" : 2008,
       "duration" : 149,
@@ -26709,6 +26339,16 @@
 }, {
   "error" : null,
   "currentMoviesList" : [ {
+    "name" : "Comet in Moominland",
+    "year" : 2000,
+    "duration" : 91,
+    "countriesBanned" : [ "Brazil", "China", "Colombia" ],
+    "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
+    "genres" : [ "Mystery", "Horror", "Western" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0
+  }, {
     "name" : "Indiana Jones and the Temple of Doom",
     "year" : 2012,
     "duration" : 88,
@@ -26868,16 +26508,6 @@
     "numLikes" : 0,
     "numRatings" : 1,
     "rating" : 5
-  }, {
-    "name" : "Comet in Moominland",
-    "year" : 2000,
-    "duration" : 91,
-    "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-    "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-    "genres" : [ "Mystery", "Horror", "Western" ],
-    "numLikes" : 0,
-    "numRatings" : 1,
-    "rating" : 6
   } ],
   "currentUser" : {
     "credentials" : {
@@ -26887,8 +26517,8 @@
       "country" : "Romania",
       "balance" : "2000"
     },
-    "tokensCount" : 990,
-    "numFreePremiumMovies" : -2,
+    "tokensCount" : 986,
+    "numFreePremiumMovies" : 0,
     "purchasedMovies" : [ {
       "name" : "Take the Money and Run",
       "year" : 2006,
@@ -26957,8 +26587,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -27128,8 +26758,8 @@
       "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
       "genres" : [ "Mystery", "Horror", "Western" ],
       "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
+      "numRatings" : 0,
+      "rating" : 0
     }, {
       "name" : "Bag It",
       "year" : 2008,
@@ -27292,16 +26922,6 @@
       "numLikes" : 0,
       "numRatings" : 1,
       "rating" : 2
-    }, {
-      "name" : "Comet in Moominland",
-      "year" : 2000,
-      "duration" : 91,
-      "countriesBanned" : [ "Brazil", "China", "Colombia" ],
-      "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
-      "genres" : [ "Mystery", "Horror", "Western" ],
-      "numLikes" : 0,
-      "numRatings" : 1,
-      "rating" : 6
     }, {
       "name" : "Bag It",
       "year" : 2008,

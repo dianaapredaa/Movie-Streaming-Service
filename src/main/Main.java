@@ -62,7 +62,7 @@ public final class Main {
                     String pageName = command.getPage();
 
                     // check if is possible to change pages
-                    if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)) {
+                    if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName) || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
                         // change page
                         currentAuth.setCurrentPage(page.type(pageName));
                     } else {
