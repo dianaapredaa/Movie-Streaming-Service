@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public final class SeeDetailsFeatures {
+
+    private static final int MAX_RATING = 5;
     private CurrentAuthentication currentAuth;
     public CurrentAuthentication getCurrent() {
         return currentAuth;
@@ -28,12 +30,9 @@ public final class SeeDetailsFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void purchase(final Actions command, final LinkedList<Users> users,
-                         final LinkedList<Movies> movies, final ArrayNode output) {
+    public void purchase(final Actions command, final ArrayNode output) {
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -55,7 +54,7 @@ public final class SeeDetailsFeatures {
         if (currentAuth.getCurrentMoviesList().get(0).getName().equals(movieName)) {
             // charge for purchasing a movie
             String accType = currentAuth.getCurrentUser().getCredentials().getAccountType();
-            if (accType.equals("standard") || currentAuth.getCurrentUser().getNumFreePremiumMovies() == 0){
+            if (accType.equals("standard") || currentAuth.getCurrentUser().getNumFreePremiumMovies() == 0) {
                 int numTokens = currentAuth.getCurrentUser().getTokensCount();
                 currentAuth.getCurrentUser().setTokensCount(numTokens - 2);
             } else {
@@ -95,12 +94,9 @@ public final class SeeDetailsFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void watch(final Actions command, final LinkedList<Users> users,
-                      final LinkedList<Movies> movies, final ArrayNode output) {
+    public void watch(final Actions command, final ArrayNode output) {
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -121,7 +117,9 @@ public final class SeeDetailsFeatures {
 
         // check if you purchased the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getPurchasedMovies().size(); i++) {
-            String purchasedMovieName = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getName();
+            Movies purchasedMovie = currentAuth.getCurrentUser().getPurchasedMovies().get(i);
+            String purchasedMovieName = purchasedMovie.getName();
+
             if (purchasedMovieName.equals(movieName)) {
 
                 Movies movie;
@@ -156,12 +154,9 @@ public final class SeeDetailsFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void rate(final Actions command, final LinkedList<Users> users,
-                     final LinkedList<Movies> movies, final ArrayNode output) {
+    public void rate(final Actions command, final ArrayNode output) {
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -182,7 +177,7 @@ public final class SeeDetailsFeatures {
 
         int rating = command.getRate();
 
-        if (rating > 5) {
+        if (rating > MAX_RATING) {
             // output message
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.putPOJO("error", "Error");
@@ -194,16 +189,17 @@ public final class SeeDetailsFeatures {
 
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
-            if (currentAuth.getCurrentUser().getWatchedMovies().get(i).getName().equals(movieName)) {
+            Movies movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
+            if (movie.getName().equals(movieName)) {
                 // increase number of likes
-                int numRatings = currentAuth.getCurrentUser().getWatchedMovies().get(i).getNumRatings() + 1;
-                currentAuth.getCurrentUser().getWatchedMovies().get(i).setNumRatings(numRatings);
+                int numRatings = movie.getNumRatings() + 1;
+                movie.setNumRatings(numRatings);
                 // calculate rate
-                int avgRating = (currentAuth.getCurrentUser().getWatchedMovies().get(i).getNumRatings() * (numRatings - 1) + rating) / numRatings;
-                currentAuth.getCurrentUser().getWatchedMovies().get(i).setRating(avgRating);
+                int avgRating = (movie.getNumRatings() * (numRatings - 1) + rating) / numRatings;
+                movie.setRating(avgRating);
 
                 // update current user rated list
-                Movies movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
+                movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
                 currentAuth.getCurrentUser().getRatedMovies().add(movie);
 
                 // output message
@@ -233,12 +229,9 @@ public final class SeeDetailsFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void like(final Actions command, final LinkedList<Users> users,
-                     final LinkedList<Movies> movies, final ArrayNode output) {
+    public void like(final Actions command, final ArrayNode output) {
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -274,11 +267,13 @@ public final class SeeDetailsFeatures {
                 // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
+
                 ArrayList<Movies> currentMoviesList = new ArrayList<>();
                 for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
                     movie = new Movies(currentAuth.getCurrentMoviesList().get(j));
                     currentMoviesList.add(movie);
                 }
+
                 objectNode.putPOJO("currentMoviesList", currentMoviesList);
                 objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
                 output.addPOJO(objectNode);
@@ -300,7 +295,8 @@ public final class SeeDetailsFeatures {
      * @param command
      * @param output
      */
-    public void seeDetailsMovies(final Actions command, final ArrayNode output) {
+    public void seeDetailsMovies(final Actions command, final LinkedList<Movies> movies,
+                                 final ArrayNode output) {
         String movie = command.getMovie();
 
         for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
@@ -334,5 +330,16 @@ public final class SeeDetailsFeatures {
 
         // back to Movies
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
+
+        currentAuth.setCurrentMoviesList(new LinkedList<>());
+        for (Movies value : movies) {
+            // current User's Country
+            String userCountry = currentAuth.getCurrentUser().getCredentials().getCountry();
+
+            // populate current User's MovieList with non-banned movies
+            if (!value.getCountriesBanned().contains(userCountry)) {
+                currentAuth.getCurrentMoviesList().add(value);
+            }
+        }
     }
 }

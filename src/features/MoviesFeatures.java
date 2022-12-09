@@ -9,6 +9,7 @@ import fileio.Users;
 import main.CurrentAuthentication;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 
 public final class MoviesFeatures {
@@ -24,12 +25,9 @@ public final class MoviesFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void search(final Actions command, final LinkedList<Users> users,
-                       final LinkedList<Movies> movies, final ArrayNode output) {
+    public void search(final Actions command, final ArrayNode output) {
         // only on Movies Page
         if (!currentAuth.getCurrentPage().getPageType().equals("movies")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -55,8 +53,8 @@ public final class MoviesFeatures {
         objectNode.putPOJO("error", null);
 
         ArrayList<Movies> currentMoviesListToPrint = new ArrayList<>();
-        for (int j = 0; j < currentMoviesList.size(); j++) {
-            Movies newMovie = new Movies(currentMoviesList.get(j));
+        for (Movies value : currentMoviesList) {
+            Movies newMovie = new Movies(value);
             currentMoviesListToPrint.add(newMovie);
         }
 
@@ -69,12 +67,9 @@ public final class MoviesFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void filters(final Actions command, final LinkedList<Users> users,
-                        final LinkedList<Movies> movies, final ArrayNode output) {
+    public void filters(final Actions command, final ArrayNode output) {
         // only on Movies Page
         if (!currentAuth.getCurrentPage().getPageType().equals("movies")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -89,6 +84,7 @@ public final class MoviesFeatures {
         String duration = null;
         ArrayList<String> genre = null;
         ArrayList<String> actors = null;
+        LinkedList<Movies> currentMoviesList = new LinkedList<>();
 
         if (command.getFilters().getSort() != null) {
             if (command.getFilters().getSort().getRating() != null) {
@@ -107,9 +103,7 @@ public final class MoviesFeatures {
             }
         }
 
-        LinkedList<Movies> currentMoviesList = new LinkedList<>();
-
-        // filter by actors
+        // filter only by actors
         if (actors != null && genre == null) {
             for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
                 if (currentAuth.getCurrentMoviesList().get(i).getActors().containsAll(actors)) {
@@ -118,7 +112,7 @@ public final class MoviesFeatures {
             }
         }
 
-        // filer by genre
+        // filer only by genre
         if (actors == null && genre != null) {
             for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
                 if (currentAuth.getCurrentMoviesList().get(i).getGenres().containsAll(genre)) {
@@ -129,17 +123,15 @@ public final class MoviesFeatures {
 
         // filter by actors and genre
         if (actors == null && genre == null) {
-            for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
-                Movies newMovie = new Movies(currentAuth.getCurrentMoviesList().get(j));
-                currentMoviesList.add(newMovie);
-            }
+            currentMoviesList.addAll(currentAuth.getCurrentMoviesList());
         }
 
         // ignore actors and genre
         if (actors != null && genre != null) {
             for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
-                if (currentAuth.getCurrentMoviesList().get(i).getActors().containsAll(actors) &&
-                        currentAuth.getCurrentMoviesList().get(i).getGenres().containsAll(genre) ) {
+                Movies movie = currentAuth.getCurrentMoviesList().get(i);
+                if (movie.getActors().containsAll(actors)
+                        && movie.getGenres().containsAll(genre)) {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
             }
@@ -151,18 +143,14 @@ public final class MoviesFeatures {
                     if (rating.equals("increasing")) {
                         if (currentMoviesList.get(j).getRating()
                                 > currentMoviesList.get(j + 1).getRating()) {
-                            Movies auxMovie = currentMoviesList.get(j);
-                            currentMoviesList.remove(j);
-                            currentMoviesList.add(j + 1, auxMovie);
+                            Collections.swap(currentMoviesList, j, j + 1);
                         }
                     }
 
                     if (rating.equals("decreasing")) {
                         if (currentMoviesList.get(j).getRating()
                                 < currentMoviesList.get(j + 1).getRating()) {
-                            Movies auxMovie = currentMoviesList.get(j);
-                            currentMoviesList.remove(j);
-                            currentMoviesList.add(j + 1, auxMovie);
+                            Collections.swap(currentMoviesList, j, j + 1);
                         }
                     }
                 }
@@ -172,18 +160,14 @@ public final class MoviesFeatures {
                         if (duration.equals("increasing")) {
                             if (currentMoviesList.get(j).getDuration()
                                     > currentMoviesList.get(j + 1).getDuration()) {
-                                Movies auxMovie = currentMoviesList.get(j);
-                                currentMoviesList.remove(j);
-                                currentMoviesList.add(j + 1, auxMovie);
+                                Collections.swap(currentMoviesList, j, j + 1);
                             }
                         }
 
                         if (duration.equals("decreasing")) {
                             if (currentMoviesList.get(j).getDuration()
                                     < currentMoviesList.get(j + 1).getDuration()) {
-                                Movies auxMovie = currentMoviesList.get(j);
-                                currentMoviesList.remove(j);
-                                currentMoviesList.add(j + 1, auxMovie);
+                                Collections.swap(currentMoviesList, j, j + 1);
                             }
                         }
                     }
@@ -214,13 +198,13 @@ public final class MoviesFeatures {
     public void onMoviesPage(final LinkedList<Movies> movies, final ArrayNode output) {
         currentAuth.setCurrentMoviesList(new LinkedList<>());
 
-        for (int j = 0; j < movies.size(); j++) {
+        for (Movies movie : movies) {
             // current User's Country
             String userCountry = currentAuth.getCurrentUser().getCredentials().getCountry();
 
             // populate current User's MovieList with non-banned movies
-            if (!movies.get(j).getCountriesBanned().contains(userCountry)) {
-                currentAuth.getCurrentMoviesList().add(movies.get(j));
+            if (!movie.getCountriesBanned().contains(userCountry)) {
+                currentAuth.getCurrentMoviesList().add(movie);
             }
         }
 

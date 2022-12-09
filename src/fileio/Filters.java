@@ -4,7 +4,6 @@ public final class Filters {
     public Filters() {
 
     }
-
     private Contains contains;
     private Sort sort;
 

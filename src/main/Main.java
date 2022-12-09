@@ -62,7 +62,8 @@ public final class Main {
                     String pageName = command.getPage();
 
                     // check if is possible to change pages
-                    if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName) || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
+                    if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)
+                            || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
                         // change page
                         currentAuth.setCurrentPage(page.type(pageName));
                     } else {
@@ -102,7 +103,7 @@ public final class Main {
                     if (pageName.equals("see details")) {
                         SeeDetailsFeatures seeDetailsFeatures = new SeeDetailsFeatures();
                         seeDetailsFeatures.setCurrent(currentAuth);
-                        seeDetailsFeatures.seeDetailsMovies(command, output);
+                        seeDetailsFeatures.seeDetailsMovies(command, movies, output);
                         break;
                     }
                     break;

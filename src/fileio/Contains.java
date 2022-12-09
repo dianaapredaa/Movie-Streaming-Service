@@ -6,7 +6,6 @@ public final class Contains {
     public Contains() {
 
     }
-
     private ArrayList<String> actors;
     private ArrayList<String> genre;
 

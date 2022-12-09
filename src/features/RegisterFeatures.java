@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.Actions;
-import fileio.Movies;
 import fileio.Users;
 import main.CurrentAuthentication;
 import main.PageType;
@@ -29,11 +28,10 @@ public final class RegisterFeatures {
      *
      * @param command
      * @param users
-     * @param movies
      * @param output
      */
     public void register(final Actions command, final LinkedList<Users> users,
-                         final LinkedList<Movies> movies, final ArrayNode output) {
+                         final ArrayNode output) {
         // only on Register page
         if (!currentAuth.getCurrentPage().getPageType().equals("register")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -46,9 +44,9 @@ public final class RegisterFeatures {
         String username = command.getCredentials().getName();
         String password = command.getCredentials().getPassword();
 
-        for (int i = 0; i < users.size(); i++) {
-            if (users.get(i).getCredentials().getName().equals(username)) {
-                if (users.get(i).getCredentials().getPassword().equals(password)) {
+        for (Users user : users) {
+            if (user.getCredentials().getName().equals(username)) {
+                if (user.getCredentials().getPassword().equals(password)) {
                     // already Registered
                     currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageNonAuthenticated"));
 

@@ -4,6 +4,16 @@ public final class Sort {
     public Sort() {
 
     }
+    public Sort(final String rating, final String duration) {
+        this.rating = rating;
+        this.duration = duration;
+    }
+
+    public Sort(final Sort sort) {
+        this.duration = sort.getDuration();
+        this.rating = sort.getRating();
+    }
+
     private String rating;
     private String duration;
 
@@ -21,15 +31,5 @@ public final class Sort {
 
     public void setDuration(final String duration) {
         this.duration = duration;
-    }
-
-    public Sort(final String rating, final String duration) {
-        this.rating = rating;
-        this.duration = duration;
-    }
-
-    public Sort(final Sort sort) {
-        this.duration = sort.getDuration();
-        this.rating = sort.getRating();
     }
 }

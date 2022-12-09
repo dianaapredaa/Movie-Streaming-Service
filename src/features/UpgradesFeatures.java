@@ -4,12 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.Actions;
-import fileio.Movies;
-import fileio.Users;
 import main.CurrentAuthentication;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public final class UpgradesFeatures {
     public static final int PREMIUM_COST = 10;
@@ -25,12 +22,9 @@ public final class UpgradesFeatures {
     /**
      *
      * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void buyTokens(final Actions command, final LinkedList<Users> users,
-                          final LinkedList<Movies> movies, final ArrayNode output) {
+    public void buyTokens(final Actions command, final ArrayNode output) {
         // only on Upgrades page
         if (!currentAuth.getCurrentPage().getPageType().equals("upgrades")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -53,13 +47,9 @@ public final class UpgradesFeatures {
 
     /**
      *
-     * @param command
-     * @param users
-     * @param movies
      * @param output
      */
-    public void buyPremiumAccount(final Actions command, final LinkedList<Users> users,
-                                  final LinkedList<Movies> movies, final ArrayNode output) {
+    public void buyPremiumAccount(final ArrayNode output) {
         // only on Upgrades page
         if (!currentAuth.getCurrentPage().getPageType().equals("upgrades")) {
             ObjectNode objectNode = objectMapper.createObjectNode();

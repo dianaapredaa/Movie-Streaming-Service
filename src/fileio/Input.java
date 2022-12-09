@@ -6,7 +6,6 @@ public final class Input {
 
     public Input() {
     }
-
     private ArrayList<Users> users;
     private ArrayList<Movies> movies;
     private ArrayList<Actions> actions;

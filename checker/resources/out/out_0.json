@@ -270,7 +270,67 @@
   "currentUser" : null
 }, {
   "error" : null,
-  "currentMoviesList" : [ ],
+  "currentMoviesList" : [ {
+    "name" : "Little Foxes, The",
+    "year" : 1999,
+    "duration" : 128,
+    "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
+    "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
+    "genres" : [ "Horror", "Action", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "Comet in Moominland",
+    "year" : 2000,
+    "duration" : 91,
+    "countriesBanned" : [ "Brazil", "China", "Colombia" ],
+    "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
+    "genres" : [ "Mystery", "Horror", "Western" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "Bag It",
+    "year" : 2008,
+    "duration" : 149,
+    "countriesBanned" : [ "China", "Sweden", "Finland" ],
+    "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
+    "genres" : [ "Drama", "Horror", "Fantasy" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "Shaolin Temple (Shao Lin si)",
+    "year" : 1987,
+    "duration" : 135,
+    "countriesBanned" : [ "China", "Norway", "United States" ],
+    "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
+    "genres" : [ "Horror", "Western", "Drama" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "Celluloid Closet, The",
+    "year" : 2002,
+    "duration" : 155,
+    "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
+    "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
+    "genres" : [ "Comedy", "Thriller", "Horror" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "As You Like It",
+    "year" : 1999,
+    "duration" : 91,
+    "countriesBanned" : [ "China", "Venezuela", "India" ],
+    "actors" : [ "Maureene Elks", "Amber McGilbon", "Lora Doelle", "Blondelle Spyvye" ],
+    "genres" : [ "Romance", "Horror", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  } ],
   "currentUser" : {
     "credentials" : {
       "name" : "Iancu",
