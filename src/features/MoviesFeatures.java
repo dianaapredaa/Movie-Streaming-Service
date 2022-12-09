@@ -110,24 +110,18 @@ public final class MoviesFeatures {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
             }
-        }
-
-        // filer only by genre
-        if (actors == null && genre != null) {
+        } else if (actors == null && genre != null) {
+            // filer only by genre
             for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
                 if (currentAuth.getCurrentMoviesList().get(i).getGenres().containsAll(genre)) {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
             }
-        }
-
-        // filter by actors and genre
-        if (actors == null && genre == null) {
+        } else if (actors == null && genre == null) {
+            // filter by actors and genre
             currentMoviesList.addAll(currentAuth.getCurrentMoviesList());
-        }
-
-        // ignore actors and genre
-        if (actors != null && genre != null) {
+        } else if (actors != null && genre != null) {
+            // ignore actors and genre
             for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
                 Movies movie = currentAuth.getCurrentMoviesList().get(i);
                 if (movie.getActors().containsAll(actors)
@@ -139,36 +133,39 @@ public final class MoviesFeatures {
 
         for (int i = 0; i < currentMoviesList.size() - 1; i++) {
             for (int j = 0; j < currentMoviesList.size() - i - 1; j++) {
-                if (rating != null) {
+                boolean isEqual = false;
+                if (duration != null) {
+                    if (duration.equals("increasing")) {
+                        if (currentMoviesList.get(j).getDuration()
+                                > currentMoviesList.get(j + 1).getDuration()) {
+                            Collections.swap(currentMoviesList, j, j + 1);
+                        } else if (currentMoviesList.get(j).getDuration()
+                                == currentMoviesList.get(j + 1).getDuration()) {
+                            isEqual = true;
+                        }
+                    }
+                    if (duration.equals("decreasing")) {
+                        if (currentMoviesList.get(j).getDuration()
+                                < currentMoviesList.get(j + 1).getDuration()) {
+                            Collections.swap(currentMoviesList, j, j + 1);
+                        } else if (currentMoviesList.get(j).getDuration()
+                                == currentMoviesList.get(j + 1).getDuration()) {
+                            isEqual = true;
+                        }
+                    }
+                }
+
+                if ((rating != null && isEqual) || (rating != null && duration == null)) {
                     if (rating.equals("increasing")) {
                         if (currentMoviesList.get(j).getRating()
                                 > currentMoviesList.get(j + 1).getRating()) {
                             Collections.swap(currentMoviesList, j, j + 1);
                         }
                     }
-
                     if (rating.equals("decreasing")) {
                         if (currentMoviesList.get(j).getRating()
                                 < currentMoviesList.get(j + 1).getRating()) {
                             Collections.swap(currentMoviesList, j, j + 1);
-                        }
-                    }
-                }
-                if (duration != null) {
-                    if (currentMoviesList.get(j).getRating()
-                            == currentMoviesList.get(j + 1).getRating()) {
-                        if (duration.equals("increasing")) {
-                            if (currentMoviesList.get(j).getDuration()
-                                    > currentMoviesList.get(j + 1).getDuration()) {
-                                Collections.swap(currentMoviesList, j, j + 1);
-                            }
-                        }
-
-                        if (duration.equals("decreasing")) {
-                            if (currentMoviesList.get(j).getDuration()
-                                    < currentMoviesList.get(j + 1).getDuration()) {
-                                Collections.swap(currentMoviesList, j, j + 1);
-                            }
                         }
                     }
                 }
