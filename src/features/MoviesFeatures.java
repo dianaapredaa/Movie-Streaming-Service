@@ -107,7 +107,7 @@ public final class MoviesFeatures {
             }
         }
 
-        ArrayList<Movies> currentMoviesList = new ArrayList<>();
+        LinkedList<Movies> currentMoviesList = new LinkedList<>();
 
         // filter by actors
         if (actors != null && genre == null) {
@@ -194,7 +194,7 @@ public final class MoviesFeatures {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
 
-        ArrayList<Movies> listToPrint = new ArrayList<>();
+        LinkedList<Movies> listToPrint = new LinkedList<>();
         for (Movies movie : currentMoviesList) {
             listToPrint.add(new Movies(movie));
         }
@@ -202,6 +202,8 @@ public final class MoviesFeatures {
         objectNode.putPOJO("currentMoviesList", listToPrint);
         objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
         output.addPOJO(objectNode);
+
+        currentAuth.setCurrentMoviesList(currentMoviesList);
     }
 
     /**

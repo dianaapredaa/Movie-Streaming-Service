@@ -44,10 +44,9 @@ public final class SeeDetailsFeatures {
             return;
         }
 
-        String objectType = command.getObjectType();
         String movieName;
 
-        if (objectType != null) {
+        if (command.getMovie() != null) {
             movieName = command.getMovie();
         } else {
             movieName = currentAuth.getCurrentMoviesList().get(0).getName();
@@ -112,10 +111,9 @@ public final class SeeDetailsFeatures {
             return;
         }
 
-        String objectType = command.getObjectType();
         String movieName;
 
-        if (objectType != null) {
+        if (command.getMovie() != null) {
             movieName = command.getMovie();
         } else {
             movieName = currentAuth.getCurrentMoviesList().get(0).getName();
@@ -174,10 +172,9 @@ public final class SeeDetailsFeatures {
             return;
         }
 
-        String objectType = command.getObjectType();
         String movieName;
 
-        if (objectType != null) {
+        if (command.getMovie() != null) {
             movieName = command.getMovie();
         } else {
             movieName = currentAuth.getCurrentMoviesList().get(0).getName();
@@ -251,10 +248,10 @@ public final class SeeDetailsFeatures {
             output.addPOJO(objectNode);
             return;
         }
-        String objectType = command.getObjectType();
+
         String movieName;
 
-        if (objectType != null) {
+        if (command.getMovie() != null) {
             movieName = command.getMovie();
         } else {
             movieName = currentAuth.getCurrentMoviesList().get(0).getName();
@@ -334,6 +331,8 @@ public final class SeeDetailsFeatures {
         objectNode.putPOJO("currentMoviesList", new ArrayList<>());
         objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
+
+        // back to Movies
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
     }
 }

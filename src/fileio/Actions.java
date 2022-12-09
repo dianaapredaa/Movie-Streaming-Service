@@ -6,7 +6,6 @@ public final class Actions {
     private String type;
     private String page;
     private String feature;
-    private String objectType;
     private String startsWith;     // Movies - Search - StartsWith
     private String movie;       // SeeDetails
     private int count;     // Upgrades - Buy Token - count
@@ -94,12 +93,5 @@ public final class Actions {
         this.rate = rate;
     }
 
-    public String getObjectType() {
-        return objectType;
-    }
-
-    public void setObjectType(final String objectType) {
-        this.objectType = objectType;
-    }
 }
 

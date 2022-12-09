@@ -265,18 +265,12 @@
     "ratedMovies" : [ ]
   }
 }, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
+}, {
   "error" : null,
-  "currentMoviesList" : [ {
-    "name" : "Indiana Jones and the Temple of Doom",
-    "year" : 2012,
-    "duration" : 88,
-    "countriesBanned" : [ "Nigeria", "Lithuania", "Burkina Faso" ],
-    "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
-    "genres" : [ "Drama", "Comedy", "Mystery" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0.0
-  } ],
+  "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
       "name" : "Iancu",
@@ -298,17 +292,7 @@
   "currentUser" : null
 }, {
   "error" : null,
-  "currentMoviesList" : [ {
-    "name" : "Indiana Jones and the Temple of Doom",
-    "year" : 2012,
-    "duration" : 88,
-    "countriesBanned" : [ "Nigeria", "Lithuania", "Burkina Faso" ],
-    "actors" : [ "Samuel Murtell", "Ansel Ryburn", "Rickert Farmery", "Ernst Malcher" ],
-    "genres" : [ "Drama", "Comedy", "Mystery" ],
-    "numLikes" : 0,
-    "numRatings" : 0,
-    "rating" : 0.0
-  } ],
+  "currentMoviesList" : [ ],
   "currentUser" : {
     "credentials" : {
       "name" : "Iancu",
@@ -324,10 +308,6 @@
     "likedMovies" : [ ],
     "ratedMovies" : [ ]
   }
-}, {
-  "error" : "Error",
-  "currentMoviesList" : [ ],
-  "currentUser" : null
 }, {
   "error" : "Error",
   "currentMoviesList" : [ ],
