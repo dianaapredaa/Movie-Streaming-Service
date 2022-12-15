@@ -12,11 +12,6 @@ public final class Filters {
         this.sort = new Sort(filters.getSort());
     }
 
-    public Filters(final Contains contains, final Sort sort) {
-        this.contains = new Contains(contains);
-        this.sort = new Sort(sort);
-    }
-
     public Sort getSort() {
         return sort;
     }

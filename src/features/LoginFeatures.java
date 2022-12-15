@@ -11,7 +11,6 @@ import main.PageType;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-
 public final class LoginFeatures {
     private CurrentAuthentication currentAuth;
 

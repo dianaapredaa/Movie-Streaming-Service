@@ -8,12 +8,6 @@ public final class Contains {
     }
     private ArrayList<String> actors;
     private ArrayList<String> genre;
-
-    public Contains(final ArrayList<String> actors, final ArrayList<String> genre) {
-        this.actors = actors;
-        this.genre = genre;
-    }
-
     public Contains(final Contains contains) {
         this.actors = contains.getActors();
         this.genre = contains.getGenre();

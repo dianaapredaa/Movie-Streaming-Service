@@ -43,6 +43,7 @@ public final class UpgradesFeatures {
         int newBalance = Integer.parseInt(balanceValue) - count;
         // set Balance
         currentAuth.getCurrentUser().getCredentials().setBalance(Integer.toString(newBalance));
+
     }
 
     /**

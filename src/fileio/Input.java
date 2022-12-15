@@ -10,14 +10,6 @@ public final class Input {
     private ArrayList<Movies> movies;
     private ArrayList<Actions> actions;
 
-    public ArrayList<Users> getUsers() {
-        return users;
-    }
-
-    public void setUsers(final ArrayList<Users> users) {
-        this.users = users;
-    }
-
     public ArrayList<Movies> getMovies() {
         return movies;
     }
@@ -32,5 +24,13 @@ public final class Input {
 
     public void setActions(final ArrayList<Actions> actions) {
         this.actions = actions;
+    }
+
+    public ArrayList<Users> getUsers() {
+        return users;
+    }
+
+    public void setUsers(final ArrayList<Users> users) {
+        this.users = users;
     }
 }

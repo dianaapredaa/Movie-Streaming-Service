@@ -30,30 +30,6 @@ public final class Movies {
         this.rating = rating;
     }
 
-    public int getNumLikes() {
-        return numLikes;
-    }
-
-    public void setNumLikes(final int numLikes) {
-        this.numLikes = numLikes;
-    }
-
-    public int getNumRatings() {
-        return numRatings;
-    }
-
-    public void setNumRatings(final int numRatings) {
-        this.numRatings = numRatings;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(final double rating) {
-        this.rating = rating;
-    }
-
     public Movies(final Movies movie) {
         this.name = movie.getName();
         this.year = movie.getYear();
@@ -90,6 +66,30 @@ public final class Movies {
         this.duration = duration;
     }
 
+    public int getNumLikes() {
+        return numLikes;
+    }
+
+    public void setNumLikes(final int numLikes) {
+        this.numLikes = numLikes;
+    }
+
+    public int getNumRatings() {
+        return numRatings;
+    }
+
+    public void setNumRatings(final int numRatings) {
+        this.numRatings = numRatings;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(final double rating) {
+        this.rating = rating;
+    }
+
     public ArrayList<String> getCountriesBanned() {
         return countriesBanned;
     }
@@ -114,15 +114,4 @@ public final class Movies {
         this.genres = genres;
     }
 
-    @Override
-    public String toString() {
-        return "Movies{"
-                + "name='" + name + '\''
-                + ", year=" + year
-                + ", duration=" + duration
-                + ", countriesBanned=" + countriesBanned
-                + ", actors=" + actors
-                + ", genres=" + genres
-                + '}';
-    }
 }

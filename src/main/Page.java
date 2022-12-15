@@ -2,6 +2,7 @@ package main;
 
 import java.util.ArrayList;
 
+// Implementation Of The Factory Pattern
 public abstract class Page {
     private ArrayList<String> nextPossiblePage = new ArrayList<>();
     private String pageType = null;
@@ -12,14 +13,6 @@ public abstract class Page {
      */
     public ArrayList<String> getNextPossiblePage() {
         return nextPossiblePage;
-    }
-
-    /**
-     *
-     * @param nextPossiblePage
-     */
-    public void setNextPossiblePage(final ArrayList<String> nextPossiblePage) {
-        this.nextPossiblePage = nextPossiblePage;
     }
 
     /**

@@ -18,27 +18,23 @@ public final class Users {
     public Users(final Users users) {
         this.credentials = new Credentials(users.getCredentials());
         this.tokensCount = users.getTokensCount();
-        this.numFreePremiumMovies = users.getNumFreePremiumMovies();
-
+        this.watchedMovies = new ArrayList<>();
+        this.likedMovies = new ArrayList<>();
+        this.ratedMovies = new ArrayList<>();
         this.purchasedMovies = new ArrayList<>();
+        this.numFreePremiumMovies = users.getNumFreePremiumMovies();
 
         for (Movies movie : users.getPurchasedMovies()) {
             this.purchasedMovies.add(new Movies(movie));
         }
 
-        this.watchedMovies = new ArrayList<>();
-
         for (Movies movie : users.getWatchedMovies()) {
             this.watchedMovies.add(new Movies(movie));
         }
 
-        this.likedMovies = new ArrayList<>();
-
         for (Movies movie : users.getLikedMovies()) {
             this.likedMovies.add(new Movies(movie));
         }
-
-        this.ratedMovies = new ArrayList<>();
 
         for (Movies movie : users.getRatedMovies()) {
             this.ratedMovies.add(new Movies(movie));
