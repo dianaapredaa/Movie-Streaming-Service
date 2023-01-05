@@ -1,4 +1,3 @@
-package main;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -6,12 +5,12 @@ import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import features.MoviesFeatures;
-import features.SeeDetailsFeatures;
+import page_features.MoviesFeatures;
+import page_features.SeeDetailsFeatures;
 import fileio.*;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-
+import main.*;
 public final class Main {
     private Main() {
 
@@ -44,8 +43,18 @@ public final class Main {
             movies.addLast(movie);
         }
 
-        CurrentAuthentication currentAuth = new CurrentAuthentication();
-        Commands commands = new Commands();
+        // Singleton instantiation
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
+        // initialize all values
+        currentAuth.setCurrentPage(currentAuth.getPage().type("HomePageNonAuthenticated"));
+        currentAuth.setCurrentMoviesList(new LinkedList<>());
+        currentAuth.setCurrentUser(null);
+        currentAuth.setPageHistory(new Stack());
+
+        currentAuth.getPageHistory().push("HomePageNonAuthenticated");
+
+        Features commands = new Features();
         commands.setCurrent(currentAuth);
 
         for (int i = 0; i < inputData.getActions().size(); i++) {
@@ -53,12 +62,19 @@ public final class Main {
 
             switch (command.getType()) {
                 case("on page"):
+//                    Type onPage = new Type();
+//                    onPage.setCurrent(currentAuth);
+//                    onPage.onPage(command, users, movies, output);
                     // jump to features if possible
                     if (command.getFeature() != null) {
                         commands.features(command, users, movies, output);
                     }
                     break;
                 case("change page"):
+//                    Type changePage = new Type();
+//                    changePage.setCurrent(currentAuth);
+//                    changePage.onPage(command, movies, output);
+                    // jump to features if possible
                     String pageName = command.getPage();
 
                     // check if is possible to change pages
@@ -66,6 +82,7 @@ public final class Main {
                             || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
                         // change page
                         currentAuth.setCurrentPage(page.type(pageName));
+                        currentAuth.getPageHistory().push(pageName);
                     } else {
                         // output message for can not change page
                         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -76,18 +93,13 @@ public final class Main {
                         break;
                     }
 
-                    // jump to features
-                    if (command.getFeature() != null) {
-                        commands.features(command, users, movies, output);
-                        break;
-                    }
-
                     // if changed page is Logout Page
                     if (pageName.equals("logout")) {
                         // only on Logout Page
                         currentAuth.setCurrentUser(null);
                         currentAuth.setCurrentPage(page.type("HomePageNonAuthenticated"));
                         currentAuth.setCurrentMoviesList(new LinkedList<>());
+                        currentAuth.setPageHistory(new Stack());
                         break;
                     }
 
@@ -107,8 +119,48 @@ public final class Main {
                         break;
                     }
                     break;
+
+                case("database"):
+//                    Type database = new Type();
+//                    database.setCurrent(currentAuth);
+//                    database.onPage(command, movies, output);
+                    break;
+                case("back"):
+//                    Type back = new Type();
+//                    back.setCurrent(currentAuth);
+//                    back.onPage(command, movies, output);
+                    if (currentAuth.getCurrentUser() == null) {
+                        // nobody is authenticated
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", "Error");
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", null);
+                        output.addPOJO(objectNode);
+                        break;
+                    }
+
+                    if (currentAuth.getPageHistory().empty()) {
+                        // nowhere to go
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", "Error");
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", null);
+                        output.addPOJO(objectNode);
+                        break;
+                    }
+                    currentAuth.getPageHistory().pop();
+                    if (currentAuth.getPageHistory().empty()) {
+                        // nowhere to go back
+                        ObjectNode objectNode = objectMapper.createObjectNode();
+                        objectNode.putPOJO("error", "Error");
+                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                        objectNode.putPOJO("currentUser", null);
+                        output.addPOJO(objectNode);
+                        break;
+                    }
+                    currentAuth.setCurrentPage(page.type((String) currentAuth.getPageHistory().peek()));
                 default:
-                    System.out.println("Nothing to do here");
+                    System.out.println(command.getType());
             }
 
         }
@@ -116,5 +168,7 @@ public final class Main {
         // output
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(args[1]), output);
+        char[] inputPath = args[0].toCharArray();
+        objectWriter.writeValue(new File("checker/resources/out/out_" + inputPath[inputPath.length - 6] + ".json"), output);
     }
 }

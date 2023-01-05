@@ -14,6 +14,7 @@ public final class Users {
     private ArrayList<Movies> watchedMovies = new ArrayList<>();
     private ArrayList<Movies> likedMovies = new ArrayList<>();
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
+    private ArrayList<Notifications> notifications;
 
     public Users(final Users users) {
         this.credentials = new Credentials(users.getCredentials());
@@ -22,6 +23,7 @@ public final class Users {
         this.likedMovies = new ArrayList<>();
         this.ratedMovies = new ArrayList<>();
         this.purchasedMovies = new ArrayList<>();
+        this.notifications = new ArrayList<>();
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
 
         for (Movies movie : users.getPurchasedMovies()) {
@@ -40,7 +42,12 @@ public final class Users {
             this.ratedMovies.add(new Movies(movie));
         }
     }
-
+    public ArrayList<Notifications> getNotifications() {
+        return notifications;
+    }
+    public void setNotifications(final ArrayList<Notifications> notifications) {
+        this.notifications = notifications;
+    }
     public ArrayList<Movies> getPurchasedMovies() {
         return purchasedMovies;
     }

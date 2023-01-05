@@ -1,4 +1,4 @@
-package features;
+package page_features;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -13,19 +13,9 @@ import java.util.LinkedList;
 
 public final class LoginFeatures {
     private CurrentAuthentication currentAuth;
-
-    /**
-     *
-     * @return
-     */
     public CurrentAuthentication getCurrent() {
         return currentAuth;
     }
-
-    /**
-     *
-     * @param currentAuthentication
-     */
     public void setCurrent(final CurrentAuthentication currentAuthentication) {
         this.currentAuth = currentAuthentication;
     }
@@ -62,6 +52,7 @@ public final class LoginFeatures {
 
                     // move to HomePageAuthenticated
                     currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
+                    currentAuth.getPageHistory().pop();
 
                     // output message
                     ObjectNode objectNode = objectMapper.createObjectNode();
@@ -83,5 +74,6 @@ public final class LoginFeatures {
 
         // move back to HomePageNonAuthenticated
         currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageNonAuthenticated"));
+        currentAuth.getPageHistory().pop();
     }
 }

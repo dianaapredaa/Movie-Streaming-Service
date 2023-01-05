@@ -14,7 +14,8 @@
     "purchasedMovies" : [ ],
     "watchedMovies" : [ ],
     "likedMovies" : [ ],
-    "ratedMovies" : [ ]
+    "ratedMovies" : [ ],
+    "notifications" : [ ]
   }
 }, {
   "error" : "Error",
@@ -36,7 +37,8 @@
     "purchasedMovies" : [ ],
     "watchedMovies" : [ ],
     "likedMovies" : [ ],
-    "ratedMovies" : [ ]
+    "ratedMovies" : [ ],
+    "notifications" : [ ]
   }
 }, {
   "error" : null,
@@ -54,8 +56,25 @@
     "purchasedMovies" : [ ],
     "watchedMovies" : [ ],
     "likedMovies" : [ ],
-    "ratedMovies" : [ ]
+    "ratedMovies" : [ ],
+    "notifications" : [ ]
   }
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
+}, {
+  "error" : "Error",
+  "currentMoviesList" : [ ],
+  "currentUser" : null
 }, {
   "error" : "Error",
   "currentMoviesList" : [ ],

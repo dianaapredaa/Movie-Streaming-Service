@@ -1,4 +1,4 @@
-package features;
+package page_features;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -49,6 +49,7 @@ public final class RegisterFeatures {
                 if (user.getCredentials().getPassword().equals(password)) {
                     // already Registered
                     currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageNonAuthenticated"));
+                    currentAuth.getPageHistory().pop();
 
                     // output message
                     ObjectNode objectNode = objectMapper.createObjectNode();
@@ -67,6 +68,7 @@ public final class RegisterFeatures {
 
         // move to HomePageAuthenticated
         currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
+        currentAuth.getPageHistory().push("HomePageAuthenticated");
 
         // output message
         ObjectNode objectNode = objectMapper.createObjectNode();

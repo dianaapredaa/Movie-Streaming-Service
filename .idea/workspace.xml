@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c05a3c9e-1921-4a46-82ac-b429638b6ce4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fileio/Notifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_3.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/ref/basic_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/ref/basic_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/checker/CheckStyleConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/checker/Checkstyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/checker/Checkstyle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/checker/poo_checks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/checker/poo_checks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/LoginFeatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/MoviesFeatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/RegisterFeatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Actions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Commands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/CurrentAuthentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/main/CurrentAuthentication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/TestType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/proiect1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proiect1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checker/CheckStyleConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checker/Checkstyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/Checkstyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checker/poo_checks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/poo_checks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/LoginFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_features/LoginFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MoviesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_features/MoviesFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/RegisterFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_features/RegisterFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_features/SeeDetailsFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/page_features/UpgradesFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileio/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileio/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CurrentAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CurrentAuthentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proiect1.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JozA8K3wZKDn2ZVanZNPqYpZH0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Diana/Desktop/facultate/POO/POO TV&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="POO TV" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c05a3c9e-1921-4a46-82ac-b429638b6ce4" name="Changes" comment="" />
+      <created>1672759080880</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672759080880</updated>
+      <workItem from="1672759082964" duration="22000" />
+      <workItem from="1672759141143" duration="2853000" />
+      <workItem from="1672861226636" duration="603000" />
+      <workItem from="1672927795393" duration="1105000" />
+      <workItem from="1672928924960" duration="15000" />
+      <workItem from="1672929766823" duration="10942000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

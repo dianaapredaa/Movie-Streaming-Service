@@ -11,8 +11,34 @@ public final class Actions {
     private int count;     // Upgrades - Buy Token - count
     private int rate;           // SeeDetails - Rate - rate
     private Filters filters;     // Movie - Filters - Sort - rating/duration
-    private Credentials credentials;     // Login - Login - Credentials - name/password
-    // Register - Register - Credentials - name/password/accountType/country/balance
+    private Credentials credentials;
+    private String subscribedGenre;
+    private Movies addedMovie;
+    private String deletedMovie;
+
+    public String getDeletedMovie() {
+        return deletedMovie;
+    }
+
+    public void setDeletedMovie(final String deletedMovie) {
+        this.deletedMovie = deletedMovie;
+    }
+
+    public Movies getAddedMovie() {
+        return addedMovie;
+    }
+
+    public void setAddedMovie(final Movies addedMovie) {
+        this.addedMovie = addedMovie;
+    }
+
+    public String getSubscribedGenre() {
+        return subscribedGenre;
+    }
+
+    public void setSubscribedGenre(final String subscribedGenre) {
+        this.subscribedGenre = subscribedGenre;
+    }
 
     public Actions(final Actions actions) {
         this.filters = new Filters(actions.getFilters());

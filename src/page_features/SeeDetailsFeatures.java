@@ -1,4 +1,4 @@
-package features;
+package page_features;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -89,6 +89,7 @@ public final class SeeDetailsFeatures {
         objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
+        currentAuth.getPageHistory().pop();
     }
 
     /**
@@ -149,6 +150,7 @@ public final class SeeDetailsFeatures {
         objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
+        currentAuth.getPageHistory().pop();
     }
 
     /**
@@ -224,6 +226,7 @@ public final class SeeDetailsFeatures {
         objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
+        currentAuth.getPageHistory().pop();
     }
 
     /**
@@ -288,6 +291,7 @@ public final class SeeDetailsFeatures {
         objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
+        currentAuth.getPageHistory().pop();
     }
 
     /**
@@ -330,6 +334,7 @@ public final class SeeDetailsFeatures {
 
         // back to Movies
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
+        currentAuth.getPageHistory().pop();
 
         currentAuth.setCurrentMoviesList(new LinkedList<>());
         for (Movies value : movies) {

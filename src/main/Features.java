@@ -1,13 +1,13 @@
 package main;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import features.*;
+import page_features.*;
 import fileio.Actions;
 import fileio.Movies;
 import fileio.Users;
 import java.util.LinkedList;
 
-public final class Commands {
+public final class Features {
     private CurrentAuthentication currentAuth;
     public CurrentAuthentication getCurrent() {
         return currentAuth;
@@ -75,6 +75,19 @@ public final class Commands {
                 SeeDetailsFeatures seeDetailsLike = new SeeDetailsFeatures();
                 seeDetailsLike.setCurrent(currentAuth);
                 seeDetailsLike.like(command, output);
+            }
+            case ("subscribe") -> {
+                String subscribedGenre = command.getSubscribedGenre();
+
+            }
+            case ("database") -> {
+
+            }
+            case ("add") -> {
+                Movies addedMovie = command.getAddedMovie();
+            }
+            case ("delete") -> {
+                String deletedMovie = command.getDeletedMovie();
             }
             default -> System.out.println("Nothing to do here");
         }
