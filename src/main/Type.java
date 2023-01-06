@@ -21,7 +21,6 @@ public final class Type {
         this.currentAuth = currentAuthentication;
     }
     private final ObjectMapper objectMapper = new ObjectMapper();
-
     // create a PageType object to get different types of pages
     private static final PageType PAGE_TYPE = new PageType();
 
@@ -32,7 +31,7 @@ public final class Type {
                         final LinkedList<Movies> movies, final ArrayNode output) {
         // jump to features if possible
         if (command.getFeature() != null) {
-            commands.features(command, users, movies, output);
+            commands.features(command, users, output);
         }
         return;
     }

@@ -25,7 +25,9 @@ public final class RegisterFeatures {
     private static final PageType PAGE_TYPE = new PageType();
 
     /**
+     * Register
      *
+     * When on register feature users try to create new accounts using their credentials
      * @param command
      * @param users
      * @param output

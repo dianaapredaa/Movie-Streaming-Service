@@ -28,7 +28,10 @@ public final class SeeDetailsFeatures {
     private static final PageType PAGE_TYPE = new PageType();
 
     /**
+     * See Details - Purchase
      *
+     * When accessing the See Details page of a specified movie users can purchase the indicated
+     * movie
      * @param command
      * @param output
      */
@@ -93,7 +96,10 @@ public final class SeeDetailsFeatures {
     }
 
     /**
+     * See Details - Watch
      *
+     * When accessing the See Details page of a specified movie users can watch the indicated
+     * movie only if they have already purchased it
      * @param command
      * @param output
      */
@@ -154,7 +160,10 @@ public final class SeeDetailsFeatures {
     }
 
     /**
+     * See Details - Rate
      *
+     * When accessing the See Details page of a specified movie users can rate the indicated
+     * movie only if they have already watched it
      * @param command
      * @param output
      */
@@ -230,7 +239,10 @@ public final class SeeDetailsFeatures {
     }
 
     /**
+     * See Details - Like
      *
+     * When accessing the See Details page of a specified movie users can like the indicated
+     * movie only if they have already watched it
      * @param command
      * @param output
      */
@@ -295,7 +307,10 @@ public final class SeeDetailsFeatures {
     }
 
     /**
+     * See Details
      *
+     * When accessing the See Details page of a specified movie, first we display movies
+     * specifications
      * @param command
      * @param output
      */

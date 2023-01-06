@@ -20,7 +20,9 @@ public final class UpgradesFeatures {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
+     * Upgrades - Buy Tokens
      *
+     * When on buy tokens feature, users can use their balance to buy tokens
      * @param command
      * @param output
      */
@@ -47,7 +49,9 @@ public final class UpgradesFeatures {
     }
 
     /**
+     * Upgrades - Buy Premium Account
      *
+     * When on buy tokens feature, users can use their tokens to buy premium subscription
      * @param output
      */
     public void buyPremiumAccount(final ArrayNode output) {

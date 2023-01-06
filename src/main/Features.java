@@ -17,14 +17,15 @@ public final class Features {
     }
 
     /**
+     * Feature Method
      *
+     * In this method we determine which feature is requested by the user
      * @param command
      * @param users
-     * @param movies
      * @param output
      */
     public void features(final Actions command, final LinkedList<Users> users,
-                         final LinkedList<Movies> movies, final ArrayNode output) {
+                         final ArrayNode output) {
         switch (command.getFeature()) {
             case ("login") -> {
                 LoginFeatures login = new LoginFeatures();

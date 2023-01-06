@@ -4,29 +4,15 @@ import java.util.ArrayList;
 
 // Implementation Of The Factory Pattern
 public abstract class Page {
-    private ArrayList<String> nextPossiblePage = new ArrayList<>();
+    private final ArrayList<String> nextPossiblePage = new ArrayList<>();
     private String pageType = null;
 
-    /**
-     *
-     * @return
-     */
     public ArrayList<String> getNextPossiblePage() {
         return nextPossiblePage;
     }
-
-    /**
-     *
-     * @return
-     */
     public String getPageType() {
         return pageType;
     }
-
-    /**
-     *
-     * @param pageType
-     */
     public void setPageType(final String pageType) {
         this.pageType = pageType;
     }

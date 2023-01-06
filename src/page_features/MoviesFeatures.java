@@ -23,7 +23,10 @@ public final class MoviesFeatures {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
+     * Movies - Search
      *
+     * When changing to movie page, there are different possible actions
+     * When on search feature users can search for a specific movie starting with given syntax
      * @param command
      * @param output
      */
@@ -65,7 +68,11 @@ public final class MoviesFeatures {
     }
 
     /**
+     * Movies - Filter
      *
+     * When changing to movie page, there are different possible actions
+     * When on filter feature users can search after specified parameters and display results
+     * depending on duration and rating
      * @param command
      * @param output
      */
@@ -188,7 +195,10 @@ public final class MoviesFeatures {
     }
 
     /**
+     * Movies
      *
+     * When changing to movie page, there are different possible actions
+     * First of all, displaying current user's movie list
      * @param movies
      * @param output
      */

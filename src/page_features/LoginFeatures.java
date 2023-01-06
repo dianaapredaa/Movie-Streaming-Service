@@ -25,7 +25,9 @@ public final class LoginFeatures {
     private static final PageType PAGE_TYPE = new PageType();
 
     /**
+     * Login
      *
+     * When on login feature users try to access their account using their credentials
      * @param command
      * @param users
      * @param output

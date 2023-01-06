@@ -7,13 +7,13 @@ import java.util.LinkedList;
 import java.util.Stack;
 
 public final class CurrentAuthentication {
-    public static CurrentAuthentication instance = new CurrentAuthentication();
     private CurrentAuthentication() {
     }
-
+    public static CurrentAuthentication instance = new CurrentAuthentication();
     public static CurrentAuthentication getInstance() {
         return instance;
     }
+
     private LinkedList<Movies> currentMoviesList = new LinkedList<>();
     private Users currentUser;
     private PageType page = new PageType();

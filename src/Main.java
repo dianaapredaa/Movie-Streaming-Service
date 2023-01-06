@@ -17,7 +17,11 @@ public final class Main {
     }
 
     /**
+     * Main method
      *
+     * Read input and write output
+     * We make a copy of the input to work with, initialize current authentication and iterate
+     * through command list to determine action type
      * @param args
      * @throws IOException
      */
@@ -67,7 +71,7 @@ public final class Main {
 //                    onPage.onPage(command, users, movies, output);
                     // jump to features if possible
                     if (command.getFeature() != null) {
-                        commands.features(command, users, movies, output);
+                        commands.features(command, users,output);
                     }
                     break;
                 case("change page"):

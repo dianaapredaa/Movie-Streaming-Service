@@ -6,11 +6,11 @@ public final class Actions {
     private String type;
     private String page;
     private String feature;
-    private String startsWith;     // Movies - Search - StartsWith
-    private String movie;       // SeeDetails
-    private int count;     // Upgrades - Buy Token - count
-    private int rate;           // SeeDetails - Rate - rate
-    private Filters filters;     // Movie - Filters - Sort - rating/duration
+    private String startsWith;
+    private String movie;
+    private int count;
+    private int rate;
+    private Filters filters;
     private Credentials credentials;
     private String subscribedGenre;
     private Movies addedMovie;

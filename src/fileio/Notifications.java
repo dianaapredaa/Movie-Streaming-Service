@@ -4,6 +4,7 @@ public final class Notifications {
     public Notifications() {
 
     }
+
     private String movieName;
     private String message;
 
@@ -15,15 +16,12 @@ public final class Notifications {
     public String getMessage() {
         return message;
     }
-
     public void setMessage(final String message) {
         this.message = message;
     }
-
     public String getMovieName() {
         return movieName;
     }
-
     public void setMovieName(final String movieName) {
         this.movieName = movieName;
     }
