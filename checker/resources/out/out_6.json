@@ -394,6 +394,16 @@
     "numLikes" : 1,
     "numRatings" : 0,
     "rating" : 0.0
+  }, {
+    "name" : "Matrix 2",
+    "year" : 1998,
+    "duration" : 131,
+    "countriesBanned" : [ "Ukraine" ],
+    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
+    "genres" : [ "Action", "Comedy", "Crime" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {

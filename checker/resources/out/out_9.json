@@ -515,6 +515,36 @@
     "numLikes" : 0,
     "numRatings" : 0,
     "rating" : 0.0
+  }, {
+    "name" : "The Shawshank Redemption",
+    "year" : 1994,
+    "duration" : 166,
+    "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+    "actors" : [ "Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler" ],
+    "genres" : [ "Drama", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "The Dark Knight",
+    "year" : 2008,
+    "duration" : 166,
+    "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+    "actors" : [ "Morgan Freeman", "Christian Bale", "Heath Ledger", "Michael Caine" ],
+    "genres" : [ "Action", "Mistery", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
+  }, {
+    "name" : "Pulp Fictiom",
+    "year" : 1994,
+    "duration" : 166,
+    "countriesBanned" : [ "Azerbaijan", "China", "India" ],
+    "actors" : [ "John Travolta", "Uma Thurman", "Samuel L. Jackson", "Bruce Willis" ],
+    "genres" : [ "Crime", "Drama", "Thriller" ],
+    "numLikes" : 0,
+    "numRatings" : 0,
+    "rating" : 0.0
   } ],
   "currentUser" : {
     "credentials" : {

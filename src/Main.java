@@ -5,12 +5,14 @@ import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import page_features.MoviesFeatures;
-import page_features.SeeDetailsFeatures;
+import features.MoviesFeatures;
+import features.SeeDetailsFeatures;
 import fileio.*;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import main.*;
+import commands.*;
+import pages.PageType;
+
 public final class Main {
     private Main() {
 
@@ -71,7 +73,7 @@ public final class Main {
 //                    onPage.onPage(command, users, movies, output);
                     // jump to features if possible
                     if (command.getFeature() != null) {
-                        commands.features(command, users,output);
+                        commands.features(command, output, users, movies);
                     }
                     break;
                 case("change page"):
@@ -127,7 +129,9 @@ public final class Main {
                 case("database"):
 //                    Type database = new Type();
 //                    database.setCurrent(currentAuth);
-//                    database.onPage(command, movies, output);
+//                    database.onPage(command, output, users, movies);
+                    commands.features(command, output, users, movies);
+
                     break;
                 case("back"):
 //                    Type back = new Type();

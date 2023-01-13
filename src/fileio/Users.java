@@ -1,5 +1,7 @@
 package fileio;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.ArrayList;
 
 public final class Users {
@@ -16,6 +18,8 @@ public final class Users {
     private ArrayList<Movies> likedMovies = new ArrayList<>();
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
     private ArrayList<Notifications> notifications;
+    @JsonIgnore
+    private ArrayList<String> subscribedGenres;
 
     public Users(final Users users) {
         this.credentials = new Credentials(users.getCredentials());
@@ -26,6 +30,7 @@ public final class Users {
         this.purchasedMovies = new ArrayList<>();
         this.notifications = new ArrayList<>();
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
+        this.subscribedGenres = new ArrayList<>();
 
         for (Movies movie : users.getPurchasedMovies()) {
             this.purchasedMovies.add(new Movies(movie));
@@ -57,6 +62,12 @@ public final class Users {
     }
     public void setWatchedMovies(final ArrayList<Movies> watchedMovies) {
         this.watchedMovies = watchedMovies;
+    }
+    public ArrayList<String> getSubscribedGenres() {
+        return subscribedGenres;
+    }
+    public void setSubscribedGenres(final ArrayList<String> subscribedGenres) {
+        this.subscribedGenres = subscribedGenres;
     }
     public ArrayList<Movies> getLikedMovies() {
         return likedMovies;
