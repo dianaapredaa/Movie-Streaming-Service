@@ -2,46 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05a3c9e-1921-4a46-82ac-b429638b6ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/AdminFeatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notifications/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notifications/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/GenreObservable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_5.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/resources/out/out_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/resources/out/out_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_8.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/resources/out/out_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_9.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/checker/Checker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/checker/Checker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/commands/Features.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/commands/Features.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/commands/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/commands/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/AdminFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/AdminFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/LoginFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/LoginFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/MoviesFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/MoviesFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/RegisterFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/RegisterFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Movies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Movies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Notifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Notifications.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/CurrentAuthentication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Features.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/HomePageAuthenticated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/HomePageNonAuthenticated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Logout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/MoviesPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/PageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Register.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/SeeDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/main/Upgrades.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/page_features/LoginFeatures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/page_features/MoviesFeatures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/page_features/RegisterFeatures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/page_features/SeeDetailsFeatures.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/page_features/UpgradesFeatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/notifications/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/POO TV/notifications/Subject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/checker/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/checker/Checker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/AdminFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/AdminFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/LoginFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/LoginFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/MoviesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MoviesFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/RegisterFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/RegisterFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileio/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Movies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileio/Notifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Notifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fileio/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CurrentAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/CurrentAuthentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Features.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/PageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_features/LoginFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/LoginFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_features/MoviesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MoviesFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_features/RegisterFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/RegisterFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_features/SeeDetailsFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page_features/UpgradesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notifications/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notifications/Subject.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -108,7 +115,8 @@
       <workItem from="1673354798506" duration="30000" />
       <workItem from="1673354956400" duration="12000" />
       <workItem from="1673514778554" duration="381000" />
-      <workItem from="1673607400731" duration="7029000" />
+      <workItem from="1673607400731" duration="26918000" />
+      <workItem from="1673704263447" duration="6376000" />
     </task>
     <servers />
   </component>

@@ -13,13 +13,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 public final class MoviesFeatures {
-    private CurrentAuthentication currentAuth;
-    public CurrentAuthentication getCurrent() {
-        return currentAuth;
-    }
-    public void setCurrent(final CurrentAuthentication currentAuthentication) {
-        this.currentAuth = currentAuthentication;
-    }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
@@ -31,6 +24,7 @@ public final class MoviesFeatures {
      * @param output
      */
     public void search(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on Movies Page
         if (!currentAuth.getCurrentPage().getPageType().equals("movies")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -77,6 +71,7 @@ public final class MoviesFeatures {
      * @param output
      */
     public void filters(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on Movies Page
         if (!currentAuth.getCurrentPage().getPageType().equals("movies")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -203,6 +198,7 @@ public final class MoviesFeatures {
      * @param output
      */
     public void onMoviesPage(final LinkedList<Movies> movies, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         currentAuth.setCurrentMoviesList(new LinkedList<>());
 
         for (Movies movie : movies) {

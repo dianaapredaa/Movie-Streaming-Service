@@ -12,13 +12,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public final class LoginFeatures {
-    private CurrentAuthentication currentAuth;
-    public CurrentAuthentication getCurrent() {
-        return currentAuth;
-    }
-    public void setCurrent(final CurrentAuthentication currentAuthentication) {
-        this.currentAuth = currentAuthentication;
-    }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
@@ -34,6 +27,7 @@ public final class LoginFeatures {
      */
     public void login(final Actions command, final LinkedList<Users> users,
                        final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on Login page
         if (!currentAuth.getCurrentPage().getPageType().equals("login")) {
             ObjectNode objectNode = objectMapper.createObjectNode();

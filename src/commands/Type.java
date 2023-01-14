@@ -13,41 +13,62 @@ import java.util.LinkedList;
 import java.util.Stack;
 
 public final class Type {
-    private CurrentAuthentication currentAuth;
-    public CurrentAuthentication getCurrent() {
-        return currentAuth;
-    }
-    public void setCurrent(final CurrentAuthentication currentAuthentication) {
-        this.currentAuth = currentAuthentication;
-    }
+
     private final ObjectMapper objectMapper = new ObjectMapper();
+
     // create a PageType object to get different types of pages
     private static final PageType PAGE_TYPE = new PageType();
 
-    private Features commands = new Features();
-//    commands.setCurrent(currentAuth);
-
+    /**
+     * On Page
+     *
+     * When having to deal with on page actions we have to see if the specified feature
+     * matches one's page possible actions.
+     * @param command
+     * @param users
+     * @param movies
+     * @param output
+     */
     public void onPage(final Actions command, final LinkedList<Users> users,
                         final LinkedList<Movies> movies, final ArrayNode output) {
-        // jump to features if possible
-        if (command.getFeature() != null) {
+        // jump to features
+//        if (command.getFeature() != null) {
+            Features commands = new Features();
             commands.features(command, output, users, movies);
-        }
-        return;
+//        }
     }
 
-    public void changePage(final Actions command, final LinkedList<Movies> movies,
-                           final ArrayNode output) {
+    /**
+     * Change Page
+     *
+     * When changing pages we have to make sure that the change is possible
+     * according to our web structure.
+     * We also have to take action depending on the page we are moving to.
+     * If the new page is logout, we have to disconnect the current user.
+     * If we move to Movies page, current user's movie list will be displayed.
+     * If we move to See Details page, of a specified movie, if the movie exist
+     * we have to display its properties
+     * @param command
+     * @param movies
+     * @param output
+     */
+    public void changePage(final Actions command, final ArrayNode output,
+                           final LinkedList<Movies> movies) {
         String pageName = command.getPage();
+
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
         // check if is possible to change pages
         if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)
                 || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
-            // change page
+            // add last page to the history stack
+            currentAuth.getPageHistory().push(currentAuth.getCurrentPage().getPageType());
+            // if possible change page
             currentAuth.setCurrentPage(PAGE_TYPE.type(pageName));
-            currentAuth.getPageHistory().push(pageName);
+
+
         } else {
-            // output message for can not change page
+            // output message if you can not change page
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.putPOJO("error", "Error");
             objectNode.putPOJO("currentMoviesList", new ArrayList<>());
@@ -56,9 +77,8 @@ public final class Type {
             return;
         }
 
-        // if changed page is Logout Page
+        // if the new page is Logout Page
         if (pageName.equals("logout")) {
-            // only on Logout Page
             currentAuth.setCurrentUser(null);
             currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageNonAuthenticated"));
             currentAuth.setCurrentMoviesList(new LinkedList<>());
@@ -66,24 +86,31 @@ public final class Type {
             return;
         }
 
-        // if changed page is Movies
+        // if the new page is Movies
         if (pageName.equals("movies")) {
             MoviesFeatures moviesFeatures = new MoviesFeatures();
-            moviesFeatures.setCurrent(currentAuth);
             moviesFeatures.onMoviesPage(movies, output);
             return;
         }
 
-        // if changed page is SeeDetails
+        // if the new page is SeeDetails
         if (pageName.equals("see details")) {
             SeeDetailsFeatures seeDetailsFeatures = new SeeDetailsFeatures();
-            seeDetailsFeatures.setCurrent(currentAuth);
             seeDetailsFeatures.seeDetailsMovies(command, movies, output);
             return;
         }
     }
 
-    public void back(final ArrayNode output) {
+    /**
+     * Back
+     *
+     * Here we navigate back to the last page we were on.
+     * @param output
+     * @param movies
+     */
+    public void back(final ArrayNode output, final LinkedList<Movies> movies) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         if (currentAuth.getCurrentUser() == null) {
             // nobody is authenticated
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -94,17 +121,7 @@ public final class Type {
             return;
         }
 
-        if (currentAuth.getPageHistory().empty()) {
-            // nowhere to go
-            ObjectNode objectNode = objectMapper.createObjectNode();
-            objectNode.putPOJO("error", "Error");
-            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-            objectNode.putPOJO("currentUser", null);
-            output.addPOJO(objectNode);
-            return;
-        }
-        currentAuth.getPageHistory().pop();
-        if (currentAuth.getPageHistory().empty()) {
+        if (currentAuth.getPageHistory().isEmpty()) {
             // nowhere to go back
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.putPOJO("error", "Error");
@@ -113,12 +130,40 @@ public final class Type {
             output.addPOJO(objectNode);
             return;
         }
-        currentAuth.setCurrentPage(PAGE_TYPE.type((String) currentAuth.getPageHistory().peek()));
+
+        if (currentAuth.getPageHistory().peek().equals("login")
+        || currentAuth.getPageHistory().peek().equals("register")) {
+            // can not go back to login/register page
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.putPOJO("error", "Error");
+            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+            objectNode.putPOJO("currentUser", null);
+            output.addPOJO(objectNode);
+            return;
+        }
+        // update current page
+        currentAuth.setCurrentPage(PAGE_TYPE.type((String) currentAuth.getPageHistory().pop()));
+
+        // if the new page is Movies
+        if (currentAuth.getCurrentPage().equals("movies")) {
+            MoviesFeatures moviesFeatures = new MoviesFeatures();
+            moviesFeatures.onMoviesPage(movies, output);
+            return;
+        }
     }
 
+    /**
+     * Database
+     *
+     * We can all add and delete movies as we want.
+     * @param command
+     * @param output
+     * @param users
+     * @param movies
+     */
     public void database(final Actions command, final ArrayNode output,
                          final LinkedList<Users> users, final LinkedList<Movies> movies) {
+        Features commands = new Features();
         commands.features(command, output, users, movies);
-
     }
 }

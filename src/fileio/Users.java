@@ -1,10 +1,12 @@
 package fileio;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import observer.Observer;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
-public final class Users {
+public final class Users implements Observer {
     public Users() {
 
     }
@@ -17,7 +19,7 @@ public final class Users {
     private ArrayList<Movies> watchedMovies = new ArrayList<>();
     private ArrayList<Movies> likedMovies = new ArrayList<>();
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
-    private ArrayList<Notifications> notifications;
+    private ArrayList<Notifications> notifications = new ArrayList<>();
     @JsonIgnore
     private ArrayList<String> subscribedGenres;
 
@@ -32,6 +34,9 @@ public final class Users {
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
         this.subscribedGenres = new ArrayList<>();
 
+        for (Notifications notification : users.getNotifications()) {
+            this.notifications.add(new Notifications(notification));
+        }
         for (Movies movie : users.getPurchasedMovies()) {
             this.purchasedMovies.add(new Movies(movie));
         }
@@ -45,6 +50,24 @@ public final class Users {
             this.ratedMovies.add(new Movies(movie));
         }
     }
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Users users = (Users) o;
+        return Objects.equals(credentials, users.credentials);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(credentials);
+    }
+
     public ArrayList<Notifications> getNotifications() {
         return notifications;
     }
@@ -101,5 +124,10 @@ public final class Users {
     }
     public void setNumFreePremiumMovies(final int numFreePremiumMovies) {
         this.numFreePremiumMovies = numFreePremiumMovies;
+    }
+
+    @Override
+    public void update(final Notifications notification) {
+        notifications.add(notification);
     }
 }

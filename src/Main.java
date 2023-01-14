@@ -5,12 +5,11 @@ import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import features.MoviesFeatures;
-import features.SeeDetailsFeatures;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.*;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import commands.*;
+import observer.GenreObservable;
 import pages.PageType;
 
 public final class Main {
@@ -51,129 +50,52 @@ public final class Main {
 
         // Singleton instantiation
         CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+        GenreObservable genreObservable = GenreObservable.getInstance();
 
         // initialize all values
         currentAuth.setCurrentPage(currentAuth.getPage().type("HomePageNonAuthenticated"));
         currentAuth.setCurrentMoviesList(new LinkedList<>());
         currentAuth.setCurrentUser(null);
         currentAuth.setPageHistory(new Stack());
-
-        currentAuth.getPageHistory().push("HomePageNonAuthenticated");
-
-        Features commands = new Features();
-        commands.setCurrent(currentAuth);
+        genreObservable.setGenres(new HashMap<>());
 
         for (int i = 0; i < inputData.getActions().size(); i++) {
             Actions command =  inputData.getActions().get(i);
-
             switch (command.getType()) {
-                case("on page"):
-//                    Type onPage = new Type();
-//                    onPage.setCurrent(currentAuth);
-//                    onPage.onPage(command, users, movies, output);
-                    // jump to features if possible
-                    if (command.getFeature() != null) {
-                        commands.features(command, output, users, movies);
-                    }
-                    break;
-                case("change page"):
-//                    Type changePage = new Type();
-//                    changePage.setCurrent(currentAuth);
-//                    changePage.onPage(command, movies, output);
-                    // jump to features if possible
-                    String pageName = command.getPage();
-
-                    // check if is possible to change pages
-                    if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)
-                            || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
-                        // change page
-                        currentAuth.setCurrentPage(page.type(pageName));
-                        currentAuth.getPageHistory().push(pageName);
-                    } else {
-                        // output message for can not change page
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "Error");
-                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                        objectNode.putPOJO("currentUser", null);
-                        output.addPOJO(objectNode);
-                        break;
-                    }
-
-                    // if changed page is Logout Page
-                    if (pageName.equals("logout")) {
-                        // only on Logout Page
-                        currentAuth.setCurrentUser(null);
-                        currentAuth.setCurrentPage(page.type("HomePageNonAuthenticated"));
-                        currentAuth.setCurrentMoviesList(new LinkedList<>());
-                        currentAuth.setPageHistory(new Stack());
-                        break;
-                    }
-
-                    // if changed page is Movies
-                    if (pageName.equals("movies")) {
-                        MoviesFeatures moviesFeatures = new MoviesFeatures();
-                        moviesFeatures.setCurrent(currentAuth);
-                        moviesFeatures.onMoviesPage(movies, output);
-                        break;
-                    }
-
-                    // if changed page is SeeDetails
-                    if (pageName.equals("see details")) {
-                        SeeDetailsFeatures seeDetailsFeatures = new SeeDetailsFeatures();
-                        seeDetailsFeatures.setCurrent(currentAuth);
-                        seeDetailsFeatures.seeDetailsMovies(command, movies, output);
-                        break;
-                    }
-                    break;
-
-                case("database"):
-//                    Type database = new Type();
-//                    database.setCurrent(currentAuth);
-//                    database.onPage(command, output, users, movies);
-                    commands.features(command, output, users, movies);
-
-                    break;
-                case("back"):
-//                    Type back = new Type();
-//                    back.setCurrent(currentAuth);
-//                    back.onPage(command, movies, output);
-                    if (currentAuth.getCurrentUser() == null) {
-                        // nobody is authenticated
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "Error");
-                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                        objectNode.putPOJO("currentUser", null);
-                        output.addPOJO(objectNode);
-                        break;
-                    }
-
-                    if (currentAuth.getPageHistory().empty()) {
-                        // nowhere to go
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "Error");
-                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                        objectNode.putPOJO("currentUser", null);
-                        output.addPOJO(objectNode);
-                        break;
-                    }
-                    currentAuth.getPageHistory().pop();
-                    if (currentAuth.getPageHistory().empty()) {
-                        // nowhere to go back
-                        ObjectNode objectNode = objectMapper.createObjectNode();
-                        objectNode.putPOJO("error", "Error");
-                        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-                        objectNode.putPOJO("currentUser", null);
-                        output.addPOJO(objectNode);
-                        break;
-                    }
-                    currentAuth.setCurrentPage(page.type((String) currentAuth.getPageHistory().peek()));
-                default:
-                    System.out.println(command.getType());
+                case ("on page") -> {
+                    Type onPage = new Type();
+                    onPage.onPage(command, users, movies, output);
+                }
+                case ("change page") -> {
+                    Type changePage = new Type();
+                    changePage.changePage(command, output, movies);
+                }
+                case ("database") -> {
+                    Type database = new Type();
+                    database.database(command, output, users, movies);
+                }
+                case ("back") -> {
+                    Type back = new Type();
+                    back.back(output, movies);
+                }
+                default -> System.out.println("nothing to be done");
             }
-
         }
 
-        // output
+        if (currentAuth.getCurrentUser() != null) {
+            if (currentAuth.getCurrentUser().getCredentials().getAccountType().equals("premium")) {
+                Notifications notification = new Notifications("No recommendation", Notifications.Message.Recommendation);
+                currentAuth.getCurrentUser().getNotifications().add(notification);
+                // output message
+                ObjectNode objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", null);
+                objectNode.putPOJO("currentMoviesList", null);
+                objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
+                output.addPOJO(objectNode);
+            }
+        }
+
+        // output write
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(args[1]), output);
         char[] inputPath = args[0].toCharArray();

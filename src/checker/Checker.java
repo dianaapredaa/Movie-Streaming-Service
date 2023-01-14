@@ -36,10 +36,10 @@ public final class Checker {
 
     private static void calculateScoreReadme() {
         System.out.println("-----------------------------------------------------");
-        System.out.print("README score = ");
-        Path path1 = Paths.get("README");
-        Path path2 = Paths.get("README.md");
-        Path path3 = Paths.get("README.txt");
+        System.out.print("README.md score = ");
+        Path path1 = Paths.get("README.md");
+        Path path2 = Paths.get("README.md.md");
+        Path path3 = Paths.get("README.md.txt");
 
         if (Files.exists(path1) || Files.exists(path2) || Files.exists(path3)) {
             readmeScore = CheckerConstants.FIVE_POINTS;

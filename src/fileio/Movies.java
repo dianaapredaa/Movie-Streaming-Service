@@ -1,13 +1,14 @@
 package fileio;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public final class Movies {
     public Movies() {
     }
 
     private String name;
-    private int year;
+    private String year;
     private int duration;
     private ArrayList<String> countriesBanned;
     private ArrayList<String> actors;
@@ -16,7 +17,7 @@ public final class Movies {
     private int numRatings = 0;
     private double rating = 0;
 
-    public Movies(final String name, final int year, final int duration,
+    public Movies(final String name, final String year, final int duration,
                   final ArrayList<String> countriesBanned, final ArrayList<String> actors,
                   final ArrayList<String> genres, final int numLikes, final int numRatings,
                   final int rating) {
@@ -43,16 +44,33 @@ public final class Movies {
         this.rating = movie.getRating();
     }
 
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Movies movies1 = (Movies) o;
+        return Objects.equals(name, movies1.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+
     public String getName() {
         return name;
     }
     public void setName(final String name) {
         this.name = name;
     }
-    public int getYear() {
+    public String getYear() {
         return year;
     }
-    public void setYear(final int year) {
+    public void setYear(final String year) {
         this.year = year;
     }
     public int getDuration() {

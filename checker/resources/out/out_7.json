@@ -21,7 +21,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -31,7 +31,7 @@
     "rating" : 0.0
   }, {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -41,7 +41,7 @@
     "rating" : 0.0
   }, {
     "name" : "Kiwi!",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 82,
     "countriesBanned" : [ "Brazil", "China", "Russia" ],
     "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
@@ -51,7 +51,7 @@
     "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 128,
     "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
     "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
@@ -61,7 +61,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -71,7 +71,7 @@
     "rating" : 0.0
   }, {
     "name" : "Jason's Lyric",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 103,
     "countriesBanned" : [ "Romania", "China", "Finland" ],
     "actors" : [ "Hoebart Lipscomb", "Romain Fehners", "Sam Restall", "Tildy Kenaway" ],
@@ -81,7 +81,7 @@
     "rating" : 0.0
   }, {
     "name" : "Comet in Moominland",
-    "year" : 2000,
+    "year" : "2000",
     "duration" : 91,
     "countriesBanned" : [ "Brazil", "China", "Colombia" ],
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
@@ -91,7 +91,7 @@
     "rating" : 0.0
   }, {
     "name" : "Bag It",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 149,
     "countriesBanned" : [ "China", "Sweden", "Finland" ],
     "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
@@ -101,7 +101,7 @@
     "rating" : 0.0
   }, {
     "name" : "Shaolin Temple (Shao Lin si)",
-    "year" : 1987,
+    "year" : "1987",
     "duration" : 135,
     "countriesBanned" : [ "China", "Norway", "United States" ],
     "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
@@ -111,7 +111,7 @@
     "rating" : 0.0
   }, {
     "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
-    "year" : 1988,
+    "year" : "1988",
     "duration" : 178,
     "countriesBanned" : [ "China", "Sweden", "Costa Rica" ],
     "actors" : [ "Florella Snoday", "Obie Dowsing", "Lynnea Denington", "Chrystal Evreux" ],
@@ -121,7 +121,7 @@
     "rating" : 0.0
   }, {
     "name" : "Endangered Species",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 79,
     "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
     "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
@@ -131,7 +131,7 @@
     "rating" : 0.0
   }, {
     "name" : "Celluloid Closet, The",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 155,
     "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
     "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
@@ -141,7 +141,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -151,7 +151,7 @@
     "rating" : 0.0
   }, {
     "name" : "Mistress",
-    "year" : 2012,
+    "year" : "2012",
     "duration" : 146,
     "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
     "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
@@ -180,7 +180,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -190,7 +190,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -219,7 +219,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -248,7 +248,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -269,7 +269,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -287,7 +287,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -308,7 +308,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -319,7 +319,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -336,7 +336,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -357,7 +357,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -368,7 +368,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -379,7 +379,7 @@
     } ],
     "likedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -414,7 +414,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -424,7 +424,7 @@
     "rating" : 0.0
   }, {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -434,7 +434,7 @@
     "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 128,
     "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
     "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
@@ -444,7 +444,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -454,7 +454,7 @@
     "rating" : 0.0
   }, {
     "name" : "Endangered Species",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 79,
     "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
     "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
@@ -464,7 +464,7 @@
     "rating" : 0.0
   }, {
     "name" : "Mistress",
-    "year" : 2012,
+    "year" : "2012",
     "duration" : 146,
     "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
     "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
@@ -493,7 +493,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -522,7 +522,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -543,7 +543,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -561,7 +561,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -582,7 +582,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -593,7 +593,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -610,7 +610,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -631,7 +631,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -642,7 +642,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -653,7 +653,7 @@
     } ],
     "likedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -669,7 +669,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -690,7 +690,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -701,7 +701,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -712,7 +712,7 @@
     } ],
     "likedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -723,7 +723,7 @@
     } ],
     "ratedMovies" : [ {
       "name" : "My Sassy Girl",
-      "year" : 2005,
+      "year" : "2005",
       "duration" : 125,
       "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
       "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -757,7 +757,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -767,7 +767,7 @@
     "rating" : 0.0
   }, {
     "name" : "Take the Money and Run",
-    "year" : 2006,
+    "year" : "2006",
     "duration" : 134,
     "countriesBanned" : [ "Indonesia", "China", "India" ],
     "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
@@ -777,7 +777,7 @@
     "rating" : 0.0
   }, {
     "name" : "Penelope",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 166,
     "countriesBanned" : [ "Azerbaijan", "China", "India" ],
     "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
@@ -787,7 +787,7 @@
     "rating" : 0.0
   }, {
     "name" : "Kiwi!",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 82,
     "countriesBanned" : [ "Brazil", "China", "Russia" ],
     "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
@@ -797,7 +797,7 @@
     "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 128,
     "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
     "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
@@ -807,7 +807,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -817,7 +817,7 @@
     "rating" : 0.0
   }, {
     "name" : "Jason's Lyric",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 103,
     "countriesBanned" : [ "Romania", "China", "Finland" ],
     "actors" : [ "Hoebart Lipscomb", "Romain Fehners", "Sam Restall", "Tildy Kenaway" ],
@@ -827,7 +827,7 @@
     "rating" : 0.0
   }, {
     "name" : "Comet in Moominland",
-    "year" : 2000,
+    "year" : "2000",
     "duration" : 91,
     "countriesBanned" : [ "Brazil", "China", "Colombia" ],
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
@@ -837,7 +837,7 @@
     "rating" : 0.0
   }, {
     "name" : "Bag It",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 149,
     "countriesBanned" : [ "China", "Sweden", "Finland" ],
     "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
@@ -847,7 +847,7 @@
     "rating" : 0.0
   }, {
     "name" : "Shaolin Temple (Shao Lin si)",
-    "year" : 1987,
+    "year" : "1987",
     "duration" : 135,
     "countriesBanned" : [ "China", "Norway", "United States" ],
     "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
@@ -857,7 +857,7 @@
     "rating" : 0.0
   }, {
     "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
-    "year" : 1988,
+    "year" : "1988",
     "duration" : 178,
     "countriesBanned" : [ "China", "Sweden", "Costa Rica" ],
     "actors" : [ "Florella Snoday", "Obie Dowsing", "Lynnea Denington", "Chrystal Evreux" ],
@@ -867,7 +867,7 @@
     "rating" : 0.0
   }, {
     "name" : "Endangered Species",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 79,
     "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
     "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
@@ -877,7 +877,7 @@
     "rating" : 0.0
   }, {
     "name" : "Celluloid Closet, The",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 155,
     "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
     "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
@@ -887,7 +887,7 @@
     "rating" : 0.0
   }, {
     "name" : "As You Like It",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 91,
     "countriesBanned" : [ "China", "Venezuela", "India" ],
     "actors" : [ "Maureene Elks", "Amber McGilbon", "Lora Doelle", "Blondelle Spyvye" ],
@@ -897,7 +897,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -907,7 +907,7 @@
     "rating" : 0.0
   }, {
     "name" : "Mistress",
-    "year" : 2012,
+    "year" : "2012",
     "duration" : 146,
     "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
     "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
@@ -917,7 +917,7 @@
     "rating" : 0.0
   }, {
     "name" : "Penelope",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 166,
     "countriesBanned" : [ "Azerbaijan", "China", "India" ],
     "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
@@ -946,7 +946,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -975,7 +975,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -996,7 +996,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1014,7 +1014,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1035,7 +1035,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1046,7 +1046,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1063,7 +1063,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1084,7 +1084,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1095,7 +1095,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1107,7 +1107,7 @@
     "likedMovies" : [ ],
     "ratedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1122,7 +1122,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1132,7 +1132,7 @@
     "rating" : 5.0
   }, {
     "name" : "Take the Money and Run",
-    "year" : 2006,
+    "year" : "2006",
     "duration" : 134,
     "countriesBanned" : [ "Indonesia", "China", "India" ],
     "actors" : [ "Hailey Evequot", "Fenelia Maryott", "Gloriane Haughton", "Evvie Asbery" ],
@@ -1142,7 +1142,7 @@
     "rating" : 0.0
   }, {
     "name" : "Penelope",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 166,
     "countriesBanned" : [ "Azerbaijan", "China", "India" ],
     "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
@@ -1152,7 +1152,7 @@
     "rating" : 0.0
   }, {
     "name" : "Kiwi!",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 82,
     "countriesBanned" : [ "Brazil", "China", "Russia" ],
     "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
@@ -1162,7 +1162,7 @@
     "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 128,
     "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
     "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
@@ -1172,7 +1172,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -1182,7 +1182,7 @@
     "rating" : 0.0
   }, {
     "name" : "Jason's Lyric",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 103,
     "countriesBanned" : [ "Romania", "China", "Finland" ],
     "actors" : [ "Hoebart Lipscomb", "Romain Fehners", "Sam Restall", "Tildy Kenaway" ],
@@ -1192,7 +1192,7 @@
     "rating" : 0.0
   }, {
     "name" : "Comet in Moominland",
-    "year" : 2000,
+    "year" : "2000",
     "duration" : 91,
     "countriesBanned" : [ "Brazil", "China", "Colombia" ],
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
@@ -1202,7 +1202,7 @@
     "rating" : 0.0
   }, {
     "name" : "Bag It",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 149,
     "countriesBanned" : [ "China", "Sweden", "Finland" ],
     "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
@@ -1212,7 +1212,7 @@
     "rating" : 0.0
   }, {
     "name" : "Shaolin Temple (Shao Lin si)",
-    "year" : 1987,
+    "year" : "1987",
     "duration" : 135,
     "countriesBanned" : [ "China", "Norway", "United States" ],
     "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
@@ -1222,7 +1222,7 @@
     "rating" : 0.0
   }, {
     "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
-    "year" : 1988,
+    "year" : "1988",
     "duration" : 178,
     "countriesBanned" : [ "China", "Sweden", "Costa Rica" ],
     "actors" : [ "Florella Snoday", "Obie Dowsing", "Lynnea Denington", "Chrystal Evreux" ],
@@ -1232,7 +1232,7 @@
     "rating" : 0.0
   }, {
     "name" : "Endangered Species",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 79,
     "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
     "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
@@ -1242,7 +1242,7 @@
     "rating" : 0.0
   }, {
     "name" : "Celluloid Closet, The",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 155,
     "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
     "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
@@ -1252,7 +1252,7 @@
     "rating" : 0.0
   }, {
     "name" : "As You Like It",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 91,
     "countriesBanned" : [ "China", "Venezuela", "India" ],
     "actors" : [ "Maureene Elks", "Amber McGilbon", "Lora Doelle", "Blondelle Spyvye" ],
@@ -1262,7 +1262,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1272,7 +1272,7 @@
     "rating" : 0.0
   }, {
     "name" : "Mistress",
-    "year" : 2012,
+    "year" : "2012",
     "duration" : 146,
     "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
     "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
@@ -1282,7 +1282,7 @@
     "rating" : 0.0
   }, {
     "name" : "Penelope",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 166,
     "countriesBanned" : [ "Azerbaijan", "China", "India" ],
     "actors" : [ "Elnore Neild", "Gay Cobbing", "Guntar Holton", "Merry Troni" ],
@@ -1303,7 +1303,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1314,7 +1314,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1326,7 +1326,7 @@
     "likedMovies" : [ ],
     "ratedMovies" : [ {
       "name" : "Lord, Save Us from Your Followers",
-      "year" : 1998,
+      "year" : "1998",
       "duration" : 125,
       "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
       "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1368,7 +1368,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1379,7 +1379,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1390,7 +1390,7 @@
     } ],
     "likedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1406,7 +1406,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1416,7 +1416,7 @@
     "rating" : 5.0
   }, {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -1426,7 +1426,7 @@
     "rating" : 3.0
   }, {
     "name" : "Kiwi!",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 82,
     "countriesBanned" : [ "Brazil", "China", "Russia" ],
     "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
@@ -1436,7 +1436,7 @@
     "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 128,
     "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
     "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
@@ -1446,7 +1446,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -1456,7 +1456,7 @@
     "rating" : 0.0
   }, {
     "name" : "Jason's Lyric",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 103,
     "countriesBanned" : [ "Romania", "China", "Finland" ],
     "actors" : [ "Hoebart Lipscomb", "Romain Fehners", "Sam Restall", "Tildy Kenaway" ],
@@ -1466,7 +1466,7 @@
     "rating" : 0.0
   }, {
     "name" : "Comet in Moominland",
-    "year" : 2000,
+    "year" : "2000",
     "duration" : 91,
     "countriesBanned" : [ "Brazil", "China", "Colombia" ],
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
@@ -1476,7 +1476,7 @@
     "rating" : 0.0
   }, {
     "name" : "Bag It",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 149,
     "countriesBanned" : [ "China", "Sweden", "Finland" ],
     "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
@@ -1486,7 +1486,7 @@
     "rating" : 0.0
   }, {
     "name" : "Shaolin Temple (Shao Lin si)",
-    "year" : 1987,
+    "year" : "1987",
     "duration" : 135,
     "countriesBanned" : [ "China", "Norway", "United States" ],
     "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
@@ -1496,7 +1496,7 @@
     "rating" : 0.0
   }, {
     "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
-    "year" : 1988,
+    "year" : "1988",
     "duration" : 178,
     "countriesBanned" : [ "China", "Sweden", "Costa Rica" ],
     "actors" : [ "Florella Snoday", "Obie Dowsing", "Lynnea Denington", "Chrystal Evreux" ],
@@ -1506,7 +1506,7 @@
     "rating" : 0.0
   }, {
     "name" : "Endangered Species",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 79,
     "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
     "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
@@ -1516,7 +1516,7 @@
     "rating" : 0.0
   }, {
     "name" : "Celluloid Closet, The",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 155,
     "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
     "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
@@ -1526,7 +1526,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1536,7 +1536,7 @@
     "rating" : 0.0
   }, {
     "name" : "Mistress",
-    "year" : 2012,
+    "year" : "2012",
     "duration" : 146,
     "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
     "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
@@ -1557,7 +1557,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1568,7 +1568,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1579,7 +1579,7 @@
     } ],
     "likedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1595,7 +1595,7 @@
   "error" : null,
   "currentMoviesList" : [ {
     "name" : "Belphecor: Curse of the Mummy (Belphégor - Le fantôme du Louvre)",
-    "year" : 1988,
+    "year" : "1988",
     "duration" : 178,
     "countriesBanned" : [ "China", "Sweden", "Costa Rica" ],
     "actors" : [ "Florella Snoday", "Obie Dowsing", "Lynnea Denington", "Chrystal Evreux" ],
@@ -1605,7 +1605,7 @@
     "rating" : 0.0
   }, {
     "name" : "Celluloid Closet, The",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 155,
     "countriesBanned" : [ "Indonesia", "Argentina", "China" ],
     "actors" : [ "Betta MacAughtrie", "Miltie Vousden", "Rand Eliasson", "Calypso Jamson" ],
@@ -1615,7 +1615,7 @@
     "rating" : 0.0
   }, {
     "name" : "Bag It",
-    "year" : 2008,
+    "year" : "2008",
     "duration" : 149,
     "countriesBanned" : [ "China", "Sweden", "Finland" ],
     "actors" : [ "Rivy Aitken", "Farra Simnor", "Korie Sager", "Pauli Stapford" ],
@@ -1625,7 +1625,7 @@
     "rating" : 0.0
   }, {
     "name" : "Mistress",
-    "year" : 2012,
+    "year" : "2012",
     "duration" : 146,
     "countriesBanned" : [ "Greece", "Czech Republic", "Malaysia" ],
     "actors" : [ "Maighdiln Moroney", "Robinett Fennick", "Candice Hacquel", "Arlene Challoner" ],
@@ -1635,7 +1635,7 @@
     "rating" : 0.0
   }, {
     "name" : "The Well-Digger's Daughter",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 141,
     "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
     "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1645,7 +1645,7 @@
     "rating" : 0.0
   }, {
     "name" : "Shaolin Temple (Shao Lin si)",
-    "year" : 1987,
+    "year" : "1987",
     "duration" : 135,
     "countriesBanned" : [ "China", "Norway", "United States" ],
     "actors" : [ "Dallon Audenis", "Anica Wrigley", "Perrine Baskwell", "Pammie Bowmaker" ],
@@ -1655,7 +1655,7 @@
     "rating" : 0.0
   }, {
     "name" : "Little Foxes, The",
-    "year" : 1999,
+    "year" : "1999",
     "duration" : 128,
     "countriesBanned" : [ "Brazil", "Philippines", "Poland" ],
     "actors" : [ "Coleen Verheijden", "Dean McCooke", "Melamie Griswaite", "Clementine Loding" ],
@@ -1665,7 +1665,7 @@
     "rating" : 0.0
   }, {
     "name" : "My Sassy Girl",
-    "year" : 2005,
+    "year" : "2005",
     "duration" : 125,
     "countriesBanned" : [ "Dominican Republic", "Indonesia", "Japan" ],
     "actors" : [ "Mabel MacAless", "Iggy MacUchadair", "Arni Harrow", "Reg Kelleher" ],
@@ -1675,7 +1675,7 @@
     "rating" : 3.0
   }, {
     "name" : "Lord, Save Us from Your Followers",
-    "year" : 1998,
+    "year" : "1998",
     "duration" : 125,
     "countriesBanned" : [ "Russia", "Saudi Arabia", "Zimbabwe" ],
     "actors" : [ "Camey Ingold", "Grace Volleth", "Jermaine D'Ruel", "Anselma Saxelby" ],
@@ -1685,7 +1685,7 @@
     "rating" : 5.0
   }, {
     "name" : "The Empty Hours",
-    "year" : 2003,
+    "year" : "2003",
     "duration" : 106,
     "countriesBanned" : [ "Indonesia", "Brazil", "Uganda" ],
     "actors" : [ "Holly Sandbrook", "Phyllys Lindsell", "Bendick Bointon", "Dani Duigenan" ],
@@ -1695,7 +1695,7 @@
     "rating" : 0.0
   }, {
     "name" : "Jason's Lyric",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 103,
     "countriesBanned" : [ "Romania", "China", "Finland" ],
     "actors" : [ "Hoebart Lipscomb", "Romain Fehners", "Sam Restall", "Tildy Kenaway" ],
@@ -1705,7 +1705,7 @@
     "rating" : 0.0
   }, {
     "name" : "Comet in Moominland",
-    "year" : 2000,
+    "year" : "2000",
     "duration" : 91,
     "countriesBanned" : [ "Brazil", "China", "Colombia" ],
     "actors" : [ "Bertina Kemshell", "Marshall Bysshe", "Dexter Rickaert", "Zack Brandel" ],
@@ -1715,7 +1715,7 @@
     "rating" : 0.0
   }, {
     "name" : "Kiwi!",
-    "year" : 2002,
+    "year" : "2002",
     "duration" : 82,
     "countriesBanned" : [ "Brazil", "China", "Russia" ],
     "actors" : [ "Carleen Pidgeon", "Lois Gibling", "Colver Corss", "Mora Piotrkowski" ],
@@ -1725,7 +1725,7 @@
     "rating" : 0.0
   }, {
     "name" : "Endangered Species",
-    "year" : 1994,
+    "year" : "1994",
     "duration" : 79,
     "countriesBanned" : [ "France", "South Africa", "Indonesia" ],
     "actors" : [ "Morry Lunny", "Freda Werrett", "Jewel Gareisr", "Carine Cucinotta" ],
@@ -1746,7 +1746,7 @@
     "numFreePremiumMovies" : 14,
     "purchasedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1757,7 +1757,7 @@
     } ],
     "watchedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1768,7 +1768,7 @@
     } ],
     "likedMovies" : [ {
       "name" : "The Well-Digger's Daughter",
-      "year" : 1994,
+      "year" : "1994",
       "duration" : 141,
       "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
       "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
@@ -1779,5 +1779,57 @@
     } ],
     "ratedMovies" : [ ],
     "notifications" : [ ]
+  }
+}, {
+  "error" : null,
+  "currentMoviesList" : null,
+  "currentUser" : {
+    "credentials" : {
+      "name" : "Eduard",
+      "password" : "secret",
+      "accountType" : "premium",
+      "country" : "India",
+      "balance" : "50"
+    },
+    "tokensCount" : 0,
+    "numFreePremiumMovies" : 14,
+    "purchasedMovies" : [ {
+      "name" : "The Well-Digger's Daughter",
+      "year" : "1994",
+      "duration" : 141,
+      "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
+      "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
+      "genres" : [ "Comedy", "Mystery", "Drama" ],
+      "numLikes" : 1,
+      "numRatings" : 0,
+      "rating" : 0.0
+    } ],
+    "watchedMovies" : [ {
+      "name" : "The Well-Digger's Daughter",
+      "year" : "1994",
+      "duration" : 141,
+      "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
+      "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
+      "genres" : [ "Comedy", "Mystery", "Drama" ],
+      "numLikes" : 1,
+      "numRatings" : 0,
+      "rating" : 0.0
+    } ],
+    "likedMovies" : [ {
+      "name" : "The Well-Digger's Daughter",
+      "year" : "1994",
+      "duration" : 141,
+      "countriesBanned" : [ "China", "South Africa", "Zimbabwe" ],
+      "actors" : [ "Fallon Sutcliff", "Maribeth Penas", "Codee Hooks", "Rubia Cotilard" ],
+      "genres" : [ "Comedy", "Mystery", "Drama" ],
+      "numLikes" : 1,
+      "numRatings" : 0,
+      "rating" : 0.0
+    } ],
+    "ratedMovies" : [ ],
+    "notifications" : [ {
+      "movieName" : "No recommendation",
+      "message" : "Recommendation"
+    } ]
   }
 } ]

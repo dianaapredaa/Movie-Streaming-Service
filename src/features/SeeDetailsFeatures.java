@@ -7,6 +7,7 @@ import fileio.Actions;
 import fileio.Movies;
 import fileio.Users;
 import commands.CurrentAuthentication;
+import observer.GenreObservable;
 import pages.PageType;
 
 import java.util.ArrayList;
@@ -15,13 +16,6 @@ import java.util.LinkedList;
 public final class SeeDetailsFeatures {
 
     private static final int MAX_RATING = 5;
-    private CurrentAuthentication currentAuth;
-    public CurrentAuthentication getCurrent() {
-        return currentAuth;
-    }
-    public void setCurrent(CurrentAuthentication currentAuthentication) {
-        this.currentAuth = currentAuthentication;
-    }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
@@ -36,6 +30,7 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void purchase(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -105,6 +100,7 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void watch(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -169,6 +165,7 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void rate(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -248,6 +245,7 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void like(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -265,7 +263,6 @@ public final class SeeDetailsFeatures {
         } else {
             movieName = currentAuth.getCurrentMoviesList().get(0).getName();
         }
-
 
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
@@ -318,6 +315,7 @@ public final class SeeDetailsFeatures {
      */
     public void seeDetailsMovies(final Actions command, final LinkedList<Movies> movies,
                                  final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         String movie = command.getMovie();
 
         for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
@@ -374,7 +372,41 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void seeDetailsSubscribe(final Actions command, final ArrayNode output) {
-        String subscribedGenre = command.getSubscribedGenre();
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+        // only on SeeDetails page
+        if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.putPOJO("error", "Error");
+            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+            objectNode.putPOJO("currentUser", null);
+            output.addPOJO(objectNode);
+            return;
+        }
 
+        String subscribedGenre = command.getSubscribedGenre();
+        GenreObservable genreObservable = GenreObservable.getInstance();
+
+        if (genreObservable.getGenres().containsKey(subscribedGenre)) {
+            if (genreObservable.getGenres().get(subscribedGenre).
+                    contains(currentAuth.getCurrentUser())) {
+                ObjectNode objectNode = objectMapper.createObjectNode();
+                objectNode.putPOJO("error", "Error");
+                objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+                objectNode.putPOJO("currentUser", null);
+                output.addPOJO(objectNode);
+                return;
+            }
+        }
+
+        if (currentAuth.getCurrentMoviesList().get(0).getGenres().contains(subscribedGenre)) {
+            GenreObservable.getInstance().attach(currentAuth.getCurrentUser(), subscribedGenre);
+        } else {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.putPOJO("error", "Error");
+            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+            objectNode.putPOJO("currentUser", null);
+            output.addPOJO(objectNode);
+            return;
+        }
     }
 }

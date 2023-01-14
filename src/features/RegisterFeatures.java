@@ -12,13 +12,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public final class RegisterFeatures {
-    private CurrentAuthentication currentAuth;
-    public CurrentAuthentication getCurrent() {
-        return currentAuth;
-    }
-    public void setCurrent(CurrentAuthentication currentAuthentication) {
-        this.currentAuth = currentAuthentication;
-    }
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
@@ -34,6 +27,7 @@ public final class RegisterFeatures {
      */
     public void register(final Actions command, final LinkedList<Users> users,
                          final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on Register page
         if (!currentAuth.getCurrentPage().getPageType().equals("register")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
