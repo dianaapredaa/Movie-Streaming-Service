@@ -35,10 +35,15 @@ public final class GenreObservable implements Observable {
 
     @Override
     public void notifyObservers(final Notifications notifications) {
+        LinkedList<Users> notifiedUsers = new LinkedList<>();
+
         for (String genre: notifications.getMovieGenre()) {
             if (genres.containsKey(genre)) {
                 for (Users user : genres.get(genre)) {
-                    user.update(notifications);
+                    if (!notifiedUsers.contains(user)) {
+                        user.update(notifications);
+                        notifiedUsers.add(user);
+                    }
                 }
             }
         }

@@ -10,9 +10,6 @@ import observer.GenreObservable;
 import java.util.LinkedList;
 
 public class AdminFeatures {
-
-    private final ObjectMapper objectMapper = new ObjectMapper();
-
     /**
      * Add movies
      *

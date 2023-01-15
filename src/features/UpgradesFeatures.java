@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public final class UpgradesFeatures {
     public static final int PREMIUM_COST = 10;
     private final ObjectMapper objectMapper = new ObjectMapper();
+    CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
     /**
      * Upgrades - Buy Tokens
@@ -20,7 +21,6 @@ public final class UpgradesFeatures {
      * @param output
      */
     public void buyTokens(final Actions command, final ArrayNode output) {
-        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
         // only on Upgrades page
         if (!currentAuth.getCurrentPage().getPageType().equals("upgrades")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -49,8 +49,6 @@ public final class UpgradesFeatures {
      * @param output
      */
     public void buyPremiumAccount(final ArrayNode output) {
-        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
-
         // only on Upgrades page
         if (!currentAuth.getCurrentPage().getPageType().equals("upgrades")) {
             ObjectNode objectNode = objectMapper.createObjectNode();

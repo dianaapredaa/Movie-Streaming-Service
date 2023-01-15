@@ -322,7 +322,7 @@
     "countriesBanned" : [ "Russia" ],
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 1,
+    "numLikes" : 0,
     "numRatings" : 0,
     "rating" : 0.0
   } ],
@@ -343,7 +343,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
@@ -354,21 +354,11 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
-    "likedMovies" : [ {
-      "name" : "Titanic",
-      "year" : "2019",
-      "duration" : 131,
-      "countriesBanned" : [ "Russia" ],
-      "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-      "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
-      "numRatings" : 0,
-      "rating" : 0.0
-    } ],
+    "likedMovies" : [ ],
     "ratedMovies" : [ ],
     "notifications" : [ ]
   }
@@ -391,7 +381,7 @@
     "countriesBanned" : [ "Russia" ],
     "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
     "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 1,
+    "numLikes" : 0,
     "numRatings" : 0,
     "rating" : 0.0
   }, {
@@ -422,7 +412,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
@@ -433,21 +423,11 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
-    "likedMovies" : [ {
-      "name" : "Titanic",
-      "year" : "2019",
-      "duration" : 131,
-      "countriesBanned" : [ "Russia" ],
-      "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-      "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
-      "numRatings" : 0,
-      "rating" : 0.0
-    } ],
+    "likedMovies" : [ ],
     "ratedMovies" : [ ],
     "notifications" : [ {
       "movieName" : "Matrix 2",
@@ -484,7 +464,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
@@ -495,21 +475,11 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
-    "likedMovies" : [ {
-      "name" : "Titanic",
-      "year" : "2019",
-      "duration" : 131,
-      "countriesBanned" : [ "Russia" ],
-      "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-      "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
-      "numRatings" : 0,
-      "rating" : 0.0
-    } ],
+    "likedMovies" : [ ],
     "ratedMovies" : [ ],
     "notifications" : [ {
       "movieName" : "Matrix 2",
@@ -560,7 +530,7 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
@@ -571,21 +541,11 @@
       "countriesBanned" : [ "Russia" ],
       "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
       "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
+      "numLikes" : 0,
       "numRatings" : 0,
       "rating" : 0.0
     } ],
-    "likedMovies" : [ {
-      "name" : "Titanic",
-      "year" : "2019",
-      "duration" : 131,
-      "countriesBanned" : [ "Russia" ],
-      "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-      "genres" : [ "Action", "Thriller", "Crime" ],
-      "numLikes" : 1,
-      "numRatings" : 0,
-      "rating" : 0.0
-    } ],
+    "likedMovies" : [ ],
     "ratedMovies" : [ ],
     "notifications" : [ {
       "movieName" : "Matrix 2",

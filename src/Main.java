@@ -61,6 +61,11 @@ public final class Main {
 
         for (int i = 0; i < inputData.getActions().size(); i++) {
             Actions command =  inputData.getActions().get(i);
+
+//            ObjectNode objectNode = objectMapper.createObjectNode();
+//            objectNode.putPOJO("comanda data", command.getFeature());
+//            output.addPOJO(objectNode);
+
             switch (command.getType()) {
                 case ("on page") -> {
                     Type onPage = new Type();
@@ -82,18 +87,9 @@ public final class Main {
             }
         }
 
-        if (currentAuth.getCurrentUser() != null) {
-            if (currentAuth.getCurrentUser().getCredentials().getAccountType().equals("premium")) {
-                Notifications notification = new Notifications("No recommendation", Notifications.Message.Recommendation);
-                currentAuth.getCurrentUser().getNotifications().add(notification);
-                // output message
-                ObjectNode objectNode = objectMapper.createObjectNode();
-                objectNode.putPOJO("error", null);
-                objectNode.putPOJO("currentMoviesList", null);
-                objectNode.putPOJO("currentUser", new Users(currentAuth.getCurrentUser()));
-                output.addPOJO(objectNode);
-            }
-        }
+        // display recommendations if necessary
+        Recommendation end = new Recommendation();
+        end.recommendation(output);
 
         // output write
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();

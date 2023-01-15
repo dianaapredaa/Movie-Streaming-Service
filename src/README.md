@@ -48,6 +48,7 @@ a Page object. It will pass information to PageType to get the type of object it
 
 For the Login system we use Singleton Pattern, so that at any point there is only one person authenticated.
 
+For the Subscribe and Notifications system we used Observer Pattern. 
 ## Commands and pages
 
 HOMEPAGE NON-AUTHENTICATED - everybody stars from here, users have only two options, to move to REGISTER

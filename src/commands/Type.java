@@ -32,10 +32,8 @@ public final class Type {
     public void onPage(final Actions command, final LinkedList<Users> users,
                         final LinkedList<Movies> movies, final ArrayNode output) {
         // jump to features
-//        if (command.getFeature() != null) {
-            Features commands = new Features();
-            commands.features(command, output, users, movies);
-//        }
+        Features commands = new Features();
+        commands.features(command, output, users, movies);
     }
 
     /**
@@ -111,6 +109,8 @@ public final class Type {
     public void back(final ArrayNode output, final LinkedList<Movies> movies) {
         CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
+        System.out.println(currentAuth.getCurrentPage().getPageType());
+
         if (currentAuth.getCurrentUser() == null) {
             // nobody is authenticated
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -145,11 +145,16 @@ public final class Type {
         currentAuth.setCurrentPage(PAGE_TYPE.type((String) currentAuth.getPageHistory().pop()));
 
         // if the new page is Movies
-        if (currentAuth.getCurrentPage().equals("movies")) {
+        if (currentAuth.getCurrentPage().getPageType().equals("movies")) {
             MoviesFeatures moviesFeatures = new MoviesFeatures();
             moviesFeatures.onMoviesPage(movies, output);
             return;
         }
+
+        System.out.println(currentAuth.getCurrentPage().getPageType());
+
+
+
     }
 
     /**
