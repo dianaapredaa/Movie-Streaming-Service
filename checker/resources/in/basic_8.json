@@ -620,8 +620,9 @@
     {
       "type": "back"
     },
-    {"type": "change page",
-    "page":"movies"
+    {
+      "type": "change page",
+      "page":"movies"
     },
     {
       "type": "change page",

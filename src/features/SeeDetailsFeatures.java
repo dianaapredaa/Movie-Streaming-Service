@@ -18,7 +18,6 @@ public final class SeeDetailsFeatures {
     private final ObjectMapper objectMapper = new ObjectMapper();
     // create a PageType object to get different types of pages
     private static final PageType PAGE_TYPE = new PageType();
-    CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
     /**
      * See Details - Purchase
@@ -29,6 +28,8 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void purchase(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -112,6 +113,8 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void watch(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -178,6 +181,8 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void rate(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -211,6 +216,7 @@ public final class SeeDetailsFeatures {
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
             Movies movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
+
             if (movie.getName().equals(movieName)) {
                 // check if you have already rated the movie
                 if (!currentAuth.getCurrentUser().getRatedMovies().contains(movie)) {
@@ -218,8 +224,23 @@ public final class SeeDetailsFeatures {
                     int numRatings = movie.getNumRatings() + 1;
                     movie.setNumRatings(numRatings);
 
-                    // calculate rate
+                    // calculate new rating
                     double avgRating = (movie.getRating() * (numRatings - 1) + rating) / numRatings;
+                    movie.setRating(avgRating);
+
+                    // update current user rated list
+                    if (!currentAuth.getCurrentUser().getRatedMovies().contains(movie)) {
+                        currentAuth.getCurrentUser().getRatedMovies().add(movie);
+                    }
+
+                    // save movie's rating
+                    currentAuth.getCurrentUser().getRating().put(movieName, rating);
+                } else {
+                    // old rating
+                    double oldRating = currentAuth.getCurrentUser().getRating().get(movieName);
+                    // calculate new rating
+                    double avgRating = (movie.getRating() * (movie.getNumRatings()) - oldRating
+                            + rating) / movie.getNumRatings();
                     movie.setRating(avgRating);
 
                     // update current user rated list
@@ -262,6 +283,8 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void like(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
@@ -283,19 +306,16 @@ public final class SeeDetailsFeatures {
         // check if you watched the movie
         for (int i = 0; i < currentAuth.getCurrentUser().getWatchedMovies().size(); i++) {
             Movies movie = currentAuth.getCurrentUser().getWatchedMovies().get(i);
+
             if (movie.getName().equals(movieName)) {
-                // check if you have already liked the movie
-                if (currentAuth.getCurrentUser().getLikedMovies().contains(movie)) {
+                // increase number of likes
+                int numLikes;
+                numLikes = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getNumLikes();
+                currentAuth.getCurrentUser().getWatchedMovies().get(i).setNumLikes(numLikes + 1);
 
-                    // increase number of likes
-                    int numLikes;
-                    numLikes = currentAuth.getCurrentUser().getPurchasedMovies().get(i).getNumLikes();
-                    currentAuth.getCurrentUser().getWatchedMovies().get(i).setNumLikes(numLikes + 1);
-
-                    // update current user likes list
-                    if (!currentAuth.getCurrentUser().getLikedMovies().contains(movie)) {
-                        currentAuth.getCurrentUser().getLikedMovies().add(movie);
-                    }
+                // update current user likes list
+                if (!currentAuth.getCurrentUser().getLikedMovies().contains(movie)) {
+                    currentAuth.getCurrentUser().getLikedMovies().add(movie);
                 }
 
                 // output message
@@ -335,6 +355,8 @@ public final class SeeDetailsFeatures {
      */
     public void seeDetailsMovies(final Actions command, final LinkedList<Movies> movies,
                                  final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         String movie = command.getMovie();
 
         for (int j = 0; j < currentAuth.getCurrentMoviesList().size(); j++) {
@@ -391,6 +413,8 @@ public final class SeeDetailsFeatures {
      * @param output
      */
     public void seeDetailsSubscribe(final Actions command, final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on SeeDetails page
         if (!currentAuth.getCurrentPage().getPageType().equals("see details")) {
             ObjectNode objectNode = objectMapper.createObjectNode();

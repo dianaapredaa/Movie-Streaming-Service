@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05a3c9e-1921-4a46-82ac-b429638b6ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/Recommendation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/in/basic_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/in/basic_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_0.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/resources/out/out_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_4.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/resources/out/out_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_6.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/resources/out/out_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_9.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/README.md" afterDir="false" />
@@ -17,6 +16,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/CurrentAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/CurrentAuthentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Features.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/Recommendation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Recommendation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/AdminFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/AdminFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/LoginFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/LoginFeatures.java" afterDir="false" />
@@ -24,7 +26,8 @@
       <change beforePath="$PROJECT_DIR$/src/features/RegisterFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/RegisterFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/GenreObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/GenreObservable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileio/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/Observable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/Observable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,7 @@
       <workItem from="1673514778554" duration="381000" />
       <workItem from="1673607400731" duration="26918000" />
       <workItem from="1673704263447" duration="7743000" />
-      <workItem from="1673782148010" duration="16787000" />
+      <workItem from="1673782148010" duration="32087000" />
     </task>
     <servers />
   </component>

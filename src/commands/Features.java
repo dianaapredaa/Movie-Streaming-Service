@@ -66,11 +66,11 @@ public final class Features {
             }
             case ("add") -> {
                 AdminFeatures adminFeaturesAdd = new AdminFeatures();
-                adminFeaturesAdd.add(command, movies);
+                adminFeaturesAdd.add(command, movies, output);
             }
             case ("delete") -> {
                 AdminFeatures adminFeaturesDelete = new AdminFeatures();
-                adminFeaturesDelete.delete(command, movies, users);
+                adminFeaturesDelete.delete(command, users, movies, output);
             }
             default -> System.out.println("Nothing to do here");
         }

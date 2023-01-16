@@ -3,9 +3,11 @@ package commands;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fileio.*;
 import features.MoviesFeatures;
 import features.SeeDetailsFeatures;
+import fileio.Actions;
+import fileio.Movies;
+import fileio.Users;
 import pages.PageType;
 
 import java.util.ArrayList;
@@ -13,7 +15,6 @@ import java.util.LinkedList;
 import java.util.Stack;
 
 public final class Type {
-
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // create a PageType object to get different types of pages
@@ -30,7 +31,7 @@ public final class Type {
      * @param output
      */
     public void onPage(final Actions command, final LinkedList<Users> users,
-                        final LinkedList<Movies> movies, final ArrayNode output) {
+                       final LinkedList<Movies> movies, final ArrayNode output) {
         // jump to features
         Features commands = new Features();
         commands.features(command, output, users, movies);
@@ -109,9 +110,9 @@ public final class Type {
     public void back(final ArrayNode output, final LinkedList<Movies> movies) {
         CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
-        System.out.println(currentAuth.getCurrentPage().getPageType());
-
-        if (currentAuth.getCurrentUser() == null) {
+        // check if the previews page is login/register or if anybody is authenticated
+        if (currentAuth.getCurrentUser() == null
+            || currentAuth.getPageHistory().isEmpty()) {
             // nobody is authenticated
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.putPOJO("error", "Error");
@@ -121,8 +122,9 @@ public final class Type {
             return;
         }
 
-        if (currentAuth.getPageHistory().isEmpty()) {
-            // nowhere to go back
+        // check if previews page is login/register
+        if (currentAuth.getPageHistory().peek().equals("login")
+            || currentAuth.getPageHistory().peek().equals("register")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.putPOJO("error", "Error");
             objectNode.putPOJO("currentMoviesList", new ArrayList<>());
@@ -131,16 +133,6 @@ public final class Type {
             return;
         }
 
-        if (currentAuth.getPageHistory().peek().equals("login")
-        || currentAuth.getPageHistory().peek().equals("register")) {
-            // can not go back to login/register page
-            ObjectNode objectNode = objectMapper.createObjectNode();
-            objectNode.putPOJO("error", "Error");
-            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
-            objectNode.putPOJO("currentUser", null);
-            output.addPOJO(objectNode);
-            return;
-        }
         // update current page
         currentAuth.setCurrentPage(PAGE_TYPE.type((String) currentAuth.getPageHistory().pop()));
 
@@ -150,10 +142,6 @@ public final class Type {
             moviesFeatures.onMoviesPage(movies, output);
             return;
         }
-
-        System.out.println(currentAuth.getCurrentPage().getPageType());
-
-
 
     }
 

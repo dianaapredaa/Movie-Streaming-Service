@@ -15,7 +15,6 @@ public final class LoginFeatures {
     private final ObjectMapper objectMapper = new ObjectMapper();
     // create a PageType object to get different types of pages
     private static final PageType PAGE_TYPE = new PageType();
-    CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
     /**
      * Login
@@ -27,6 +26,8 @@ public final class LoginFeatures {
      */
     public void login(final Actions command, final LinkedList<Users> users,
                        final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on Login page
         if (!currentAuth.getCurrentPage().getPageType().equals("login")) {
             ObjectNode objectNode = objectMapper.createObjectNode();

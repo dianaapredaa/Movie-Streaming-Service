@@ -94,3 +94,7 @@ We make sure to always update current user's info after every command.
 
 - better code structure
 - shorter methods
+
+## Sources
+Hashmap sort by value:
+https://www.geeksforgeeks.org/collections-sort-java-examples/

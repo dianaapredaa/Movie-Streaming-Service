@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import observer.Observer;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public final class Users implements Observer {
@@ -21,7 +22,15 @@ public final class Users implements Observer {
     private ArrayList<Movies> ratedMovies = new ArrayList<>();
     private ArrayList<Notifications> notifications = new ArrayList<>();
     @JsonIgnore
-    private ArrayList<String> subscribedGenres;
+    private HashMap<String, Double> rating = new HashMap<>();
+
+    public HashMap<String, Double> getRating() {
+        return rating;
+    }
+
+    public void setRating(final HashMap<String, Double> rating) {
+        this.rating = rating;
+    }
 
     public Users(final Users users) {
         this.credentials = new Credentials(users.getCredentials());
@@ -32,7 +41,6 @@ public final class Users implements Observer {
         this.purchasedMovies = new ArrayList<>();
         this.notifications = new ArrayList<>();
         this.numFreePremiumMovies = users.getNumFreePremiumMovies();
-        this.subscribedGenres = new ArrayList<>();
 
         for (Notifications notification : users.getNotifications()) {
             this.notifications.add(new Notifications(notification));
@@ -85,12 +93,6 @@ public final class Users implements Observer {
     }
     public void setWatchedMovies(final ArrayList<Movies> watchedMovies) {
         this.watchedMovies = watchedMovies;
-    }
-    public ArrayList<String> getSubscribedGenres() {
-        return subscribedGenres;
-    }
-    public void setSubscribedGenres(final ArrayList<String> subscribedGenres) {
-        this.subscribedGenres = subscribedGenres;
     }
     public ArrayList<Movies> getLikedMovies() {
         return likedMovies;

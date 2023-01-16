@@ -1,15 +1,20 @@
 package features;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.Actions;
 import fileio.Movies;
 import fileio.Notifications;
 import fileio.Users;
 import observer.GenreObservable;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class AdminFeatures {
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
     /**
      * Add movies
      *
@@ -17,15 +22,26 @@ public class AdminFeatures {
      * @param command
      * @param movies
      */
-    public void add(final Actions command, final LinkedList<Movies> movies) {
+    public void add(final Actions command, final LinkedList<Movies> movies,
+                    final ArrayNode output) {
         Movies addedMovie = command.getAddedMovie();
 
-        Movies movie = new Movies(addedMovie);
-        movies.addLast(movie);
+        if (!movies.contains(addedMovie)) {
 
-        Notifications notification = new Notifications(addedMovie.getName(),
-                Notifications.Message.ADD, addedMovie.getGenres());
-        GenreObservable.getInstance().notifyObservers(notification);
+            Movies movie = new Movies(addedMovie);
+            movies.addLast(movie);
+
+            Notifications notification = new Notifications(addedMovie.getName(),
+                    Notifications.Message.ADD, addedMovie.getGenres());
+            GenreObservable.getInstance().notifyObservers(notification);
+        } else {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.putPOJO("error", "Error");
+            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+            objectNode.putPOJO("currentUser", null);
+            output.addPOJO(objectNode);
+            return;
+        }
     }
 
     /**
@@ -36,8 +52,8 @@ public class AdminFeatures {
      * @param command
      * @param movies
      */
-    public void delete(final Actions command, final LinkedList<Movies> movies,
-                       final LinkedList<Users> users) {
+    public void delete(final Actions command, final LinkedList<Users> users,
+                       final LinkedList<Movies> movies, final ArrayNode output) {
         String deletedMovie = command.getDeletedMovie();
 
         for (int i = 0; i < movies.size(); i++) {
@@ -60,11 +76,16 @@ public class AdminFeatures {
                         }
                     }
                 }
-
-                movies.remove(i);
-                i--;
+                return;
             }
         }
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.putPOJO("error", "Error");
+        objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+        objectNode.putPOJO("currentUser", null);
+        output.addPOJO(objectNode);
+        return;
     }
 
 }

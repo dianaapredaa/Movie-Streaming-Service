@@ -6,9 +6,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fileio.*;
 
 import commands.*;
+import fileio.Actions;
+import fileio.Input;
+import fileio.Movies;
+import fileio.Users;
 import observer.GenreObservable;
 import pages.PageType;
 
@@ -89,7 +92,7 @@ public final class Main {
 
         // display recommendations if necessary
         Recommendation end = new Recommendation();
-        end.recommendation(output);
+        end.recommendation(output, movies);
 
         // output write
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();

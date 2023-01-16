@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import java.util.Stack;
 
 public final class CurrentAuthentication {
+    // Singleton implementation
     private CurrentAuthentication() {
     }
     private static CurrentAuthentication instance = new CurrentAuthentication();
@@ -16,11 +17,17 @@ public final class CurrentAuthentication {
         return instance;
     }
 
-    private LinkedList<Movies> currentMoviesList = new LinkedList<>();
+    // current user
     private Users currentUser;
+
+    // current user's movie list
+    private LinkedList<Movies> currentMoviesList = new LinkedList<>();
+
+    // current page
     private PageType page = new PageType();
     private Page currentPage = page.type("HomePageNonAuthenticated");
-    // page history stack
+
+    // navigation history
     private Stack pageHistory = new Stack<>();
 
     public Stack getPageHistory() {

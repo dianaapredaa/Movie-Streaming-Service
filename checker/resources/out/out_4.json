@@ -1590,7 +1590,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 2,
-    "rating" : 2.0
+    "rating" : 3.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -1611,7 +1611,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1632,7 +1632,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1654,7 +1654,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1689,7 +1689,7 @@
     "genres" : [ "Action", "Thriller", "Crime" ],
     "numLikes" : 0,
     "numRatings" : 2,
-    "rating" : 2.0
+    "rating" : 3.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -1710,7 +1710,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1731,7 +1731,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1753,7 +1753,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1770,6 +1770,16 @@
 }, {
   "error" : null,
   "currentMoviesList" : [ {
+    "name" : "Titanic",
+    "year" : "2019",
+    "duration" : 131,
+    "countriesBanned" : [ "Russia" ],
+    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
+    "genres" : [ "Action", "Thriller", "Crime" ],
+    "numLikes" : 0,
+    "numRatings" : 2,
+    "rating" : 3.0
+  }, {
     "name" : "John Wick: Chapter 3 - Parabellum",
     "year" : "2019",
     "duration" : 131,
@@ -1779,16 +1789,6 @@
     "numLikes" : 0,
     "numRatings" : 2,
     "rating" : 2.5
-  }, {
-    "name" : "Titanic",
-    "year" : "2019",
-    "duration" : 131,
-    "countriesBanned" : [ "Russia" ],
-    "actors" : [ "Laurence Fishburne", "Halle Berry", "Keanu Reeves" ],
-    "genres" : [ "Action", "Thriller", "Crime" ],
-    "numLikes" : 0,
-    "numRatings" : 2,
-    "rating" : 2.0
   } ],
   "currentUser" : {
     "credentials" : {
@@ -1809,7 +1809,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1830,7 +1830,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",
@@ -1852,7 +1852,7 @@
       "genres" : [ "Action", "Thriller", "Crime" ],
       "numLikes" : 0,
       "numRatings" : 2,
-      "rating" : 2.0
+      "rating" : 3.0
     }, {
       "name" : "John Wick: Chapter 3 - Parabellum",
       "year" : "2019",

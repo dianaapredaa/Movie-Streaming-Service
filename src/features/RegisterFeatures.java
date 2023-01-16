@@ -15,7 +15,6 @@ public final class RegisterFeatures {
     private final ObjectMapper objectMapper = new ObjectMapper();
     // create a PageType object to get different types of pages
     private static final PageType PAGE_TYPE = new PageType();
-    CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
 
     /**
      * Register
@@ -27,6 +26,8 @@ public final class RegisterFeatures {
      */
     public void register(final Actions command, final LinkedList<Users> users,
                          final ArrayNode output) {
+        CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         // only on Register page
         if (!currentAuth.getCurrentPage().getPageType().equals("register")) {
             ObjectNode objectNode = objectMapper.createObjectNode();
