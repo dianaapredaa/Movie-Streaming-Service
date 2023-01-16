@@ -54,8 +54,12 @@ which notifies observers about the changes in its state. In our case users can b
 different movie genres. When adding/deleting movies from database, subscribers of the movie's
 genres are notified.
 
+For generating notifications we used Builder Design Pattern. We set required fields and wrapped
+up the object.
+
 For the GenreObservable, we also used Singleton Pattern, so that at any point there is only one
 instance of subscribed genres.
+
 
 ## Commands and pages
 
@@ -111,4 +115,4 @@ new movie recommendation based on his preferences.
 
 ## Sources
 Hashmap sort by value:
-https://www.geeksforgeeks.org/collections-sort-java-examples/
+https://www.geeksforgeeks.org/sorting-a-hashmap-according-to-values/

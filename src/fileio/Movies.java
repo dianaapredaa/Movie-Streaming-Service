@@ -16,7 +16,7 @@ public final class Movies {
     private int numLikes = 0;
     private int numRatings = 0;
     private double rating = 0;
-    
+
     public Movies(final Movies movie) {
         this.name = movie.getName();
         this.year = movie.getYear();

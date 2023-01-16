@@ -33,8 +33,10 @@ public class AdminFeatures {
             movies.addLast(movie);
 
             // notify subscribers
-            Notifications notification = new Notifications(addedMovie.getName(),
-                    Notifications.Message.ADD, addedMovie.getGenres());
+            Notifications notification = new Notifications.NotificationBuilder().
+                    messageType(Notifications.Message.ADD).movieName(addedMovie.getName()).
+                    movieGenre(addedMovie.getGenres()).build();
+
             GenreObservable.getInstance().notifyObservers(notification);
         } else {
             // output message for already existent movie
@@ -63,8 +65,10 @@ public class AdminFeatures {
         for (Movies movie : movies) {
             if (movie.getName().equals(deletedMovie)) {
                 // if found, notify subscribers
-                Notifications notification = new Notifications(deletedMovie,
-                        Notifications.Message.DELETE, movie.getGenres());
+                Notifications notification = new Notifications.NotificationBuilder().
+                        messageType(Notifications.Message.DELETE).movieName(deletedMovie).
+                        movieGenre(movie.getGenres()).build();
+
                 GenreObservable.getInstance().notifyObservers(notification);
 
                 // delete movie from subscriber's lists

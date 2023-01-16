@@ -37,6 +37,14 @@ public final class Recommendation {
         }
         return sortedHashMap;
     }
+
+    /**
+     * Sort by Value
+     *
+     * This function rearrange given hashmap decreasingly by its keys
+     * @param hashMap
+     * @return
+     */
     public static HashMap<String, Integer> sortByKey(final HashMap<String, Integer> hashMap) {
         // create a list from elements of HashMap
         List<Map.Entry<String, Integer>> list =
@@ -114,8 +122,11 @@ public final class Recommendation {
                 for (Map.Entry<String, Integer> entry : genre) {
                     for (Movies topMovie : topMovies) {
                         if (topMovie.getGenres().contains(entry.getKey())) {
-                            Notifications notification = new Notifications(topMovie.getName(),
-                                    Notifications.Message.Recommendation);
+
+                            Notifications notification = new Notifications.NotificationBuilder().
+                                    messageType(Notifications.Message.Recommendation).
+                                    movieName(topMovie.getName()).build();
+
                             currentAuth.getCurrentUser().getNotifications().add(notification);
 
                             // output message for recommendation
@@ -130,8 +141,11 @@ public final class Recommendation {
                 }
 
                 // output message for no recommendation
-                Notifications notification = new Notifications("No recommendation",
-                        Notifications.Message.Recommendation);
+
+                Notifications notification = new Notifications.NotificationBuilder().
+                        messageType(Notifications.Message.Recommendation).
+                        movieName("No recommendation").build();
+
                 currentAuth.getCurrentUser().getNotifications().add(notification);
 
                 ObjectNode objectNode = objectMapper.createObjectNode();
