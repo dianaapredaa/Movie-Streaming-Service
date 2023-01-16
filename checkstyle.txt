@@ -2,7 +2,7 @@ Starting audit...
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\commands\Features.java:4:16: Using the '.*' form of import should be avoided - features.*. [AvoidStarImport]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\commands\Recommendation.java:10:17: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\commands\Recommendation.java:40:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\commands\Recommendation.java:127: Line is longer than 100 characters (found 103). [LineLength]
+[ERROR] C:\Users\Diana\Desktop\POO TV\.\src\commands\Recommendation.java:125: Line is longer than 100 characters (found 103). [LineLength]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\fileio\Movies.java:19: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\Main.java:3:17: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] C:\Users\Diana\Desktop\POO TV\.\src\Main.java:8:8: Unused import - com.fasterxml.jackson.databind.node.ObjectNode. [UnusedImports]

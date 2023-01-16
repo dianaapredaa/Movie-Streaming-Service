@@ -3,36 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c05a3c9e-1921-4a46-82ac-b429638b6ce4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker/resources/out/out_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/checker/resources/out/out_7.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/commands/Recommendation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/commands/Recommendation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/commands/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/commands/Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/AdminFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/AdminFeatures.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/MoviesFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/MoviesFeatures.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/SeeDetailsFeatures.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Contains.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Contains.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Credentials.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Filters.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Filters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/fileio/Movies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/fileio/Movies.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/observer/GenreObservable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/observer/GenreObservable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/Recommendation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Recommendation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/AdminFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/AdminFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/LoginFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/LoginFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/MoviesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/MoviesFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/RegisterFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/RegisterFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/SeeDetailsFeatures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileio/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileio/Contains.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Contains.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileio/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Credentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileio/Filters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Filters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileio/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileio/Movies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/GenreObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/GenreObservable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +80,7 @@
       <workItem from="1673514778554" duration="381000" />
       <workItem from="1673607400731" duration="26918000" />
       <workItem from="1673704263447" duration="7743000" />
-      <workItem from="1673782148010" duration="36090000" />
+      <workItem from="1673782148010" duration="43769000" />
     </task>
     <servers />
   </component>

@@ -64,9 +64,9 @@ public final class Main {
 
         for (int i = 0; i < inputData.getActions().size(); i++) {
             Actions command =  inputData.getActions().get(i);
-
+//
 //            ObjectNode objectNode = objectMapper.createObjectNode();
-//            objectNode.putPOJO("comanda data", command.getFeature());
+//            objectNode.putPOJO("comanda data", command.getType());
 //            output.addPOJO(objectNode);
 
             switch (command.getType()) {

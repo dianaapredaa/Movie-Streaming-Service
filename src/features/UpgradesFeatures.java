@@ -34,13 +34,22 @@ public final class UpgradesFeatures {
 
         int count = command.getCount();
         int tokensNumber = currentAuth.getCurrentUser().getTokensCount();
-
-        // update tokens and balance value
-        currentAuth.getCurrentUser().setTokensCount(tokensNumber + count);
         String balanceValue = currentAuth.getCurrentUser().getCredentials().getBalance();
-        int newBalance = Integer.parseInt(balanceValue) - count;
-        currentAuth.getCurrentUser().getCredentials().setBalance(Integer.toString(newBalance));
+        int balance =  Integer.parseInt(balanceValue);
 
+        if (balance >= count) {
+            // update tokens and balance value
+            currentAuth.getCurrentUser().setTokensCount(tokensNumber + count);
+            int newBalance = balance - count;
+            currentAuth.getCurrentUser().getCredentials().setBalance(Integer.toString(newBalance));
+        } else {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.putPOJO("error", "Error");
+            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+            objectNode.putPOJO("currentUser", null);
+            output.addPOJO(objectNode);
+            return;
+        }
     }
 
     /**

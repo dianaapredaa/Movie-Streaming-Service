@@ -109,11 +109,9 @@ public final class Recommendation {
 
                 // find best movie
                 Set<Map.Entry<String, Integer>> genre = genres.entrySet();
-                Iterator<Map.Entry<String, Integer>> it = genre.iterator();
 
                 // iterate through genres to find if the best most suitable recommendation
-                while (it.hasNext()) {
-                    Map.Entry<String, Integer> entry = it.next();
+                for (Map.Entry<String, Integer> entry : genre) {
                     for (Movies topMovie : topMovies) {
                         if (topMovie.getGenres().contains(entry.getKey())) {
                             Notifications notification = new Notifications(topMovie.getName(),

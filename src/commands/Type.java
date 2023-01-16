@@ -61,7 +61,9 @@ public final class Type {
         if (currentAuth.getCurrentPage().getNextPossiblePage().contains(pageName)
                 || pageName.equals(currentAuth.getCurrentPage().getPageType())) {
             // add last page to the history stack and change current page
-            currentAuth.getPageHistory().push(currentAuth.getCurrentPage().getPageType());
+            if (!pageName.equals(currentAuth.getCurrentPage().getPageType())) {
+                currentAuth.getPageHistory().push(currentAuth.getCurrentPage().getPageType());
+            }
             currentAuth.setCurrentPage(PAGE_TYPE.type(pageName));
         } else {
             // output message if you can not change page
