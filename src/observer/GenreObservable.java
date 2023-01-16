@@ -9,7 +9,6 @@ import java.util.LinkedList;
 public final class GenreObservable implements Observable {
     private GenreObservable() {
         genres = new HashMap<>();
-
     }
 
     private static GenreObservable instance = new GenreObservable();

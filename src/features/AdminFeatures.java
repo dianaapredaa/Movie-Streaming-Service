@@ -26,15 +26,18 @@ public class AdminFeatures {
                     final ArrayNode output) {
         Movies addedMovie = command.getAddedMovie();
 
+        // check if movie already exists
         if (!movies.contains(addedMovie)) {
-
+            // add movie to movie's database
             Movies movie = new Movies(addedMovie);
             movies.addLast(movie);
 
+            // notify subscribers
             Notifications notification = new Notifications(addedMovie.getName(),
                     Notifications.Message.ADD, addedMovie.getGenres());
             GenreObservable.getInstance().notifyObservers(notification);
         } else {
+            // output message for already existent movie
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.putPOJO("error", "Error");
             objectNode.putPOJO("currentMoviesList", new ArrayList<>());
@@ -56,19 +59,23 @@ public class AdminFeatures {
                        final LinkedList<Movies> movies, final ArrayNode output) {
         String deletedMovie = command.getDeletedMovie();
 
-        for (int i = 0; i < movies.size(); i++) {
-            if (movies.get(i).getName().equals(deletedMovie)) {
+        // search for indicated movie
+        for (Movies movie : movies) {
+            if (movie.getName().equals(deletedMovie)) {
+                // if found, notify subscribers
                 Notifications notification = new Notifications(deletedMovie,
-                        Notifications.Message.DELETE, movies.get(i).getGenres());
+                        Notifications.Message.DELETE, movie.getGenres());
                 GenreObservable.getInstance().notifyObservers(notification);
 
+                // delete movie from subscriber's lists
                 for (Users user : users) {
-                    if (user.getPurchasedMovies().contains(movies.get(i))) {
-                        user.getPurchasedMovies().remove(movies.get(i));
-                        user.getWatchedMovies().remove(movies.get(i));
-                        user.getRatedMovies().remove(movies.get(i));
-                        user.getLikedMovies().remove(movies.get(i));
+                    if (user.getPurchasedMovies().contains(movie)) {
+                        user.getPurchasedMovies().remove(movie);
+                        user.getWatchedMovies().remove(movie);
+                        user.getRatedMovies().remove(movie);
+                        user.getLikedMovies().remove(movie);
 
+                        // refund purchase costs
                         if (user.getCredentials().getAccountType().equals("premium")) {
                             user.setNumFreePremiumMovies(user.getNumFreePremiumMovies() + 1);
                         } else {
@@ -80,6 +87,7 @@ public class AdminFeatures {
             }
         }
 
+        // output message if movie doesn't exists
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", "Error");
         objectNode.putPOJO("currentMoviesList", new ArrayList<>());

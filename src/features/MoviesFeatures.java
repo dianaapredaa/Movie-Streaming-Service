@@ -120,10 +120,10 @@ public final class MoviesFeatures {
                     currentMoviesList.add(currentAuth.getCurrentMoviesList().get(i));
                 }
             }
-        } else if (actors == null && genre == null) {
+        } else if (actors == null) {
             // filter by actors and genre
             currentMoviesList.addAll(currentAuth.getCurrentMoviesList());
-        } else if (actors != null && genre != null) {
+        } else {
             // ignore actors and genre
             for (int i = 0; i < currentAuth.getCurrentMoviesList().size(); i++) {
                 Movies movie = currentAuth.getCurrentMoviesList().get(i);
@@ -134,6 +134,7 @@ public final class MoviesFeatures {
             }
         }
 
+        // sort algorithm
         for (int i = 0; i < currentMoviesList.size() - 1; i++) {
             for (int j = 0; j < currentMoviesList.size() - i - 1; j++) {
                 boolean isEqual = false;
@@ -175,6 +176,7 @@ public final class MoviesFeatures {
             }
         }
 
+        // display sorted list
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
 
@@ -200,6 +202,7 @@ public final class MoviesFeatures {
      */
     public void onMoviesPage(final LinkedList<Movies> movies, final ArrayNode output) {
         CurrentAuthentication currentAuth = CurrentAuthentication.getInstance();
+
         currentAuth.setCurrentMoviesList(new LinkedList<>());
 
         for (Movies movie : movies) {

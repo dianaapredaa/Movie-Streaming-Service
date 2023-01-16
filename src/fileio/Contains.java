@@ -13,6 +13,7 @@ public final class Contains {
         this.actors = contains.getActors();
         this.genre = contains.getGenre();
     }
+
     public ArrayList<String> getActors() {
         return actors;
     }

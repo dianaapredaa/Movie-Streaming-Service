@@ -16,22 +16,7 @@ public final class Movies {
     private int numLikes = 0;
     private int numRatings = 0;
     private double rating = 0;
-
-    public Movies(final String name, final String year, final int duration,
-                  final ArrayList<String> countriesBanned, final ArrayList<String> actors,
-                  final ArrayList<String> genres, final int numLikes, final int numRatings,
-                  final int rating) {
-        this.name = name;
-        this.year = year;
-        this.duration = duration;
-        this.countriesBanned = countriesBanned;
-        this.actors = actors;
-        this.genres = genres;
-        this.numLikes = numLikes;
-        this.numRatings = numRatings;
-        this.rating = rating;
-    }
-
+    
     public Movies(final Movies movie) {
         this.name = movie.getName();
         this.year = movie.getYear();

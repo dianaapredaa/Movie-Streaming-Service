@@ -47,7 +47,7 @@ public final class RegisterFeatures {
                     currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageNonAuthenticated"));
                     currentAuth.getPageHistory().pop();
 
-                    // output message
+                    // output message for failed registration
                     ObjectNode objectNode = objectMapper.createObjectNode();
                     objectNode.putPOJO("error", "Error");
                     objectNode.putPOJO("currentMoviesList", new ArrayList<>());
@@ -66,7 +66,7 @@ public final class RegisterFeatures {
         currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
         currentAuth.getPageHistory().push("HomePageAuthenticated");
 
-        // output message
+        // output message for successful registration
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.putPOJO("error", null);
         objectNode.putPOJO("currentMoviesList", new ArrayList<>());

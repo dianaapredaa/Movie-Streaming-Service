@@ -50,7 +50,7 @@ public final class LoginFeatures {
                     currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
                     currentAuth.getPageHistory().pop();
 
-                    // output message
+                    // output message for successful authentication
                     ObjectNode objectNode = objectMapper.createObjectNode();
                     objectNode.putPOJO("error", null);
                     objectNode.putPOJO("currentMoviesList", new ArrayList<>());

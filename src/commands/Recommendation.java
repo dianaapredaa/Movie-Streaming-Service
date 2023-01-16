@@ -25,8 +25,27 @@ public final class Recommendation {
         List<Map.Entry<String, Integer>> list =
                 new LinkedList<>(hashMap.entrySet());
 
-        // sort the list
-        list.sort((o1, o2) -> -(o1.getValue()).compareTo(o2.getValue()));
+        // sort the list by value
+        list.sort((o1, o2) -> {
+            return -(o1.getValue()).compareTo(o2.getValue());
+        });
+
+        // reassemble hashmap
+        HashMap<String, Integer> sortedHashMap = new LinkedHashMap<>();
+        for (Map.Entry<String, Integer> aa : list) {
+            sortedHashMap.put(aa.getKey(), aa.getValue());
+        }
+        return sortedHashMap;
+    }
+    public static HashMap<String, Integer> sortByKey(final HashMap<String, Integer> hashMap) {
+        // create a list from elements of HashMap
+        List<Map.Entry<String, Integer>> list =
+                new LinkedList<>(hashMap.entrySet());
+
+        // sort the list by key
+        list.sort((o1, o2) -> {
+            return (o1.getKey()).compareTo(o2.getKey());
+        });
 
         // reassemble hashmap
         HashMap<String, Integer> sortedHashMap = new LinkedHashMap<>();
@@ -85,6 +104,7 @@ public final class Recommendation {
                 }
 
                 // ordinate genres decreasingly depending on their number of likes
+                genres = sortByKey(genres);
                 genres = sortByValue(genres);
 
                 // find best movie
@@ -100,7 +120,7 @@ public final class Recommendation {
                                     Notifications.Message.Recommendation);
                             currentAuth.getCurrentUser().getNotifications().add(notification);
 
-                            // output message
+                            // output message for recommendation
                             ObjectNode objectNode = objectMapper.createObjectNode();
                             objectNode.putPOJO("error", null);
                             objectNode.putPOJO("currentMoviesList", null);
@@ -111,11 +131,11 @@ public final class Recommendation {
                     }
                 }
 
+                // output message for no recommendation
                 Notifications notification = new Notifications("No recommendation",
                         Notifications.Message.Recommendation);
                 currentAuth.getCurrentUser().getNotifications().add(notification);
 
-                // output message
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
                 objectNode.putPOJO("currentMoviesList", null);

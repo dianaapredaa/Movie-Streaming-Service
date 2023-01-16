@@ -4,6 +4,7 @@ public final class Credentials {
     public Credentials() {
 
     }
+
     private String name;
     private String password;
     private String accountType;

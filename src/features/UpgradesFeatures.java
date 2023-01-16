@@ -31,14 +31,14 @@ public final class UpgradesFeatures {
             output.addPOJO(objectNode);
             return;
         }
-        // count
+
         int count = command.getCount();
-        // set Tokens
         int tokensNumber = currentAuth.getCurrentUser().getTokensCount();
+
+        // update tokens and balance value
         currentAuth.getCurrentUser().setTokensCount(tokensNumber + count);
         String balanceValue = currentAuth.getCurrentUser().getCredentials().getBalance();
         int newBalance = Integer.parseInt(balanceValue) - count;
-        // set Balance
         currentAuth.getCurrentUser().getCredentials().setBalance(Integer.toString(newBalance));
 
     }
@@ -62,9 +62,20 @@ public final class UpgradesFeatures {
             return;
         }
 
+        // puy for premium
         int tokensNumber = currentAuth.getCurrentUser().getTokensCount();
-        currentAuth.getCurrentUser().setTokensCount(tokensNumber - PREMIUM_COST);
-        currentAuth.getCurrentUser().getCredentials().setAccountType("premium");
 
+        // check if you have enough tokens to buy a premium account
+        if (tokensNumber > PREMIUM_COST) {
+            currentAuth.getCurrentUser().setTokensCount(tokensNumber - PREMIUM_COST);
+            currentAuth.getCurrentUser().getCredentials().setAccountType("premium");
+        } else {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.putPOJO("error", "Error");
+            objectNode.putPOJO("currentMoviesList", new ArrayList<>());
+            objectNode.putPOJO("currentUser", null);
+            output.addPOJO(objectNode);
+            return;
+        }
     }
 }

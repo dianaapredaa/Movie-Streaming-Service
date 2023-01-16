@@ -69,7 +69,7 @@ public final class SeeDetailsFeatures {
                 // update current user purchased list
                 currentAuth.getCurrentUser().getPurchasedMovies().add(movie);
 
-                // output message
+                // output message for successful purchase
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
 
@@ -147,7 +147,7 @@ public final class SeeDetailsFeatures {
                     }
                 }
 
-                // output message
+                // output message for watching the movie
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
                 ArrayList<Movies> currentMoviesList = new ArrayList<>();
@@ -249,7 +249,7 @@ public final class SeeDetailsFeatures {
                     }
                 }
 
-                // output message
+                // output message for rating the movie
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
                 ArrayList<Movies> currentMoviesList = new ArrayList<>();
@@ -318,7 +318,7 @@ public final class SeeDetailsFeatures {
                     currentAuth.getCurrentUser().getLikedMovies().add(movie);
                 }
 
-                // output message
+                // output message for liking the movie
                 ObjectNode objectNode = objectMapper.createObjectNode();
                 objectNode.putPOJO("error", null);
 
@@ -388,7 +388,7 @@ public final class SeeDetailsFeatures {
         objectNode.putPOJO("currentUser", null);
         output.addPOJO(objectNode);
 
-        // back to Movies
+        // go back to Movies page
         currentAuth.setCurrentPage(PAGE_TYPE.type("movies"));
         currentAuth.getPageHistory().pop();
 
@@ -428,6 +428,7 @@ public final class SeeDetailsFeatures {
         String subscribedGenre = command.getSubscribedGenre();
         GenreObservable genreObservable = GenreObservable.getInstance();
 
+        // check if you are already subscribed to the indicated genre
         if (genreObservable.getGenres().containsKey(subscribedGenre)) {
             if (genreObservable.getGenres().get(subscribedGenre).
                     contains(currentAuth.getCurrentUser())) {
@@ -440,6 +441,7 @@ public final class SeeDetailsFeatures {
             }
         }
 
+        // check if the indicated genre is part of current movie's genres
         if (currentAuth.getCurrentMoviesList().get(0).getGenres().contains(subscribedGenre)) {
             GenreObservable.getInstance().attach(currentAuth.getCurrentUser(), subscribedGenre);
         } else {
