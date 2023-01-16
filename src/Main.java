@@ -5,7 +5,6 @@ import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import commands.*;
 import fileio.Actions;
@@ -64,10 +63,6 @@ public final class Main {
 
         for (int i = 0; i < inputData.getActions().size(); i++) {
             Actions command =  inputData.getActions().get(i);
-//
-//            ObjectNode objectNode = objectMapper.createObjectNode();
-//            objectNode.putPOJO("comanda data", command.getType());
-//            output.addPOJO(objectNode);
 
             switch (command.getType()) {
                 case ("on page") -> {
@@ -97,7 +92,5 @@ public final class Main {
         // output write
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(args[1]), output);
-        char[] inputPath = args[0].toCharArray();
-        objectWriter.writeValue(new File("checker/resources/out/out_" + inputPath[inputPath.length - 6] + ".json"), output);
     }
 }

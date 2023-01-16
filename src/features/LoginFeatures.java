@@ -48,7 +48,7 @@ public final class LoginFeatures {
 
                     // move to HomePageAuthenticated
                     currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
-                    currentAuth.getPageHistory().pop();
+                    currentAuth.getPageHistory().push("login");
 
                     // output message for successful authentication
                     ObjectNode objectNode = objectMapper.createObjectNode();

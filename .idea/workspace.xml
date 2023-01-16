@@ -4,13 +4,10 @@
     <list default="true" id="c05a3c9e-1921-4a46-82ac-b429638b6ce4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/commands/Recommendation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/commands/Recommendation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/commands/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/commands/Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/POO TV/features/UpgradesFeatures.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/Recommendation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Recommendation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/UpgradesFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/LoginFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/LoginFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/RegisterFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/RegisterFeatures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +78,8 @@
       <workItem from="1673607400731" duration="26918000" />
       <workItem from="1673704263447" duration="7743000" />
       <workItem from="1673782148010" duration="43769000" />
+      <workItem from="1673876591569" duration="21000" />
+      <workItem from="1673876799278" duration="1517000" />
     </task>
     <servers />
   </component>

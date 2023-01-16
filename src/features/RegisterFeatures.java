@@ -53,6 +53,7 @@ public final class RegisterFeatures {
                     objectNode.putPOJO("currentMoviesList", new ArrayList<>());
                     objectNode.putPOJO("currentUser", null);
                     output.addPOJO(objectNode);
+
                     return;
                 }
             }
@@ -64,7 +65,7 @@ public final class RegisterFeatures {
 
         // move to HomePageAuthenticated
         currentAuth.setCurrentPage(PAGE_TYPE.type("HomePageAuthenticated"));
-        currentAuth.getPageHistory().push("HomePageAuthenticated");
+        currentAuth.getPageHistory().push("register");
 
         // output message for successful registration
         ObjectNode objectNode = objectMapper.createObjectNode();
